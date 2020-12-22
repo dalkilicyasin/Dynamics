@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190FE3242583BB8500DD720B /* NomuraViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190FE3232583BB8500DD720B /* NomuraViewModelTests.swift */; };
+		191E711A2566EAD10013C4E3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E71192566EAD10013C4E3 /* Service.swift */; };
+		191E711C2566EAD50013C4E3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E711B2566EAD50013C4E3 /* Errors.swift */; };
+		191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E711D2566F13A0013C4E3 /* QuotesDM.swift */; };
+		191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E711F2566F1440013C4E3 /* QuotesVM.swift */; };
+		191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */; };
+		191E71242566F2640013C4E3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E71232566F2640013C4E3 /* UIViewController+Additions.swift */; };
+		1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DB5C256AB55B004FDAF5 /* UIColor+Additions.swift */; };
+		1951D1352566984300E4699A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D1342566984300E4699A /* AppDelegate.swift */; };
+		1951D1392566984300E4699A /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D1382566984300E4699A /* QuotesVC.swift */; };
+		1951D13C2566984300E4699A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13A2566984300E4699A /* Main.storyboard */; };
+		1951D13E2566984500E4699A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13D2566984500E4699A /* Assets.xcassets */; };
+		1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13F2566984500E4699A /* LaunchScreen.storyboard */; };
+		1951D14C2566984500E4699A /* NomuraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D14B2566984500E4699A /* NomuraTestTests.swift */; };
+		19D62C51256836080016B530 /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D62C50256836080016B530 /* QuotesCell.swift */; };
+		19F5E98A2583C27000EB8E03 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E9892583C27000EB8E03 /* ViewModelTest.swift */; };
+		19F5E98D2583C68A00EB8E03 /* get-quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 19F2563F2583A5E000E66547 /* get-quotes.json */; };
+		19F5E98E2583C68E00EB8E03 /* get-quotesError.json in Resources */ = {isa = PBXBuildFile; fileRef = 19F256412583A6AA00E66547 /* get-quotesError.json */; };
+		19F5E98F2583C69100EB8E03 /* get-quotesJsonError.json in Resources */ = {isa = PBXBuildFile; fileRef = 19F256432583A6C900E66547 /* get-quotesJsonError.json */; };
+		19F5E9912583D48500EB8E03 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E9902583D48500EB8E03 /* AppConstants.swift */; };
+		6D929A017411B393CB8548E8 /* Pods_OdeonDynamicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE5191DCC82ED77E094D6E9 /* Pods_OdeonDynamicsTests.framework */; };
+		B8C0C34D71CDF6BC82A7ACB3 /* Pods_OdeonDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F6F35962C14285FEFB3FF1 /* Pods_OdeonDynamics.framework */; };
+		BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */; };
+		BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */; };
+		BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1951D1482566984500E4699A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1951D1292566984300E4699A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1951D1302566984300E4699A;
+			remoteInfo = NomuraTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CE3BAF3793F07A9D1F2F5C5 /* Pods-OdeonDynamics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.debug.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.debug.xcconfig"; sourceTree = "<group>"; };
+		0D84B97B75AF91940DE04BCC /* Pods-NomuraTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTestTests.release.xcconfig"; path = "Target Support Files/Pods-NomuraTestTests/Pods-NomuraTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		14F6F35962C14285FEFB3FF1 /* Pods_OdeonDynamics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeonDynamics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		190FE3232583BB8500DD720B /* NomuraViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomuraViewModelTests.swift; sourceTree = "<group>"; };
+		191E71192566EAD10013C4E3 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		191E711B2566EAD50013C4E3 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		191E711D2566F13A0013C4E3 /* QuotesDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesDM.swift; sourceTree = "<group>"; };
+		191E711F2566F1440013C4E3 /* QuotesVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesVM.swift; sourceTree = "<group>"; };
+		191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdeonBaseViewModel.swift; sourceTree = "<group>"; };
+		191E71232566F2640013C4E3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		1939DB5C256AB55B004FDAF5 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		1951D1312566984300E4699A /* OdeonDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdeonDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1951D1342566984300E4699A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1951D1382566984300E4699A /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
+		1951D13B2566984300E4699A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1951D13D2566984500E4699A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1951D1402566984500E4699A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1951D1422566984500E4699A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1951D1472566984500E4699A /* OdeonDynamicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdeonDynamicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1951D14B2566984500E4699A /* NomuraTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomuraTestTests.swift; sourceTree = "<group>"; };
+		1951D14D2566984500E4699A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D62C50256836080016B530 /* QuotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
+		19F2563F2583A5E000E66547 /* get-quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-quotes.json"; sourceTree = "<group>"; };
+		19F256412583A6AA00E66547 /* get-quotesError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-quotesError.json"; sourceTree = "<group>"; };
+		19F256432583A6C900E66547 /* get-quotesJsonError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "get-quotesJsonError.json"; path = "/Users/rac/Documents/NomuraTest/NomuraTestTests/Mock Response/get-quotesJsonError.json"; sourceTree = "<absolute>"; };
+		19F5E9892583C27000EB8E03 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		19F5E9902583D48500EB8E03 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		2EA280F6783B64849E7D6256 /* Pods-NomuraTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTestTests.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTestTests/Pods-NomuraTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DC73BA37A5F41437891A518 /* Pods-OdeonDynamicsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADE5191DCC82ED77E094D6E9 /* Pods_OdeonDynamicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeonDynamicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponseModel.swift; sourceTree = "<group>"; };
+		BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
+		BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
+		D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.debug.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
+		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1951D12E2566984300E4699A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C0C34D71CDF6BC82A7ACB3 /* Pods_OdeonDynamics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1951D1442566984500E4699A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D929A017411B393CB8548E8 /* Pods_OdeonDynamicsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A3B85019BD428F705ED083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14F6F35962C14285FEFB3FF1 /* Pods_OdeonDynamics.framework */,
+				ADE5191DCC82ED77E094D6E9 /* Pods_OdeonDynamicsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		191E71102566E9C00013C4E3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1951D13D2566984500E4699A /* Assets.xcassets */,
+				1951D13A2566984300E4699A /* Main.storyboard */,
+				1951D13F2566984500E4699A /* LaunchScreen.storyboard */,
+				1951D1342566984300E4699A /* AppDelegate.swift */,
+				1951D1422566984500E4699A /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		191E71112566E9DD0013C4E3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				19D62C50256836080016B530 /* QuotesCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		191E71122566EA3C0013C4E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1951D1382566984300E4699A /* QuotesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		191E71132566EA530013C4E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */,
+				191E711F2566F1440013C4E3 /* QuotesVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		191E71142566EA760013C4E3 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				191E711D2566F13A0013C4E3 /* QuotesDM.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		191E71152566EA810013C4E3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				191E71192566EAD10013C4E3 /* Service.swift */,
+				191E711B2566EAD50013C4E3 /* Errors.swift */,
+				BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */,
+				BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		191E71162566EA8F0013C4E3 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		191E71252566F26A0013C4E3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				191E71232566F2640013C4E3 /* UIViewController+Additions.swift */,
+				1939DB5C256AB55B004FDAF5 /* UIColor+Additions.swift */,
+				19F5E9902583D48500EB8E03 /* AppConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1951D1282566984300E4699A = {
+			isa = PBXGroup;
+			children = (
+				1951D1332566984300E4699A /* OdeonDynamics */,
+				1951D14A2566984500E4699A /* NomuraTestTests */,
+				1951D1322566984300E4699A /* Products */,
+				4447FF19F614C2C5223E2170 /* Pods */,
+				00A3B85019BD428F705ED083 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1951D1322566984300E4699A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1951D1312566984300E4699A /* OdeonDynamics.app */,
+				1951D1472566984500E4699A /* OdeonDynamicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1951D1332566984300E4699A /* OdeonDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				191E71252566F26A0013C4E3 /* Helpers */,
+				191E71162566EA8F0013C4E3 /* Data Model */,
+				191E71152566EA810013C4E3 /* Network */,
+				191E71142566EA760013C4E3 /* Data Manager */,
+				191E71132566EA530013C4E3 /* ViewModel */,
+				191E71122566EA3C0013C4E3 /* Controllers */,
+				191E71112566E9DD0013C4E3 /* Cell */,
+				191E71102566E9C00013C4E3 /* Application */,
+			);
+			path = OdeonDynamics;
+			sourceTree = "<group>";
+		};
+		1951D14A2566984500E4699A /* NomuraTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				198EA13F2583A8E700103301 /* ViewModelTests */,
+				1951D14B2566984500E4699A /* NomuraTestTests.swift */,
+				19F2563E2583A5C900E66547 /* Mock Response */,
+				1951D14D2566984500E4699A /* Info.plist */,
+			);
+			path = NomuraTestTests;
+			sourceTree = "<group>";
+		};
+		198EA13F2583A8E700103301 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				190FE3232583BB8500DD720B /* NomuraViewModelTests.swift */,
+				19F5E9892583C27000EB8E03 /* ViewModelTest.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		19F2563E2583A5C900E66547 /* Mock Response */ = {
+			isa = PBXGroup;
+			children = (
+				19F2563F2583A5E000E66547 /* get-quotes.json */,
+				19F256412583A6AA00E66547 /* get-quotesError.json */,
+				19F256432583A6C900E66547 /* get-quotesJsonError.json */,
+			);
+			path = "Mock Response";
+			sourceTree = "<group>";
+		};
+		4447FF19F614C2C5223E2170 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */,
+				F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */,
+				2EA280F6783B64849E7D6256 /* Pods-NomuraTestTests.debug.xcconfig */,
+				0D84B97B75AF91940DE04BCC /* Pods-NomuraTestTests.release.xcconfig */,
+				0CE3BAF3793F07A9D1F2F5C5 /* Pods-OdeonDynamics.debug.xcconfig */,
+				E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */,
+				D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */,
+				7DC73BA37A5F41437891A518 /* Pods-OdeonDynamicsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1951D1302566984300E4699A /* OdeonDynamics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1951D1502566984500E4699A /* Build configuration list for PBXNativeTarget "OdeonDynamics" */;
+			buildPhases = (
+				D457BC44A4B1C9EE5ED8CA48 /* [CP] Check Pods Manifest.lock */,
+				1951D12D2566984300E4699A /* Sources */,
+				1951D12E2566984300E4699A /* Frameworks */,
+				1951D12F2566984300E4699A /* Resources */,
+				D5C383091E961906AE89BE44 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdeonDynamics;
+			productName = NomuraTest;
+			productReference = 1951D1312566984300E4699A /* OdeonDynamics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1951D1462566984500E4699A /* OdeonDynamicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1951D1532566984500E4699A /* Build configuration list for PBXNativeTarget "OdeonDynamicsTests" */;
+			buildPhases = (
+				816BD191EC59C095D2BEF8D4 /* [CP] Check Pods Manifest.lock */,
+				1951D1432566984500E4699A /* Sources */,
+				1951D1442566984500E4699A /* Frameworks */,
+				1951D1452566984500E4699A /* Resources */,
+				36CEF32E7DEF97A5182A9B40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1951D1492566984500E4699A /* PBXTargetDependency */,
+			);
+			name = OdeonDynamicsTests;
+			productName = NomuraTestTests;
+			productReference = 1951D1472566984500E4699A /* OdeonDynamicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1951D1292566984300E4699A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Azure;
+				TargetAttributes = {
+					1951D1302566984300E4699A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					1951D1462566984500E4699A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1951D1302566984300E4699A;
+					};
+				};
+			};
+			buildConfigurationList = 1951D12C2566984300E4699A /* Build configuration list for PBXProject "OdeonDynamics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1951D1282566984300E4699A;
+			productRefGroup = 1951D1322566984300E4699A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1951D1302566984300E4699A /* OdeonDynamics */,
+				1951D1462566984500E4699A /* OdeonDynamicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1951D12F2566984300E4699A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */,
+				1951D13E2566984500E4699A /* Assets.xcassets in Resources */,
+				1951D13C2566984300E4699A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1951D1452566984500E4699A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F5E98E2583C68E00EB8E03 /* get-quotesError.json in Resources */,
+				19F5E98D2583C68A00EB8E03 /* get-quotes.json in Resources */,
+				19F5E98F2583C69100EB8E03 /* get-quotesJsonError.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36CEF32E7DEF97A5182A9B40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816BD191EC59C095D2BEF8D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OdeonDynamicsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D457BC44A4B1C9EE5ED8CA48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OdeonDynamics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C383091E961906AE89BE44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1951D12D2566984300E4699A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */,
+				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
+				1951D1392566984300E4699A /* QuotesVC.swift in Sources */,
+				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
+				19D62C51256836080016B530 /* QuotesCell.swift in Sources */,
+				191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */,
+				1951D1352566984300E4699A /* AppDelegate.swift in Sources */,
+				1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */,
+				191E711A2566EAD10013C4E3 /* Service.swift in Sources */,
+				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
+				191E711C2566EAD50013C4E3 /* Errors.swift in Sources */,
+				19F5E9912583D48500EB8E03 /* AppConstants.swift in Sources */,
+				191E71242566F2640013C4E3 /* UIViewController+Additions.swift in Sources */,
+				BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1951D1432566984500E4699A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F5E98A2583C27000EB8E03 /* ViewModelTest.swift in Sources */,
+				190FE3242583BB8500DD720B /* NomuraViewModelTests.swift in Sources */,
+				1951D14C2566984500E4699A /* NomuraTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1951D1492566984500E4699A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1951D1302566984300E4699A /* OdeonDynamics */;
+			targetProxy = 1951D1482566984500E4699A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1951D13A2566984300E4699A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1951D13B2566984300E4699A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1951D13F2566984500E4699A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1951D1402566984500E4699A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1951D14E2566984500E4699A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1951D14F2566984500E4699A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1951D1512566984500E4699A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE3BAF3793F07A9D1F2F5C5 /* Pods-OdeonDynamics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK3CHZC7W8;
+				INFOPLIST_FILE = "$(SRCROOT)/OdeonDynamics/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.NomuraTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1951D1522566984500E4699A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK3CHZC7W8;
+				INFOPLIST_FILE = "$(SRCROOT)/OdeonDynamics/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.NomuraTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1951D1542566984500E4699A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK3CHZC7W8;
+				INFOPLIST_FILE = NomuraTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.NomuraTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OdeonDynamics.app/OdeonDynamics";
+			};
+			name = Debug;
+		};
+		1951D1552566984500E4699A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC73BA37A5F41437891A518 /* Pods-OdeonDynamicsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK3CHZC7W8;
+				INFOPLIST_FILE = NomuraTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.NomuraTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OdeonDynamics.app/OdeonDynamics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1951D12C2566984300E4699A /* Build configuration list for PBXProject "OdeonDynamics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1951D14E2566984500E4699A /* Debug */,
+				1951D14F2566984500E4699A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1951D1502566984500E4699A /* Build configuration list for PBXNativeTarget "OdeonDynamics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1951D1512566984500E4699A /* Debug */,
+				1951D1522566984500E4699A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1951D1532566984500E4699A /* Build configuration list for PBXNativeTarget "OdeonDynamicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1951D1542566984500E4699A /* Debug */,
+				1951D1552566984500E4699A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1951D1292566984300E4699A /* Project object */;
+}
