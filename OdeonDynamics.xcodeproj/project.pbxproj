@@ -32,6 +32,8 @@
 		BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */; };
 		BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */; };
 		BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */; };
+		D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C5B2591FC530031821A /* LoginViewController.swift */; };
+		D9455C5E2591FC530031821A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C5C2591FC530031821A /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
 		BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
 		D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.debug.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9455C5B2591FC530031821A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D9455C5C2591FC530031821A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
 		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				1951D1382566984300E4699A /* QuotesVC.swift */,
+				D9455C5B2591FC530031821A /* LoginViewController.swift */,
+				D9455C5C2591FC530031821A /* LoginViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9455C5E2591FC530031821A /* LoginViewController.xib in Resources */,
 				1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */,
 				1951D13E2566984500E4699A /* Assets.xcassets in Resources */,
 				1951D13C2566984300E4699A /* Main.storyboard in Resources */,
@@ -459,6 +466,7 @@
 				BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */,
 				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
 				1951D1392566984300E4699A /* QuotesVC.swift in Sources */,
+				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
 				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
 				19D62C51256836080016B530 /* QuotesCell.swift in Sources */,
 				191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */,
