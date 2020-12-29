@@ -17,7 +17,6 @@
 		1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DB5C256AB55B004FDAF5 /* UIColor+Additions.swift */; };
 		1951D1352566984300E4699A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D1342566984300E4699A /* AppDelegate.swift */; };
 		1951D1392566984300E4699A /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D1382566984300E4699A /* QuotesVC.swift */; };
-		1951D13C2566984300E4699A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13A2566984300E4699A /* Main.storyboard */; };
 		1951D13E2566984500E4699A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13D2566984500E4699A /* Assets.xcassets */; };
 		1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13F2566984500E4699A /* LaunchScreen.storyboard */; };
 		1951D14C2566984500E4699A /* NomuraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D14B2566984500E4699A /* NomuraTestTests.swift */; };
@@ -32,8 +31,13 @@
 		BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */; };
 		BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */; };
 		BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */; };
+		D90650E3259A50E900EFFF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90650E2259A50E900EFFF1E /* Main.storyboard */; };
 		D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C5B2591FC530031821A /* LoginViewController.swift */; };
-		D9455C5E2591FC530031821A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C5C2591FC530031821A /* LoginViewController.xib */; };
+		D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C642591FFBF0031821A /* OdeonHeaderView.swift */; };
+		D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C6A259200040031821A /* OdeonHeaderView.xib */; };
+		D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */; };
+		D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DC245259B95570042D7B7 /* CheckBoxView.swift */; };
+		D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96DC249259B95720042D7B7 /* CheckBoxView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +65,6 @@
 		1951D1312566984300E4699A /* OdeonDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdeonDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1951D1342566984300E4699A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1951D1382566984300E4699A /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
-		1951D13B2566984300E4699A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1951D13D2566984500E4699A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1951D1402566984500E4699A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1951D1422566984500E4699A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,8 +84,13 @@
 		BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
 		BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
 		D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.debug.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D90650E2259A50E900EFFF1E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Main.storyboard"; sourceTree = "<group>"; };
 		D9455C5B2591FC530031821A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D9455C5C2591FC530031821A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D9455C642591FFBF0031821A /* OdeonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeonHeaderView.swift; sourceTree = "<group>"; };
+		D9455C6A259200040031821A /* OdeonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdeonHeaderView.xib; sourceTree = "<group>"; };
+		D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		D96DC245259B95570042D7B7 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		D96DC249259B95720042D7B7 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
 		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
 		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,10 +129,11 @@
 			isa = PBXGroup;
 			children = (
 				1951D13D2566984500E4699A /* Assets.xcassets */,
-				1951D13A2566984300E4699A /* Main.storyboard */,
 				1951D13F2566984500E4699A /* LaunchScreen.storyboard */,
+				D90650E2259A50E900EFFF1E /* Main.storyboard */,
 				1951D1342566984300E4699A /* AppDelegate.swift */,
 				1951D1422566984500E4699A /* Info.plist */,
+				D95EA71E259B26F300816CEE /* font */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -142,7 +151,6 @@
 			children = (
 				1951D1382566984300E4699A /* QuotesVC.swift */,
 				D9455C5B2591FC530031821A /* LoginViewController.swift */,
-				D9455C5C2591FC530031821A /* LoginViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,6 +224,8 @@
 		1951D1332566984300E4699A /* OdeonDynamics */ = {
 			isa = PBXGroup;
 			children = (
+				D96DC240259B93760042D7B7 /* Extension */,
+				D9455C632591FF840031821A /* CustomView */,
 				191E71252566F26A0013C4E3 /* Helpers */,
 				191E71162566EA8F0013C4E3 /* Data Model */,
 				191E71152566EA810013C4E3 /* Network */,
@@ -271,6 +281,32 @@
 				7DC73BA37A5F41437891A518 /* Pods-OdeonDynamicsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9455C632591FF840031821A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D9455C642591FFBF0031821A /* OdeonHeaderView.swift */,
+				D9455C6A259200040031821A /* OdeonHeaderView.xib */,
+				D96DC245259B95570042D7B7 /* CheckBoxView.swift */,
+				D96DC249259B95720042D7B7 /* CheckBoxView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		D95EA71E259B26F300816CEE /* font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		D96DC240259B93760042D7B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,10 +394,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9455C5E2591FC530031821A /* LoginViewController.xib in Resources */,
 				1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */,
+				D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */,
 				1951D13E2566984500E4699A /* Assets.xcassets in Resources */,
-				1951D13C2566984300E4699A /* Main.storyboard in Resources */,
+				D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */,
+				D90650E3259A50E900EFFF1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,11 +506,14 @@
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
 				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
 				19D62C51256836080016B530 /* QuotesCell.swift in Sources */,
+				D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */,
 				191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */,
 				1951D1352566984300E4699A /* AppDelegate.swift in Sources */,
 				1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */,
+				D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */,
 				191E711A2566EAD10013C4E3 /* Service.swift in Sources */,
 				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
+				D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */,
 				191E711C2566EAD50013C4E3 /* Errors.swift in Sources */,
 				19F5E9912583D48500EB8E03 /* AppConstants.swift in Sources */,
 				191E71242566F2640013C4E3 /* UIViewController+Additions.swift in Sources */,
@@ -502,14 +542,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1951D13A2566984300E4699A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1951D13B2566984300E4699A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1951D13F2566984500E4699A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
