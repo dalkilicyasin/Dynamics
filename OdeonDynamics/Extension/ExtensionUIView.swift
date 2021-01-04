@@ -8,8 +8,7 @@
 
 import UIKit
 
-extension UIView
-{
+extension UIView{
     func addCustomContainerView(_ container: UIView!) -> Void{
         self.translatesAutoresizingMaskIntoConstraints = false;
         self.frame = container.frame;

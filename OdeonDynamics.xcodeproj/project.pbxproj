@@ -31,10 +31,27 @@
 		BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */; };
 		BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */; };
 		BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */; };
+		D900C90725A1D7940042CA43 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C90525A1D7940042CA43 /* MainPageViewController.swift */; };
+		D900C90825A1D7940042CA43 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900C90625A1D7940042CA43 /* MainPageViewController.xib */; };
+		D900C91625A1E9340042CA43 /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C91425A1E9340042CA43 /* MainPageCollectionViewCell.swift */; };
+		D900C91725A1E9340042CA43 /* MainPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900C91525A1E9340042CA43 /* MainPageCollectionViewCell.xib */; };
+		D900C91B25A1FB560042CA43 /* MainPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C91A25A1FB560042CA43 /* MainPageVM.swift */; };
+		D900C91F25A1FB710042CA43 /* MainPageResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */; };
 		D90650E3259A50E900EFFF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90650E2259A50E900EFFF1E /* Main.storyboard */; };
+		D9338E7125A221C600593D89 /* MainPageDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9338E7025A221C600593D89 /* MainPageDM.swift */; };
+		D93F262625A2177100CEB1E0 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F262525A2177100CEB1E0 /* BaseCollectionViewCell.swift */; };
 		D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C5B2591FC530031821A /* LoginViewController.swift */; };
 		D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C642591FFBF0031821A /* OdeonHeaderView.swift */; };
 		D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C6A259200040031821A /* OdeonHeaderView.xib */; };
+		D96D0D10259C6826004A0689 /* ModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D0E259C6826004A0689 /* ModuleViewController.swift */; };
+		D96D0D11259C6826004A0689 /* ModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96D0D0F259C6826004A0689 /* ModuleViewController.xib */; };
+		D96D0D2C259C93BE004A0689 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D2B259C93BE004A0689 /* ExtensionUIViewController.swift */; };
+		D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */; };
+		D96D0D34259C98A8004A0689 /* ModuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */; };
+		D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */; };
+		D96D0D3E259CE1A1004A0689 /* ModuleResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */; };
+		D96D0D42259CE3BD004A0689 /* ModuleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D41259CE3BD004A0689 /* ModuleVM.swift */; };
+		D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D45259CF831004A0689 /* ModuleDM.swift */; };
 		D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */; };
 		D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DC245259B95570042D7B7 /* CheckBoxView.swift */; };
 		D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96DC249259B95720042D7B7 /* CheckBoxView.xib */; };
@@ -84,10 +101,27 @@
 		BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
 		BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
 		D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.debug.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D900C90525A1D7940042CA43 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		D900C90625A1D7940042CA43 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
+		D900C91425A1E9340042CA43 /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D900C91525A1E9340042CA43 /* MainPageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageCollectionViewCell.xib; sourceTree = "<group>"; };
+		D900C91A25A1FB560042CA43 /* MainPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVM.swift; sourceTree = "<group>"; };
+		D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageResponseModel.swift; sourceTree = "<group>"; };
 		D90650E2259A50E900EFFF1E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Main.storyboard"; sourceTree = "<group>"; };
+		D9338E7025A221C600593D89 /* MainPageDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageDM.swift; sourceTree = "<group>"; };
+		D93F262525A2177100CEB1E0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9455C5B2591FC530031821A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9455C642591FFBF0031821A /* OdeonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeonHeaderView.swift; sourceTree = "<group>"; };
 		D9455C6A259200040031821A /* OdeonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdeonHeaderView.xib; sourceTree = "<group>"; };
+		D96D0D0E259C6826004A0689 /* ModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewController.swift; sourceTree = "<group>"; };
+		D96D0D0F259C6826004A0689 /* ModuleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleViewController.xib; sourceTree = "<group>"; };
+		D96D0D2B259C93BE004A0689 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
+		D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTableViewCell.xib; sourceTree = "<group>"; };
+		D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleResponseModel.swift; sourceTree = "<group>"; };
+		D96D0D41259CE3BD004A0689 /* ModuleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVM.swift; sourceTree = "<group>"; };
+		D96D0D45259CF831004A0689 /* ModuleDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDM.swift; sourceTree = "<group>"; };
 		D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 		D96DC245259B95570042D7B7 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		D96DC249259B95720042D7B7 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
@@ -133,7 +167,6 @@
 				D90650E2259A50E900EFFF1E /* Main.storyboard */,
 				1951D1342566984300E4699A /* AppDelegate.swift */,
 				1951D1422566984500E4699A /* Info.plist */,
-				D95EA71E259B26F300816CEE /* font */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -141,7 +174,13 @@
 		191E71112566E9DD0013C4E3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */,
+				D93F262525A2177100CEB1E0 /* BaseCollectionViewCell.swift */,
 				19D62C50256836080016B530 /* QuotesCell.swift */,
+				D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */,
+				D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */,
+				D900C91425A1E9340042CA43 /* MainPageCollectionViewCell.swift */,
+				D900C91525A1E9340042CA43 /* MainPageCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -149,6 +188,8 @@
 		191E71122566EA3C0013C4E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D900C90B25A1D7A20042CA43 /* MainPageViewController */,
+				D96D0D0D259C6734004A0689 /* ModuleViewController */,
 				1951D1382566984300E4699A /* QuotesVC.swift */,
 				D9455C5B2591FC530031821A /* LoginViewController.swift */,
 			);
@@ -160,6 +201,8 @@
 			children = (
 				191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */,
 				191E711F2566F1440013C4E3 /* QuotesVM.swift */,
+				D96D0D41259CE3BD004A0689 /* ModuleVM.swift */,
+				D900C91A25A1FB560042CA43 /* MainPageVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				191E711D2566F13A0013C4E3 /* QuotesDM.swift */,
+				D96D0D45259CF831004A0689 /* ModuleDM.swift */,
+				D9338E7025A221C600593D89 /* MainPageDM.swift */,
 			);
 			path = "Data Manager";
 			sourceTree = "<group>";
@@ -187,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */,
+				D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */,
+				D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -283,6 +330,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D900C90B25A1D7A20042CA43 /* MainPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D900C90525A1D7940042CA43 /* MainPageViewController.swift */,
+				D900C90625A1D7940042CA43 /* MainPageViewController.xib */,
+			);
+			path = MainPageViewController;
+			sourceTree = "<group>";
+		};
 		D9455C632591FF840031821A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,17 +350,20 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
-		D95EA71E259B26F300816CEE /* font */ = {
+		D96D0D0D259C6734004A0689 /* ModuleViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D96D0D0E259C6826004A0689 /* ModuleViewController.swift */,
+				D96D0D0F259C6826004A0689 /* ModuleViewController.xib */,
 			);
-			path = font;
+			path = ModuleViewController;
 			sourceTree = "<group>";
 		};
 		D96DC240259B93760042D7B7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */,
+				D96D0D2B259C93BE004A0689 /* ExtensionUIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -394,8 +453,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D900C91725A1E9340042CA43 /* MainPageCollectionViewCell.xib in Resources */,
 				1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */,
+				D96D0D34259C98A8004A0689 /* ModuleTableViewCell.xib in Resources */,
 				D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */,
+				D96D0D11259C6826004A0689 /* ModuleViewController.xib in Resources */,
+				D900C90825A1D7940042CA43 /* MainPageViewController.xib in Resources */,
 				1951D13E2566984500E4699A /* Assets.xcassets in Resources */,
 				D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */,
 				D90650E3259A50E900EFFF1E /* Main.storyboard in Resources */,
@@ -505,16 +568,29 @@
 				1951D1392566984300E4699A /* QuotesVC.swift in Sources */,
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
 				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
+				D93F262625A2177100CEB1E0 /* BaseCollectionViewCell.swift in Sources */,
 				19D62C51256836080016B530 /* QuotesCell.swift in Sources */,
+				D96D0D10259C6826004A0689 /* ModuleViewController.swift in Sources */,
 				D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */,
+				D900C91B25A1FB560042CA43 /* MainPageVM.swift in Sources */,
+				D96D0D3E259CE1A1004A0689 /* ModuleResponseModel.swift in Sources */,
 				191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */,
 				1951D1352566984300E4699A /* AppDelegate.swift in Sources */,
+				D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */,
 				1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */,
+				D900C91F25A1FB710042CA43 /* MainPageResponseModel.swift in Sources */,
 				D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */,
 				191E711A2566EAD10013C4E3 /* Service.swift in Sources */,
 				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
+				D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */,
 				D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */,
+				D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */,
+				D96D0D42259CE3BD004A0689 /* ModuleVM.swift in Sources */,
+				D9338E7125A221C600593D89 /* MainPageDM.swift in Sources */,
+				D900C91625A1E9340042CA43 /* MainPageCollectionViewCell.swift in Sources */,
+				D900C90725A1D7940042CA43 /* MainPageViewController.swift in Sources */,
 				191E711C2566EAD50013C4E3 /* Errors.swift in Sources */,
+				D96D0D2C259C93BE004A0689 /* ExtensionUIViewController.swift in Sources */,
 				19F5E9912583D48500EB8E03 /* AppConstants.swift in Sources */,
 				191E71242566F2640013C4E3 /* UIViewController+Additions.swift in Sources */,
 				BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */,

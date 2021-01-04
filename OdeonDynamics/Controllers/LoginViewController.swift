@@ -9,36 +9,24 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+ 
     @IBOutlet weak var headerView: OdeonHeaderView!
-    @IBOutlet weak var checkImage: UIImageView!
-    @IBOutlet weak var checkBoxView: UIView!
-    var isCheckRemember = false
+    @IBOutlet weak var checkBoxView: CheckBoxView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkImage.isHidden = true
-        checkBoxView.layer.borderWidth = 0.5
-        checkBoxView.layer.borderColor = UIColor.lightGray.cgColor
-        checkBoxView.layer.cornerRadius = 4
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTabCheckbox))
-        checkBoxView.addGestureRecognizer(gesture)
-        checkImage.layer.cornerRadius = 5
-    }
-    
-    @objc func didTabCheckbox() {      
-        self.isCheckRemember = !isCheckRemember
-        if self.isCheckRemember{
-            checkImage.isHidden = false
-            print(isCheckRemember)
-        }else {
-            checkImage.isHidden = true
-            print(isCheckRemember)
-        }
+        self.checkBoxView.checkBoxViewDelegate = self
+     
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
+        self.otiPushViewController(viewController: ModuleViewController())
     }
-    
+}
+
+extension LoginViewController : CheckBoxViewDelegate {
+    func checkBoxTapped(isremember: Bool) {
+       print(isremember)
+    }   
 }
 
