@@ -11,13 +11,18 @@ import UIKit
 class ModuleViewController: UIViewController {
     
     @IBOutlet weak var headerView: OdeonHeaderView!
- 
     @IBOutlet weak var tableView: UITableView!
     
     let moduleVM = ModuleVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+            
+//        tableView.estimatedRowHeight = 102
+        
+//        tableView.rowHeight = 102
+        
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(ModuleTableViewCell.nib, forCellReuseIdentifier: ModuleTableViewCell.identifier)
@@ -31,7 +36,6 @@ extension ModuleViewController : ViewModelDelegate {
     func viewModelDidUpdate(sender: OdeonViewModel) {
         self.tableView.reloadData()
     }
-    
     func viewModelUpdateFailed(error: AppError) {
     }
 }
@@ -40,13 +44,20 @@ extension ModuleViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.moduleVM.moduleList.count
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 102
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ModuleTableViewCell.identifier) as! ModuleTableViewCell
         cell.setInfo(module: self.moduleVM.moduleList[indexPath.row])
         return cell
-        
     }
+  
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.otiPushViewController(viewController: MainPageViewController())

@@ -5,7 +5,7 @@
 //  Created by Yasin Dalkilic on 29.12.2020.
 //  Copyright © 2020 Azure. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 extension UIView{
@@ -18,6 +18,9 @@ extension UIView{
         NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
     }
+    
 }
+
+
 
 

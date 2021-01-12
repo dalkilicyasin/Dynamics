@@ -33,15 +33,16 @@
                     <state key="normal" image="logout"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkB-lf-TM0">
-                    <rect key="frame" x="36" y="244" width="128" height="21"/>
+                    <rect key="frame" x="36" y="244" width="120" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="2db-eR-mEo"/>
+                        <constraint firstAttribute="height" constant="18" id="2db-eR-mEo"/>
+                        <constraint firstAttribute="width" constant="120" id="7R9-hj-Gfd"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="textColor" red="0.023529411764705882" green="0.56470588235294117" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="102" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TK6-9L-ThF">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TK6-9L-ThF">
                     <rect key="frame" x="36" y="281" width="342" height="615"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
@@ -51,12 +52,12 @@
             <constraints>
                 <constraint firstItem="omZ-EC-3ch" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3cP-Rq-heO"/>
                 <constraint firstAttribute="bottom" secondItem="TK6-9L-ThF" secondAttribute="bottom" id="DAV-cy-8B4"/>
-                <constraint firstAttribute="trailing" secondItem="GkB-lf-TM0" secondAttribute="trailing" constant="250" id="DRA-13-1vI"/>
                 <constraint firstItem="GkB-lf-TM0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="GNo-ft-Fas"/>
                 <constraint firstItem="tPK-nf-A0c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="369" id="SBS-5V-UQL"/>
                 <constraint firstItem="eVc-Hl-OOx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="175" id="SN0-PH-SfT"/>
                 <constraint firstItem="TK6-9L-ThF" firstAttribute="top" secondItem="omZ-EC-3ch" secondAttribute="bottom" constant="77" id="VVZ-VY-YbX"/>
                 <constraint firstItem="TK6-9L-ThF" firstAttribute="top" secondItem="eVc-Hl-OOx" secondAttribute="bottom" constant="117.5" id="anV-7b-7J1"/>
+                <constraint firstItem="GkB-lf-TM0" firstAttribute="top" secondItem="omZ-EC-3ch" secondAttribute="bottom" constant="40" id="c2v-Ih-hIF"/>
                 <constraint firstAttribute="trailing" secondItem="tPK-nf-A0c" secondAttribute="trailing" constant="20" id="d20-d0-baz"/>
                 <constraint firstItem="TK6-9L-ThF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="ehD-rF-C6S"/>
                 <constraint firstItem="tPK-nf-A0c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="ffk-LB-oJY"/>
@@ -64,7 +65,6 @@
                 <constraint firstItem="TK6-9L-ThF" firstAttribute="top" secondItem="tPK-nf-A0c" secondAttribute="bottom" constant="206" id="mTC-2z-EaA"/>
                 <constraint firstAttribute="bottom" secondItem="omZ-EC-3ch" secondAttribute="bottom" constant="692" id="mwa-lr-Ail"/>
                 <constraint firstItem="eVc-Hl-OOx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="tc8-k3-J2f"/>
-                <constraint firstItem="GkB-lf-TM0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="244" id="uSO-mf-Riy"/>
                 <constraint firstAttribute="trailing" secondItem="eVc-Hl-OOx" secondAttribute="trailing" constant="175" id="ufe-Wd-Mwb"/>
                 <constraint firstItem="omZ-EC-3ch" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vaZ-cI-eWN"/>
                 <constraint firstItem="omZ-EC-3ch" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wRg-JL-hUI"/>

@@ -12,6 +12,7 @@ class MainPageViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var contentView = NavigationBarView()
     let mainPageVM = MainPAgeVM()
     
     override func viewDidLoad() {
@@ -27,7 +28,24 @@ class MainPageViewController: UIViewController {
         self.collectionView.register(MainPageCollectionViewCell.nib, forCellWithReuseIdentifier: MainPageCollectionViewCell.identifier)
         
         self.mainPageVM.delegate = self
-        self.mainPageVM.getMainPageList() 
+        self.mainPageVM.getMainPageList()
+        contentView.frame = CGRect(x: view.frame.size.width, y: 0, width: 414, height: 896)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        contentView.headerView.addGestureRecognizer(tap)
+        contentView.headerView.isUserInteractionEnabled = true
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        print("button tapped")
+        contentView.removeFromSuperview()
+    }
+    
+    @IBAction func hamburgerButton(_ sender: Any) {
+        self.view.addSubview(contentView)
+        UIView.animate(withDuration: 0.1) {
+            self.contentView.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+        }
     }
 }
 
@@ -42,7 +60,7 @@ extension MainPageViewController : ViewModelDelegate {
 }
 
 extension MainPageViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.mainPageVM.mainPageList.count
     }
@@ -56,8 +74,15 @@ extension MainPageViewController : UICollectionViewDelegate, UICollectionViewDat
         cell.layer.shadowOpacity = 0.15
         cell.layer.shadowRadius = 10
         return cell
-    } 
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("selected")
+    }
 }
+
+
+
 
 
 

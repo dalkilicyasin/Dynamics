@@ -15,7 +15,7 @@ class ModuleVM: OdeonViewModel {
         }
     }
   
-    var stringArray = ["App Statistic","Pax Information","Sales Revenue","Budget Finance"]
+    var stringArray = ["App StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp StatisticApp Statistic","Pax Information","Sales Revenue","Budget Finance"]
     var imageArray = ["statistic","pax","sales","budget"]
     
     let dataManager = ModuleDM()

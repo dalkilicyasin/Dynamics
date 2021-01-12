@@ -20,37 +20,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-WJ-QdE" customClass="OdeonHeaderView" customModule="OdeonDynamics" customModuleProvider="target">
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cdp-WJ-QdE" customClass="OdeonHeaderView" customModule="OdeonDynamics" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd3-Po-d1e">
-                    <rect key="frame" x="347" y="68" width="30" height="24"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odg-q7-uuD" customClass="HamburgerMenuView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="347" y="67" width="30" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="24" id="02c-0y-CFx"/>
-                        <constraint firstAttribute="width" constant="30" id="Crn-ED-FEA"/>
+                        <constraint firstAttribute="width" constant="30" id="WCP-q2-tMw"/>
+                        <constraint firstAttribute="height" constant="24" id="hih-Q6-ZdF"/>
                     </constraints>
-                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" image="text.alignright" catalog="system"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni3-83-Qes">
+                    <rect key="frame" x="347" y="67" width="30" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="gBb-s7-1cc"/>
+                    </constraints>
+                    <connections>
+                        <action selector="hamburgerButton:" destination="-1" eventType="touchUpInside" id="mMQ-uz-4Qg"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Operator Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ian-t0-MxJ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 Operator Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ian-t0-MxJ">
                     <rect key="frame" x="36" y="68" width="163" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="163" id="7Eu-jp-svk"/>
-                    </constraints>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3D-HT-3lJ">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3D-HT-3lJ">
                     <rect key="frame" x="211" y="68" width="20" height="22.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" image="gobackward" catalog="system">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ah9-ch-AC7">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ah9-ch-AC7">
                     <rect key="frame" x="0.0" y="115" width="414" height="781"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="oWG-Hd-Zoz">
                         <size key="itemSize" width="146" height="146"/>
@@ -63,28 +73,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zd3-Po-d1e" secondAttribute="trailing" constant="37" id="39M-Gx-RhS"/>
-                <constraint firstItem="A3D-HT-3lJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="3RL-8U-oVd"/>
-                <constraint firstItem="Cdp-WJ-QdE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Su-h0-ZXq"/>
-                <constraint firstItem="ah9-ch-AC7" firstAttribute="top" secondItem="ian-t0-MxJ" secondAttribute="bottom" constant="26" id="Afp-wu-LWJ"/>
-                <constraint firstItem="ah9-ch-AC7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="115" id="B1B-sF-aPb"/>
-                <constraint firstItem="A3D-HT-3lJ" firstAttribute="leading" secondItem="ian-t0-MxJ" secondAttribute="trailing" constant="12" id="DXB-uX-WHy"/>
-                <constraint firstAttribute="trailing" secondItem="ah9-ch-AC7" secondAttribute="trailing" id="PMy-hg-D2S"/>
-                <constraint firstAttribute="bottom" secondItem="ah9-ch-AC7" secondAttribute="bottom" id="TQT-E6-41T"/>
-                <constraint firstItem="ian-t0-MxJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="TfF-xd-aIi"/>
-                <constraint firstItem="Cdp-WJ-QdE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gbk-y0-8ul"/>
-                <constraint firstItem="ah9-ch-AC7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gwc-lh-2JA"/>
-                <constraint firstAttribute="bottom" secondItem="Cdp-WJ-QdE" secondAttribute="bottom" constant="692" id="iZB-Fr-qWQ"/>
-                <constraint firstItem="ian-t0-MxJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="pic-UJ-RMg"/>
-                <constraint firstItem="zd3-Po-d1e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="wTc-io-cNP"/>
-                <constraint firstAttribute="trailing" secondItem="Cdp-WJ-QdE" secondAttribute="trailing" id="xPw-Ua-djK"/>
+                <constraint firstItem="ni3-83-Qes" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="FML-Tg-QB4"/>
+                <constraint firstAttribute="trailing" secondItem="Odg-q7-uuD" secondAttribute="trailing" constant="37" id="ST6-ng-yUd"/>
+                <constraint firstAttribute="trailing" secondItem="ni3-83-Qes" secondAttribute="trailing" constant="37" id="Wy8-6m-umI"/>
+                <constraint firstItem="Odg-q7-uuD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="kLu-VM-XhC"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </view>
     </objects>
     <resources>
         <image name="gobackward" catalog="system" width="121" height="128"/>
-        <image name="text.alignright" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
