@@ -15,13 +15,13 @@ class ModuleViewController: UIViewController {
     
     let moduleVM = ModuleVM()
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-            
-//        tableView.estimatedRowHeight = 102
         
-//        tableView.rowHeight = 102
-        
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableView.automaticDimension
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -29,6 +29,8 @@ class ModuleViewController: UIViewController {
         
         self.moduleVM.delegate = self
         self.moduleVM.getModuleList()
+        
+     
     }
 }
 
@@ -48,18 +50,27 @@ extension ModuleViewController : UITableViewDelegate, UITableViewDataSource {
         return UITableView.automaticDimension
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 102
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ModuleTableViewCell.identifier) as! ModuleTableViewCell
         cell.setInfo(module: self.moduleVM.moduleList[indexPath.row])
         return cell
     }
-  
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.otiPushViewController(viewController: MainPageViewController())
+        
+        var viewController: UIViewController = UIViewController()
+        switch (indexPath.row) {
+        case 0:
+            viewController =  MainPageViewController()
+        case 1:
+            viewController =  DestinationsViewController()
+        case 2:
+            viewController = SalesViewController()
+        case 3:
+            viewController = ExcursionViewController()
+        default:
+            print("default")
+        }
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

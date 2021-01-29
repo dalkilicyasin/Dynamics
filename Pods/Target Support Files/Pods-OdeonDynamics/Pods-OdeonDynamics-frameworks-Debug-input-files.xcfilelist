@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework
+${BUILT_PRODUCTS_DIR}/PieCharts/PieCharts.framework

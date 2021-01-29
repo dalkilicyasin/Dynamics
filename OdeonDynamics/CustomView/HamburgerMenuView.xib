@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="546" height="253"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 621" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-PF-tQ1">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 622" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-PF-tQ1">
                     <rect key="frame" x="0.0" y="0.0" width="546" height="253"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
@@ -36,6 +36,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Group 621" width="32" height="26"/>
+        <image name="Group 622" width="32" height="26"/>
     </resources>
 </document>

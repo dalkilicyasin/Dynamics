@@ -11,9 +11,12 @@ import UIKit
 class MainPageViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var hamburgerMenuView: HamburgerMenuView!
     
     var contentView = NavigationBarView()
     let mainPageVM = MainPAgeVM()
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,21 +34,24 @@ class MainPageViewController: UIViewController {
         self.mainPageVM.getMainPageList()
         contentView.frame = CGRect(x: view.frame.size.width, y: 0, width: 414, height: 896)
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        contentView.headerView.addGestureRecognizer(tap)
-        contentView.headerView.isUserInteractionEnabled = true
+        /*   let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+         contentView.headerView.addGestureRecognizer(tap)
+         contentView.headerView.isUserInteractionEnabled = true */
+        
+        
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        print("button tapped")
-        contentView.removeFromSuperview()
+        /*  print("button tapped")
+         contentView.removeFromSuperview() */
     }
     
     @IBAction func hamburgerButton(_ sender: Any) {
-        self.view.addSubview(contentView)
-        UIView.animate(withDuration: 0.1) {
-            self.contentView.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
-        }
+        /*    self.view.addSubview(contentView)
+         UIView.animate(withDuration: 1) {
+         self.contentView.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
+         
+         }*/
     }
 }
 
@@ -80,6 +86,8 @@ extension MainPageViewController : UICollectionViewDelegate, UICollectionViewDat
         print("selected")
     }
 }
+
+
 
 
 

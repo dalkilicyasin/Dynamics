@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalesViewController" customModule="OdeonDynamics" customModuleProvider="target">
+            <connections>
+                <outlet property="pieChart" destination="Zw1-BE-6at" id="nAk-rW-tHT"/>
+                <outlet property="secondView" destination="apx-9F-K5N" id="Vjj-VV-yWT"/>
+                <outlet property="tableView" destination="zRc-GP-a2l" id="lAn-Mr-3fa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3g-N5-Rfa" customClass="OdeonHeaderView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apx-9F-K5N">
+                            <rect key="frame" x="36" y="0.0" width="342" height="340"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="340" id="eMe-fl-fBb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="115" id="S5r-VS-qrz"/>
+                        <constraint firstItem="apx-9F-K5N" firstAttribute="leading" secondItem="u3g-N5-Rfa" secondAttribute="leading" constant="36" id="XQX-AY-aVk"/>
+                        <constraint firstAttribute="trailing" secondItem="apx-9F-K5N" secondAttribute="trailing" constant="36" id="gzb-r6-Hfa"/>
+                        <constraint firstItem="apx-9F-K5N" firstAttribute="top" secondItem="u3g-N5-Rfa" secondAttribute="top" id="osD-ry-HUL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-sq-DS2" customClass="OperatorSelectView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="36" y="68" width="200" height="22"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="azs-tL-zOm"/>
+                        <constraint firstAttribute="height" constant="22" id="tLl-q6-bNR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-NS-vPZ" customClass="HamburgerMenuView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="347" y="67" width="30" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="3Cz-n9-dYz"/>
+                        <constraint firstAttribute="width" constant="30" id="LH4-Ya-1Rv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-BE-6at" customClass="PieChart" customModule="PieCharts">
+                    <rect key="frame" x="10" y="120" width="209" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zRc-GP-a2l">
+                    <rect key="frame" x="36" y="340" width="342" height="556"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OS3-QG-niy">
+                    <rect key="frame" x="254" y="143" width="15" height="15"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="9Yg-Sb-4HT"/>
+                        <constraint firstAttribute="height" constant="15" id="Wps-PY-DaH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JP0-H0-oCe">
+                    <rect key="frame" x="254" y="173" width="15" height="15"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="UWl-CP-Efo"/>
+                        <constraint firstAttribute="width" constant="15" id="tLN-Pt-XLZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Nw-Se-BVj">
+                    <rect key="frame" x="254" y="204" width="15" height="15"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="nJu-5K-cL5"/>
+                        <constraint firstAttribute="width" constant="15" id="xx5-s7-dhQ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excursion Sales" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoi-lf-fgE">
+                    <rect key="frame" x="274" y="135" width="120" height="28"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping Sales" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihD-65-qXB">
+                    <rect key="frame" x="274" y="173" width="120" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour Package Sales" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2i-0X-7Zv">
+                    <rect key="frame" x="274" y="204" width="120" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zRc-GP-a2l" firstAttribute="top" secondItem="X2i-0X-7Zv" secondAttribute="bottom" priority="250" constant="138" id="283-bz-aOv"/>
+                <constraint firstItem="zRc-GP-a2l" firstAttribute="top" secondItem="Zw1-BE-6at" secondAttribute="bottom" constant="20" id="49f-Sa-M3p"/>
+                <constraint firstAttribute="trailing" secondItem="FuG-NS-vPZ" secondAttribute="trailing" constant="37" id="5rZ-u8-PXA"/>
+                <constraint firstAttribute="trailing" secondItem="Zw1-BE-6at" secondAttribute="trailing" constant="195" id="6pU-ob-aZp"/>
+                <constraint firstItem="X2i-0X-7Zv" firstAttribute="top" secondItem="ihD-65-qXB" secondAttribute="bottom" constant="11.5" id="7xa-al-nDV"/>
+                <constraint firstItem="Hoi-lf-fgE" firstAttribute="leading" secondItem="OS3-QG-niy" secondAttribute="trailing" constant="5" id="9S3-v0-DLO"/>
+                <constraint firstAttribute="bottom" secondItem="zRc-GP-a2l" secondAttribute="bottom" id="AUn-pJ-yFc"/>
+                <constraint firstAttribute="trailing" secondItem="u3g-N5-Rfa" secondAttribute="trailing" id="AWS-8L-9ii"/>
+                <constraint firstItem="ihD-65-qXB" firstAttribute="top" secondItem="Hoi-lf-fgE" secondAttribute="bottom" constant="10" id="Cz4-mh-XzH"/>
+                <constraint firstItem="3vw-sq-DS2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="DDE-c2-fGH"/>
+                <constraint firstItem="ihD-65-qXB" firstAttribute="leading" secondItem="JP0-H0-oCe" secondAttribute="trailing" constant="5" id="DHI-Ce-Hwu"/>
+                <constraint firstItem="0Nw-Se-BVj" firstAttribute="top" secondItem="X2i-0X-7Zv" secondAttribute="top" id="H4R-a0-mCe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ihD-65-qXB" secondAttribute="trailing" constant="20" id="HZa-Sg-XGN"/>
+                <constraint firstItem="zRc-GP-a2l" firstAttribute="top" secondItem="ihD-65-qXB" secondAttribute="bottom" priority="250" constant="172" id="Lkr-bk-9K7"/>
+                <constraint firstItem="u3g-N5-Rfa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lu8-4L-KTX"/>
+                <constraint firstItem="Zw1-BE-6at" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="Ozi-Mc-1cu"/>
+                <constraint firstItem="3vw-sq-DS2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="Puf-x8-uQp"/>
+                <constraint firstItem="JP0-H0-oCe" firstAttribute="top" secondItem="ihD-65-qXB" secondAttribute="top" id="V6s-bI-KHY"/>
+                <constraint firstAttribute="trailing" secondItem="Hoi-lf-fgE" secondAttribute="trailing" constant="20" id="VWE-LA-LLk"/>
+                <constraint firstItem="Zw1-BE-6at" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="251" constant="10" id="XhW-Lz-6SL"/>
+                <constraint firstItem="FuG-NS-vPZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="YvN-ry-GeQ"/>
+                <constraint firstItem="0Nw-Se-BVj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JP0-H0-oCe" secondAttribute="bottom" constant="16" id="ahI-Tz-u2f"/>
+                <constraint firstItem="u3g-N5-Rfa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bsf-Oo-NDR"/>
+                <constraint firstAttribute="trailing" secondItem="X2i-0X-7Zv" secondAttribute="trailing" constant="20" id="dNw-gW-Xr2"/>
+                <constraint firstAttribute="trailing" secondItem="zRc-GP-a2l" secondAttribute="trailing" constant="36" id="i0l-v3-q7l"/>
+                <constraint firstItem="zRc-GP-a2l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="iMw-p0-Btb"/>
+                <constraint firstItem="OS3-QG-niy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="143" id="kUY-tS-oWd"/>
+                <constraint firstItem="0Nw-Se-BVj" firstAttribute="leading" secondItem="Zw1-BE-6at" secondAttribute="trailing" constant="35" id="nnJ-2d-RvN"/>
+                <constraint firstItem="zRc-GP-a2l" firstAttribute="top" secondItem="Hoi-lf-fgE" secondAttribute="bottom" priority="250" constant="202" id="nxt-tx-h8t"/>
+                <constraint firstItem="JP0-H0-oCe" firstAttribute="leading" secondItem="Zw1-BE-6at" secondAttribute="trailing" constant="35" id="oDQ-RO-aUx"/>
+                <constraint firstItem="Hoi-lf-fgE" firstAttribute="top" secondItem="u3g-N5-Rfa" secondAttribute="bottom" constant="20" id="rKV-Fr-m6I"/>
+                <constraint firstItem="OS3-QG-niy" firstAttribute="leading" secondItem="Zw1-BE-6at" secondAttribute="trailing" constant="35" id="sMc-Rq-iWO"/>
+                <constraint firstItem="JP0-H0-oCe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OS3-QG-niy" secondAttribute="bottom" constant="15" id="txV-OQ-Bno"/>
+                <constraint firstItem="X2i-0X-7Zv" firstAttribute="leading" secondItem="0Nw-Se-BVj" secondAttribute="trailing" constant="5" id="vFN-XH-7Ls"/>
+                <constraint firstItem="zRc-GP-a2l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="340" id="zzx-Ku-hLU"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

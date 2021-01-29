@@ -32,7 +32,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J3-yO-EK6">
-                        <rect key="frame" x="30" y="10" width="186" height="18"/>
+                        <rect key="frame" x="30" y="10" width="186" height="92"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,6 +44,7 @@
                     <constraint firstItem="0J3-yO-EK6" firstAttribute="leading" secondItem="KRy-Bj-a4a" secondAttribute="trailing" constant="10" id="6Me-Um-ySg"/>
                     <constraint firstItem="NmE-x1-WCx" firstAttribute="leading" secondItem="0J3-yO-EK6" secondAttribute="trailing" constant="10" id="BHd-bG-rBx"/>
                     <constraint firstItem="KRy-Bj-a4a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MqQ-6b-l7B"/>
+                    <constraint firstItem="0J3-yO-EK6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RTL-um-3ST"/>
                     <constraint firstAttribute="trailing" secondItem="NmE-x1-WCx" secondAttribute="trailing" constant="5" id="XaL-a4-eOb"/>
                     <constraint firstAttribute="bottom" secondItem="0J3-yO-EK6" secondAttribute="bottom" priority="250" constant="10" id="bt5-wC-l1w"/>
                     <constraint firstItem="0J3-yO-EK6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="drJ-zS-FjP"/>

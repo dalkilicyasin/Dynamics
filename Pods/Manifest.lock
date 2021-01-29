@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.2.2)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - MBProgressHUD (1.1.0)
   - OHHTTPStubs/Core (9.1.0)
   - OHHTTPStubs/Default (9.1.0):
@@ -14,23 +17,30 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (9.1.0)
   - OHHTTPStubs/Swift (9.1.0):
     - OHHTTPStubs/Default
+  - PieCharts (0.0.7)
 
 DEPENDENCIES:
   - Alamofire
+  - Charts
   - MBProgressHUD (~> 1.1.0)
   - OHHTTPStubs/Swift
+  - PieCharts
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - MBProgressHUD
     - OHHTTPStubs
+    - PieCharts
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
+  PieCharts: 30e50dfa7dc19e5b84e9878d32089673ef5d0453
 
-PODFILE CHECKSUM: 4480df6e6dada3b6eaad11288b1fd7bded4ac2d5
+PODFILE CHECKSUM: 2c337849c87ab5f5e60639d5a1ef05b052687e4f
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

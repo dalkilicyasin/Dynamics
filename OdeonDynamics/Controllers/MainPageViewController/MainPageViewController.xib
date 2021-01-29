@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPageViewController" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="ah9-ch-AC7" id="jfp-Mw-bnU"/>
+                <outlet property="hamburgerMenuView" destination="Odg-q7-uuD" id="XG8-N0-FVz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,31 +34,14 @@
                         <constraint firstAttribute="height" constant="24" id="hih-Q6-ZdF"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni3-83-Qes">
-                    <rect key="frame" x="347" y="67" width="30" height="24"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aya-gu-Bwv" customClass="OperatorSelectView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="36" y="68" width="205" height="24"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="24" id="gBb-s7-1cc"/>
+                        <constraint firstAttribute="height" constant="24" id="FdV-TY-IvC"/>
+                        <constraint firstAttribute="width" constant="205" id="g5d-ke-kuo"/>
                     </constraints>
-                    <connections>
-                        <action selector="hamburgerButton:" destination="-1" eventType="touchUpInside" id="mMQ-uz-4Qg"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 Operator Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ian-t0-MxJ">
-                    <rect key="frame" x="36" y="68" width="163" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3D-HT-3lJ">
-                    <rect key="frame" x="211" y="68" width="20" height="22.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" image="gobackward" catalog="system">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
+                </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ah9-ch-AC7">
                     <rect key="frame" x="0.0" y="115" width="414" height="781"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,16 +57,15 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="ni3-83-Qes" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="FML-Tg-QB4"/>
                 <constraint firstAttribute="trailing" secondItem="Odg-q7-uuD" secondAttribute="trailing" constant="37" id="ST6-ng-yUd"/>
-                <constraint firstAttribute="trailing" secondItem="ni3-83-Qes" secondAttribute="trailing" constant="37" id="Wy8-6m-umI"/>
+                <constraint firstItem="aya-gu-Bwv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="SXu-Xb-4rg"/>
                 <constraint firstItem="Odg-q7-uuD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="kLu-VM-XhC"/>
+                <constraint firstItem="aya-gu-Bwv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="v5Y-qS-Iv3"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </view>
     </objects>
     <resources>
-        <image name="gobackward" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

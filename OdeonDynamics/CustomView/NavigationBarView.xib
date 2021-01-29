@@ -11,7 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBarView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="headerView" destination="vyX-vu-TrV" id="IHF-1b-SR5"/>
+                <outlet property="hamburgerImage" destination="vSA-yo-zGD" id="fBX-95-8qu"/>
+                <outlet property="logOutView" destination="NSw-Oc-UlS" id="YkF-ja-aKj"/>
                 <outlet property="navigationBarView" destination="iN0-l3-epB" id="oQw-ub-nTQ"/>
                 <outlet property="secondNavigationBarView" destination="O9w-On-fEd" id="RwX-8V-Wu3"/>
                 <outlet property="tableView" destination="4fI-Gw-WIJ" id="DNH-oR-HOs"/>
@@ -26,7 +27,7 @@
                     <rect key="frame" x="75" y="45" width="339" height="851"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4fI-Gw-WIJ">
-                            <rect key="frame" x="39" y="85" width="263" height="666"/>
+                            <rect key="frame" x="39" y="85" width="263" height="632"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-3a-fCD">
@@ -39,24 +40,57 @@
                             <nil key="textColor"/>
                             <color key="highlightedColor" white="0.0" alpha="0.42850620699244618" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-vu-TrV" customClass="HamburgerMenuView" customModule="OdeonDynamics" customModuleProvider="target">
-                            <rect key="frame" x="272" y="22" width="30" height="24"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSw-Oc-UlS">
+                            <rect key="frame" x="39" y="717" width="263" height="70"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjM-eQ-Cqj">
+                                    <rect key="frame" x="0.0" y="27" width="70" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="Bgz-DD-4bd"/>
+                                        <constraint firstAttribute="height" constant="18" id="S3z-aZ-Ym5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ynp-ab-it4">
+                                    <rect key="frame" x="233" y="29" width="20" height="16.5"/>
+                                    <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="030-0r-EvF"/>
+                                        <constraint firstAttribute="width" constant="20" id="cYV-DG-9Fa"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="24" id="GBy-Lw-lQa"/>
-                                <constraint firstAttribute="width" constant="30" id="IfB-k5-Z5h"/>
+                                <constraint firstItem="Ynp-ab-it4" firstAttribute="top" secondItem="NSw-Oc-UlS" secondAttribute="top" constant="27" id="BIH-5Y-L5f"/>
+                                <constraint firstItem="GjM-eQ-Cqj" firstAttribute="top" secondItem="NSw-Oc-UlS" secondAttribute="top" constant="27" id="L0l-qb-EeS"/>
+                                <constraint firstAttribute="height" constant="70" id="MyI-gN-zXw"/>
+                                <constraint firstItem="GjM-eQ-Cqj" firstAttribute="leading" secondItem="NSw-Oc-UlS" secondAttribute="leading" id="Ra0-a4-EzT"/>
+                                <constraint firstAttribute="trailing" secondItem="Ynp-ab-it4" secondAttribute="trailing" constant="10" id="YEE-1N-jUA"/>
                             </constraints>
                         </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 621" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-yo-zGD">
+                            <rect key="frame" x="272" y="22" width="30" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="IKP-S0-ci6"/>
+                                <constraint firstAttribute="height" constant="24" id="mdQ-R9-HZv"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NSw-Oc-UlS" secondAttribute="trailing" constant="37" id="0M2-qL-Vf8"/>
+                        <constraint firstItem="NSw-Oc-UlS" firstAttribute="leading" secondItem="O9w-On-fEd" secondAttribute="leading" constant="39" id="4Dy-zZ-aUu"/>
                         <constraint firstItem="4fI-Gw-WIJ" firstAttribute="leading" secondItem="O9w-On-fEd" secondAttribute="leading" constant="39" id="4jb-qM-vNT"/>
-                        <constraint firstAttribute="bottom" secondItem="4fI-Gw-WIJ" secondAttribute="bottom" constant="100" id="5TQ-F3-bfR"/>
-                        <constraint firstAttribute="trailing" secondItem="vyX-vu-TrV" secondAttribute="trailing" constant="37" id="ASo-s3-uc8"/>
+                        <constraint firstAttribute="trailing" secondItem="vSA-yo-zGD" secondAttribute="trailing" constant="37" id="5M6-hb-IeU"/>
+                        <constraint firstItem="NSw-Oc-UlS" firstAttribute="top" secondItem="4fI-Gw-WIJ" secondAttribute="bottom" id="5bk-Nl-4BL"/>
+                        <constraint firstItem="vSA-yo-zGD" firstAttribute="top" secondItem="O9w-On-fEd" secondAttribute="top" constant="22" id="6mS-53-Wzu"/>
                         <constraint firstItem="4fI-Gw-WIJ" firstAttribute="top" secondItem="O9w-On-fEd" secondAttribute="top" constant="85" id="DUa-cu-tqj"/>
                         <constraint firstItem="RpR-3a-fCD" firstAttribute="leading" secondItem="O9w-On-fEd" secondAttribute="leading" constant="39" id="PPw-R2-lQL"/>
                         <constraint firstAttribute="trailing" secondItem="4fI-Gw-WIJ" secondAttribute="trailing" constant="37" id="di4-Wk-YVr"/>
-                        <constraint firstItem="vyX-vu-TrV" firstAttribute="top" secondItem="O9w-On-fEd" secondAttribute="top" constant="22" id="iim-de-2cu"/>
+                        <constraint firstAttribute="bottom" secondItem="NSw-Oc-UlS" secondAttribute="bottom" constant="64" id="syc-2J-rbf"/>
                         <constraint firstItem="RpR-3a-fCD" firstAttribute="top" secondItem="O9w-On-fEd" secondAttribute="top" constant="24" id="tlQ-hn-UOL"/>
                     </constraints>
                 </view>
@@ -73,6 +107,8 @@
         </view>
     </objects>
     <resources>
+        <image name="Group 621" width="32" height="26"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

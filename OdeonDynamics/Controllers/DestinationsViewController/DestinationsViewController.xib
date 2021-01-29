@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DestinationsViewController" customModule="OdeonDynamics" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="9Js-qW-aWK" id="0DL-AS-CuT"/>
+                <outlet property="operatorSelectedView" destination="Fs5-rq-Rvu" id="s4E-uI-gzB"/>
+                <outlet property="tableView" destination="1w6-AG-tnu" id="iwN-e0-cUe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="viewController1" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kb-xl-omV" customClass="OdeonHeaderView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="204" id="kE7-jn-fL5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Js-qW-aWK" customClass="DestinationSelectView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="36" y="133" width="342" height="61"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6w-EU-PoK">
+                            <rect key="frame" x="302" y="22" width="20" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="0qT-4d-6DB"/>
+                                <constraint firstAttribute="width" constant="20" id="L8x-uc-aCm"/>
+                            </constraints>
+                            <state key="normal" image="circle"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="C6w-EU-PoK" secondAttribute="trailing" constant="20" id="XZs-8x-D7Q"/>
+                        <constraint firstItem="C6w-EU-PoK" firstAttribute="top" secondItem="9Js-qW-aWK" secondAttribute="top" constant="22" id="lWo-h0-Ocr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gq-GX-OQV" customClass="HamburgerMenuView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="347" y="67" width="30" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Pb7-WU-xeb"/>
+                        <constraint firstAttribute="width" constant="30" id="nBe-hp-Oco"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-rq-Rvu" customClass="OperatorSelectView" customModule="OdeonDynamics" customModuleProvider="target">
+                    <rect key="frame" x="36" y="68" width="205" height="21"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Hn5-dJ-lkx"/>
+                        <constraint firstAttribute="width" constant="205" id="dBD-mC-Nta"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1w6-AG-tnu">
+                    <rect key="frame" x="36" y="214" width="342" height="682"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8kb-xl-omV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4zs-TB-tQS"/>
+                <constraint firstItem="5gq-GX-OQV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="BbG-jP-SaS"/>
+                <constraint firstAttribute="trailing" secondItem="8kb-xl-omV" secondAttribute="trailing" id="Cgc-NI-7Ih"/>
+                <constraint firstItem="8kb-xl-omV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FHg-fd-jpE"/>
+                <constraint firstItem="1w6-AG-tnu" firstAttribute="top" secondItem="8kb-xl-omV" secondAttribute="bottom" constant="10" id="Lnq-Ku-9Pz"/>
+                <constraint firstItem="9Js-qW-aWK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="REp-3h-FTu"/>
+                <constraint firstAttribute="trailing" secondItem="9Js-qW-aWK" secondAttribute="trailing" constant="36" id="cDa-PX-nMo"/>
+                <constraint firstItem="1w6-AG-tnu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="egk-5s-Lbe"/>
+                <constraint firstItem="9Js-qW-aWK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="133" id="fQ1-Un-jah"/>
+                <constraint firstAttribute="trailing" secondItem="5gq-GX-OQV" secondAttribute="trailing" constant="37" id="iV1-3a-mEL"/>
+                <constraint firstItem="Fs5-rq-Rvu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="nSh-53-SWQ"/>
+                <constraint firstAttribute="trailing" secondItem="1w6-AG-tnu" secondAttribute="trailing" constant="36" id="p1c-El-IEC"/>
+                <constraint firstItem="1w6-AG-tnu" firstAttribute="top" secondItem="9Js-qW-aWK" secondAttribute="bottom" constant="20" id="qeb-Tf-bD7"/>
+                <constraint firstAttribute="bottom" secondItem="1w6-AG-tnu" secondAttribute="bottom" id="yHo-iN-HF4"/>
+                <constraint firstItem="Fs5-rq-Rvu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="ycH-ci-BtX"/>
+            </constraints>
+            <point key="canvasLocation" x="-197.10144927536234" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle" width="23" height="20"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
