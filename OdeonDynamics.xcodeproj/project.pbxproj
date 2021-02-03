@@ -80,11 +80,6 @@
 		D974A47925B0FB2100D37B8A /* DestinationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A47725B0FB2100D37B8A /* DestinationTableViewCell.xib */; };
 		D974A47E25B1975E00D37B8A /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A47C25B1975E00D37B8A /* DestinationsViewController.swift */; };
 		D974A47F25B1975E00D37B8A /* DestinationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A47D25B1975E00D37B8A /* DestinationsViewController.xib */; };
-		D974A49025B228DD00D37B8A /* Destination2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A48E25B228DD00D37B8A /* Destination2TableViewCell.swift */; };
-		D974A49125B228DD00D37B8A /* Destination2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A48F25B228DD00D37B8A /* Destination2TableViewCell.xib */; };
-		D974A49525B2699000D37B8A /* Destination2ResPonseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A49425B2699000D37B8A /* Destination2ResPonseModel.swift */; };
-		D974A49925B269E000D37B8A /* Destination2DM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A49825B269E000D37B8A /* Destination2DM.swift */; };
-		D974A49D25B26A1F00D37B8A /* Destination2VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A49C25B26A1F00D37B8A /* Destination2VM.swift */; };
 		D974A4A325B348F900D37B8A /* OperatorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A4A225B348F900D37B8A /* OperatorSelectView.swift */; };
 		D974A4A725B3490500D37B8A /* OperatorSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A4A625B3490500D37B8A /* OperatorSelectView.xib */; };
 		D974A4B025B355F800D37B8A /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A4AE25B355F800D37B8A /* SalesViewController.swift */; };
@@ -195,11 +190,6 @@
 		D974A47725B0FB2100D37B8A /* DestinationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationTableViewCell.xib; sourceTree = "<group>"; };
 		D974A47C25B1975E00D37B8A /* DestinationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsViewController.swift; sourceTree = "<group>"; };
 		D974A47D25B1975E00D37B8A /* DestinationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationsViewController.xib; sourceTree = "<group>"; };
-		D974A48E25B228DD00D37B8A /* Destination2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination2TableViewCell.swift; sourceTree = "<group>"; };
-		D974A48F25B228DD00D37B8A /* Destination2TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Destination2TableViewCell.xib; sourceTree = "<group>"; };
-		D974A49425B2699000D37B8A /* Destination2ResPonseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination2ResPonseModel.swift; sourceTree = "<group>"; };
-		D974A49825B269E000D37B8A /* Destination2DM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination2DM.swift; sourceTree = "<group>"; };
-		D974A49C25B26A1F00D37B8A /* Destination2VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination2VM.swift; sourceTree = "<group>"; };
 		D974A4A225B348F900D37B8A /* OperatorSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSelectView.swift; sourceTree = "<group>"; };
 		D974A4A625B3490500D37B8A /* OperatorSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorSelectView.xib; sourceTree = "<group>"; };
 		D974A4AE25B355F800D37B8A /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
@@ -273,8 +263,6 @@
 				D900C91525A1E9340042CA43 /* MainPageCollectionViewCell.xib */,
 				D974A47625B0FB2100D37B8A /* DestinationTableViewCell.swift */,
 				D974A47725B0FB2100D37B8A /* DestinationTableViewCell.xib */,
-				D974A48E25B228DD00D37B8A /* Destination2TableViewCell.swift */,
-				D974A48F25B228DD00D37B8A /* Destination2TableViewCell.xib */,
 				D974A50525B39DDD00D37B8A /* SalesTableViewCell.swift */,
 				D974A50625B39DDD00D37B8A /* SalesTableViewCell.xib */,
 				D975F9D725B7328000AD5978 /* ExcursionTableViewCell.swift */,
@@ -309,7 +297,6 @@
 				D96D0D41259CE3BD004A0689 /* ModuleVM.swift */,
 				D900C91A25A1FB560042CA43 /* MainPageVM.swift */,
 				D974A46825B0D6D700D37B8A /* DestinationVM.swift */,
-				D974A49C25B26A1F00D37B8A /* Destination2VM.swift */,
 				D974A50125B39D3300D37B8A /* SalesVM.swift */,
 				D975F9E525B7528100AD5978 /* ExcursionVM.swift */,
 				D94326D225C30EFC00298451 /* OperatorMenuVM.swift */,
@@ -324,7 +311,6 @@
 				D96D0D45259CF831004A0689 /* ModuleDM.swift */,
 				D9338E7025A221C600593D89 /* MainPageDM.swift */,
 				D974A46E25B0D8BD00D37B8A /* DestinationsDM.swift */,
-				D974A49825B269E000D37B8A /* Destination2DM.swift */,
 				D974A4FD25B39CFA00D37B8A /* SalesDM.swift */,
 				D975F9E125B7524900AD5978 /* ExcursionDM.swift */,
 				D94326CE25C30EC400298451 /* OperatorMenuDM.swift */,
@@ -350,7 +336,6 @@
 				D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */,
 				D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */,
 				D974A46125B0D48300D37B8A /* DestinationsResponseModel.swift */,
-				D974A49425B2699000D37B8A /* Destination2ResPonseModel.swift */,
 				D974A4F925B39CB300D37B8A /* SalesResponseModel.swift */,
 				D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */,
 				D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */,
@@ -620,7 +605,6 @@
 				D94326CB25C303A500298451 /* OperatorMenuTableViewCell.xib in Resources */,
 				D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */,
 				D975F9DA25B7328000AD5978 /* ExcursionTableViewCell.xib in Resources */,
-				D974A49125B228DD00D37B8A /* Destination2TableViewCell.xib in Resources */,
 				D973AC1325A76F8B00117C6D /* NavigationBarView.xib in Resources */,
 				D96D0D11259C6826004A0689 /* ModuleViewController.xib in Resources */,
 				D9338E7925A4E9EA00593D89 /* HamburgerMenuView.xib in Resources */,
@@ -744,8 +728,6 @@
 				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
 				1951D1392566984300E4699A /* QuotesVC.swift in Sources */,
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
-				D974A49025B228DD00D37B8A /* Destination2TableViewCell.swift in Sources */,
-				D974A49D25B26A1F00D37B8A /* Destination2VM.swift in Sources */,
 				D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */,
 				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
 				D93F262625A2177100CEB1E0 /* BaseCollectionViewCell.swift in Sources */,
@@ -767,7 +749,6 @@
 				D94326CF25C30EC400298451 /* OperatorMenuDM.swift in Sources */,
 				D974A4A325B348F900D37B8A /* OperatorSelectView.swift in Sources */,
 				D900C91F25A1FB710042CA43 /* MainPageResponseModel.swift in Sources */,
-				D974A49525B2699000D37B8A /* Destination2ResPonseModel.swift in Sources */,
 				D95EB6E625C3FB43009736D7 /* DestinationMenuView.swift in Sources */,
 				D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */,
 				D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */,
@@ -778,7 +759,6 @@
 				D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */,
 				D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */,
 				D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */,
-				D974A49925B269E000D37B8A /* Destination2DM.swift in Sources */,
 				D96D0D42259CE3BD004A0689 /* ModuleVM.swift in Sources */,
 				D974A4B025B355F800D37B8A /* SalesViewController.swift in Sources */,
 				D9385C7625C355550049911A /* DestinationMenuTableViewCell.swift in Sources */,

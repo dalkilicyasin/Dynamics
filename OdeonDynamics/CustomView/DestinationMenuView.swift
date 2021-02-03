@@ -37,9 +37,7 @@ class DestinationMenuView: UIView {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(DestinationMenuTableViewCell.nib, forCellReuseIdentifier: DestinationMenuTableViewCell.identifier)
-        
-    }
-    
+    }   
 }
 
 extension DestinationMenuView : UITableViewDelegate, UITableViewDataSource {

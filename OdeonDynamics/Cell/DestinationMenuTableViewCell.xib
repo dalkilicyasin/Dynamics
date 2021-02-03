@@ -11,18 +11,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="DestinationMenuTableViewCell" customModule="OdeonDynamics" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="304" height="92"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="DestinationMenuTableViewCell" customModule="OdeonDynamics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="62"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="304" height="92"/>
+                <rect key="frame" x="0.0" y="0.0" width="304" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9n-Dk-LTc">
-                        <rect key="frame" x="0.0" y="4" width="304" height="88"/>
+                        <rect key="frame" x="0.0" y="4" width="304" height="58"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-Ji-ROV">
-                                <rect key="frame" x="20" y="34.5" width="42.5" height="19.5"/>
+                                <rect key="frame" x="20" y="19.5" width="42.5" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,13 +38,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DS6-Ji-ROV" firstAttribute="top" secondItem="g9n-Dk-LTc" secondAttribute="top" priority="250" constant="30" id="1FE-dI-9CC"/>
+                            <constraint firstItem="rPM-Sr-yZt" firstAttribute="top" secondItem="g9n-Dk-LTc" secondAttribute="top" constant="20" id="1oc-1l-zcL"/>
                             <constraint firstItem="DS6-Ji-ROV" firstAttribute="centerY" secondItem="g9n-Dk-LTc" secondAttribute="centerY" id="40f-dc-n2Y"/>
+                            <constraint firstItem="DS6-Ji-ROV" firstAttribute="top" secondItem="g9n-Dk-LTc" secondAttribute="top" priority="250" constant="30" id="FXx-Au-QdW"/>
                             <constraint firstAttribute="bottom" secondItem="DS6-Ji-ROV" secondAttribute="bottom" priority="250" constant="30" id="Mc9-A4-8nN"/>
                             <constraint firstAttribute="trailing" secondItem="rPM-Sr-yZt" secondAttribute="trailing" constant="15" id="a6z-jG-U4I"/>
                             <constraint firstAttribute="trailing" secondItem="DS6-Ji-ROV" secondAttribute="trailing" priority="250" constant="100" id="gLA-Ia-sfy"/>
                             <constraint firstItem="DS6-Ji-ROV" firstAttribute="leading" secondItem="g9n-Dk-LTc" secondAttribute="leading" constant="20" id="wqN-rg-86N"/>
-                            <constraint firstItem="rPM-Sr-yZt" firstAttribute="top" secondItem="g9n-Dk-LTc" secondAttribute="top" constant="20" id="zu3-ae-0d3"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -60,7 +60,7 @@
                 <outlet property="infoLAbel" destination="DS6-Ji-ROV" id="ZtY-j1-dtW"/>
                 <outlet property="secondView" destination="g9n-Dk-LTc" id="qH0-OB-O6B"/>
             </connections>
-            <point key="canvasLocation" x="118.84057971014494" y="114.50892857142857"/>
+            <point key="canvasLocation" x="118.84057971014494" y="104.46428571428571"/>
         </tableViewCell>
     </objects>
     <resources>

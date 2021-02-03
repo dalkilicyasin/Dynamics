@@ -14,7 +14,7 @@ class DestinationsViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var operatorSelectedView: OperatorSelectView!
     
-    var destination2VM = Destination2VM()
+ 
     var destinationVM = DestinationVM()
   
     override func viewDidLoad() {
@@ -34,13 +34,12 @@ class DestinationsViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(DestinationTableViewCell.nib, forCellReuseIdentifier: DestinationTableViewCell.identifier)
-        self.tableView.register(Destination2TableViewCell.nib, forCellReuseIdentifier: Destination2TableViewCell.identifier)
+        
         
         self.destinationVM.delegate = self
         self.destinationVM.getMainPageList()
         
-        self.destination2VM.delegate = self
-        self.destination2VM.getMainPageList()
+      
         
      
     }
@@ -60,7 +59,7 @@ extension DestinationsViewController : UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.destinationVM.destinationsList.count
-        //return 3
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
