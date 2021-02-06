@@ -15,13 +15,15 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.checkBoxView.checkBoxViewDelegate = self
+    self.checkBoxView.checkBoxViewDelegate = self
         
-        loginview.layer.cornerRadius = 5
+       loginview.layer.cornerRadius = 5
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
-        self.otiPushViewController(viewController: ModuleViewController())
+       self.otiPushViewController(viewController: ModuleViewController())
+        
+     
     }
 }
 

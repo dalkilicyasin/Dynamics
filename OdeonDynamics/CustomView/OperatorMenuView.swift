@@ -31,54 +31,54 @@ class OperatorMenuView: UIView {
         Bundle.main.loadNibNamed(String(describing: OperatorMenuView.self), owner: self, options: nil)
         operatorMenuView.addCustomContainerView(self)
         
-      buttonView.layer.cornerRadius = 7
+        buttonView.layer.cornerRadius = 7
         
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableView.automaticDimension
         
         self.operatorModuleList.delegate = self
         self.operatorModuleList.getMainPageList()
-        
+   
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(OperatorMenuTableViewCell.nib, forCellReuseIdentifier: OperatorMenuTableViewCell.identifier)
         
-        
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-       selectLAbel.addGestureRecognizer(tap)
-       selectLAbel.isUserInteractionEnabled = true
+        selectLAbel.addGestureRecognizer(tap)
+        selectLAbel.isUserInteractionEnabled = true
+        
+        
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-  
         self.removeFromSuperview()
-        
         print("button tapped")
-      
     }
-   
 }
 
 extension OperatorMenuView : UITableViewDelegate, UITableViewDataSource {
+    
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//       self.operatorModuleList.infoArray.count
-         return 5
+             self.operatorModuleList.infoArray.count
+      //  return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: OperatorMenuTableViewCell.identifier) as! OperatorMenuTableViewCell
-      // cell.setInfo(operatormenu: operatorModuleList.operatorList[indexPath.row])
         
-        cell.infoLabel.text = "Corel Travel"
-        cell.coralImage.image = UIImage(named: "statistic")
+        if operatorModuleList.operatorList.count > 0 {
+            cell.setInfo(operatormenu: operatorModuleList.operatorList[indexPath.row])
+        }else{
+            self.tableView.reloadData()
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-    }
- 
+    }  
 }
 
 extension OperatorMenuView : ViewModelDelegate {
@@ -87,6 +87,6 @@ extension OperatorMenuView : ViewModelDelegate {
     }
     
     func viewModelUpdateFailed(error: AppError) {
-        
+
     }
 }

@@ -15,6 +15,8 @@ class DestinationMenuView: UIView {
     @IBOutlet weak var secondView: UIView!
     let destinationList = ["Odeon Tour EG","Odeon Tour GR","Odeon Tour ES","Odeon Tour UAE","Odeon Tour TN","Odeon Tour TZ","Odeon Tour TH"]
     
+    var destinationModuleList = DestinationMenuVM()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -34,6 +36,9 @@ class DestinationMenuView: UIView {
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableView.automaticDimension
         
+        self.destinationModuleList.delegate = self
+        self.destinationModuleList.getMainPageList()
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(DestinationMenuTableViewCell.nib, forCellReuseIdentifier: DestinationMenuTableViewCell.identifier)
@@ -42,12 +47,19 @@ class DestinationMenuView: UIView {
 
 extension DestinationMenuView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.destinationList.count
+      //  return self.destinationList.count
+        self.destinationModuleList.destinationList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DestinationMenuTableViewCell.identifier) as! DestinationMenuTableViewCell
-        cell.infoLAbel.text = destinationList[indexPath.row]
+       // cell.infoLAbel.text = destinationList[indexPath.row]
+        if destinationModuleList.destinationList.count > 0 {
+            cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
+        }else{
+            self.tableView.reloadData()
+        }
+    
         return cell
     }
     
@@ -57,5 +69,15 @@ extension DestinationMenuView : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+}
+
+extension DestinationMenuView : ViewModelDelegate {
+    func viewModelDidUpdate(sender: OdeonViewModel) {
+        self.tableView.reloadData()
+    }
+    
+    func viewModelUpdateFailed(error: AppError) {
+        
     }
 }

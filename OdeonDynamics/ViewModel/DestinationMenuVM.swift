@@ -10,28 +10,27 @@
 import Foundation
 import UIKit
 
-class OperatorMenuVM : OdeonViewModel {
-    var operatorList : [OperatorMenuResponseModel] = []{
+class DestinationMenuVM : OdeonViewModel {
+    var destinationList : [DestinationMenuResponseModel] = []{
         didSet {
             delegate?.viewModelDidUpdate(sender: self)
         }
     }
     
-    var infoArray = ["Coral Travel Rusya","Coral Travel Poland","Coral Travel Ukraine","Sunmar","Ferien Touristik"]
-    var imageArray = ["statistic","statistic","statistic","statistic","statistic"]
-    
-    let dataManager = OperatorMenuDM()
+    var infoArray = ["Odeon Tour EG","Odeon Tour GR","Odeon Tour ES","Odeon Tour UAE","Odeon Tour TN","Odeon Tour TZ","Odeon Tour TH"]
+  
+    let dataManager = DestinationMenuDM()
     
     func getMainPageList() {
         dataManager.getMainPAgeList(success: { [weak self](data) in
             //  let decoder = JSONDecoder()
             do {
-                var tempList : [OperatorMenuResponseModel] = []
+                var tempList : [DestinationMenuResponseModel] = []
                 tempList.removeAll()
                 for i in  0...(self?.infoArray.count)! - 1 {
-                    tempList.append(OperatorMenuResponseModel(description: self?.infoArray[i], image: self?.imageArray[i]))
+                    tempList.append(DestinationMenuResponseModel(description: self?.infoArray[i]))
                 }
-                self?.operatorList = tempList
+                self?.destinationList = tempList
                 //  let item = try decoder.decode(ModulesModel.self, from: data)
                 // self?.model = item
            

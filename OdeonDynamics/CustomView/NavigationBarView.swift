@@ -9,7 +9,7 @@
 import UIKit
 
 class NavigationBarView: UIView {
-   
+    
     @IBOutlet weak var hamburgerImage: UIImageView!
     @IBOutlet weak var logOutView: UIView!
     @IBOutlet var navigationBarView: UIView!
@@ -48,19 +48,28 @@ class NavigationBarView: UIView {
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableView.automaticDimension
         
+        let logOutTap = UITapGestureRecognizer(target: self, action: #selector(self.logOutHandleTap(_:)))
+        logOutView.addGestureRecognizer(logOutTap)
+        logOutView.isUserInteractionEnabled = true
         
-          let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-         hamburgerImage.addGestureRecognizer(tap)
-         hamburgerImage.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        hamburgerImage.addGestureRecognizer(tap)
+        hamburgerImage.isUserInteractionEnabled = true
     }
     
-    
-    @objc func handleTap(_ sender: UITapGestureRecognizer) {
-  
-        self.removeFromSuperview()
+    @objc func logOutHandleTap(_ sender: UITapGestureRecognizer) {
         
         print("button tapped")
-      
+        if let topVC = UIApplication.getTopViewController() {
+            
+            let viewController: UIViewController = LoginViewController()
+            topVC.navigationController?.popToRootViewController(animated: true)
+        }
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        self.removeFromSuperview()
+        print("button tapped")
     }
 }
 
@@ -80,16 +89,16 @@ extension NavigationBarView : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
+        
         print("selected")
         if let topVC = UIApplication.getTopViewController() {
-           
+            
             var viewController: UIViewController = UIViewController()
             switch (indexPath.row) {
             case 0:
-                viewController =  MainPageViewController()
+                viewController = MainPageViewController()
             case 1:
-                viewController =  DestinationsViewController()
+                viewController = DestinationsViewController()
             case 2:
                 viewController = SalesViewController()
             case 3:

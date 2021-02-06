@@ -38,7 +38,6 @@ class MainPageViewController: UIViewController {
          contentView.headerView.addGestureRecognizer(tap)
          contentView.headerView.isUserInteractionEnabled = true */
         
-        
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {

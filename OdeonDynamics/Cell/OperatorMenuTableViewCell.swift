@@ -24,9 +24,7 @@ class OperatorMenuTableViewCell: BaseTableViewCell {
     }
     
     func setInfo( operatormenu : OperatorMenuResponseModel ) {
-        
         self.infoLabel.text = operatormenu.description
         self.coralImage.image = UIImage(named: operatormenu.image ?? "")
-    }
-    
+    } 
 }

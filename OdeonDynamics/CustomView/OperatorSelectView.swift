@@ -52,8 +52,7 @@ class OperatorSelectView: UIView {
             
         }
         
-        self.remember = !remember
-      
+       // self.remember = !remember
     }
     
 }

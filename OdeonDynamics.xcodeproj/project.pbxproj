@@ -50,6 +50,9 @@
 		D94326CF25C30EC400298451 /* OperatorMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326CE25C30EC400298451 /* OperatorMenuDM.swift */; };
 		D94326D325C30EFC00298451 /* OperatorMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326D225C30EFC00298451 /* OperatorMenuVM.swift */; };
 		D94326D725C30F1C00298451 /* OperatorMenuResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */; };
+		D944C17E25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */; };
+		D944C18225CF1D4F0030CB8B /* DestinationMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C18125CF1D4F0030CB8B /* DestinationMenuDM.swift */; };
+		D944C18625CF1D7F0030CB8B /* DestinationMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C18525CF1D7F0030CB8B /* DestinationMenuVM.swift */; };
 		D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C5B2591FC530031821A /* LoginViewController.swift */; };
 		D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C642591FFBF0031821A /* OdeonHeaderView.swift */; };
 		D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C6A259200040031821A /* OdeonHeaderView.xib */; };
@@ -160,6 +163,9 @@
 		D94326CE25C30EC400298451 /* OperatorMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuDM.swift; sourceTree = "<group>"; };
 		D94326D225C30EFC00298451 /* OperatorMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuVM.swift; sourceTree = "<group>"; };
 		D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuResponseModel.swift; sourceTree = "<group>"; };
+		D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuResponseModel.swift; sourceTree = "<group>"; };
+		D944C18125CF1D4F0030CB8B /* DestinationMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuDM.swift; sourceTree = "<group>"; };
+		D944C18525CF1D7F0030CB8B /* DestinationMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuVM.swift; sourceTree = "<group>"; };
 		D9455C5B2591FC530031821A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9455C642591FFBF0031821A /* OdeonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeonHeaderView.swift; sourceTree = "<group>"; };
 		D9455C6A259200040031821A /* OdeonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdeonHeaderView.xib; sourceTree = "<group>"; };
@@ -300,6 +306,7 @@
 				D974A50125B39D3300D37B8A /* SalesVM.swift */,
 				D975F9E525B7528100AD5978 /* ExcursionVM.swift */,
 				D94326D225C30EFC00298451 /* OperatorMenuVM.swift */,
+				D944C18525CF1D7F0030CB8B /* DestinationMenuVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -314,6 +321,7 @@
 				D974A4FD25B39CFA00D37B8A /* SalesDM.swift */,
 				D975F9E125B7524900AD5978 /* ExcursionDM.swift */,
 				D94326CE25C30EC400298451 /* OperatorMenuDM.swift */,
+				D944C18125CF1D4F0030CB8B /* DestinationMenuDM.swift */,
 			);
 			path = "Data Manager";
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 				D974A4F925B39CB300D37B8A /* SalesResponseModel.swift */,
 				D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */,
 				D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */,
+				D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -753,8 +762,11 @@
 				D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */,
 				D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */,
 				D95C282C25B5F133004BB4DF /* ExcursionViewController.swift in Sources */,
+				D944C18225CF1D4F0030CB8B /* DestinationMenuDM.swift in Sources */,
+				D944C17E25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift in Sources */,
 				191E711A2566EAD10013C4E3 /* Service.swift in Sources */,
 				D94326BB25C3008900298451 /* OperatorMenuView.swift in Sources */,
+				D944C18625CF1D7F0030CB8B /* DestinationMenuVM.swift in Sources */,
 				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
 				D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */,
 				D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */,

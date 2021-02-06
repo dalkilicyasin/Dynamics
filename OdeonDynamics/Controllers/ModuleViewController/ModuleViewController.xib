@@ -31,6 +31,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPK-nf-A0c">
                     <rect key="frame" x="369" y="50" width="25" height="25"/>
                     <state key="normal" image="logout"/>
+                    <connections>
+                        <action selector="logOutButtonTapped:" destination="-1" eventType="touchUpInside" id="V7Q-ou-0vh"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkB-lf-TM0">
                     <rect key="frame" x="36" y="244" width="120" height="18"/>

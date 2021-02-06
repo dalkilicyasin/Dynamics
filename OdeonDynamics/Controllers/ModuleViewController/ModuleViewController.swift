@@ -12,6 +12,7 @@ class ModuleViewController: UIViewController {
     
     @IBOutlet weak var headerView: OdeonHeaderView!
     @IBOutlet weak var tableView: UITableView!
+  
     
     let moduleVM = ModuleVM()
     
@@ -29,8 +30,9 @@ class ModuleViewController: UIViewController {
         
         self.moduleVM.delegate = self
         self.moduleVM.getModuleList()
-        
-     
+    }
+    @IBAction func logOutButtonTapped(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
