@@ -28,6 +28,7 @@
 		19F5E9912583D48500EB8E03 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5E9902583D48500EB8E03 /* AppConstants.swift */; };
 		6D929A017411B393CB8548E8 /* Pods_OdeonDynamicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE5191DCC82ED77E094D6E9 /* Pods_OdeonDynamicsTests.framework */; };
 		B8C0C34D71CDF6BC82A7ACB3 /* Pods_OdeonDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F6F35962C14285FEFB3FF1 /* Pods_OdeonDynamics.framework */; };
+		BF78C96E25D524F2002747F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78C96D25D524F2002747F0 /* Main.storyboard */; };
 		BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */; };
 		BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */; };
 		BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */; };
@@ -97,7 +98,6 @@
 		D975F9DE25B750DD00AD5978 /* ExcursionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */; };
 		D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E125B7524900AD5978 /* ExcursionDM.swift */; };
 		D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E525B7528100AD5978 /* ExcursionVM.swift */; };
-		D9B36A1925C090FD0048DD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B36A1725C090FD0048DD3D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +140,7 @@
 		2EA280F6783B64849E7D6256 /* Pods-NomuraTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTestTests.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTestTests/Pods-NomuraTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DC73BA37A5F41437891A518 /* Pods-OdeonDynamicsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADE5191DCC82ED77E094D6E9 /* Pods_OdeonDynamicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeonDynamicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF78C96D25D524F2002747F0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponseModel.swift; sourceTree = "<group>"; };
 		BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
 		BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
@@ -210,7 +211,6 @@
 		D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionResponseModel.swift; sourceTree = "<group>"; };
 		D975F9E125B7524900AD5978 /* ExcursionDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionDM.swift; sourceTree = "<group>"; };
 		D975F9E525B7528100AD5978 /* ExcursionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionVM.swift; sourceTree = "<group>"; };
-		D9B36A1825C090FD0048DD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/OdeonDynamics-develop/OdeonDynamics/Application/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
 		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 			children = (
 				1951D13D2566984500E4699A /* Assets.xcassets */,
 				1951D13F2566984500E4699A /* LaunchScreen.storyboard */,
-				D9B36A1725C090FD0048DD3D /* Main.storyboard */,
+				BF78C96D25D524F2002747F0 /* Main.storyboard */,
 				1951D1342566984300E4699A /* AppDelegate.swift */,
 				1951D1422566984500E4699A /* Info.plist */,
 			);
@@ -609,6 +609,7 @@
 				D900C91725A1E9340042CA43 /* MainPageCollectionViewCell.xib in Resources */,
 				D974A4A725B3490500D37B8A /* OperatorSelectView.xib in Resources */,
 				1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */,
+				BF78C96E25D524F2002747F0 /* Main.storyboard in Resources */,
 				D974A47925B0FB2100D37B8A /* DestinationTableViewCell.xib in Resources */,
 				D96D0D34259C98A8004A0689 /* ModuleTableViewCell.xib in Resources */,
 				D94326CB25C303A500298451 /* OperatorMenuTableViewCell.xib in Resources */,
@@ -626,7 +627,6 @@
 				D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */,
 				D974A47F25B1975E00D37B8A /* DestinationsViewController.xib in Resources */,
 				D94326BF25C300A100298451 /* OperatorMenuView.xib in Resources */,
-				D9B36A1925C090FD0048DD3D /* Main.storyboard in Resources */,
 				D9385C7725C355550049911A /* DestinationMenuTableViewCell.xib in Resources */,
 				D974A4B125B355F800D37B8A /* SalesViewController.xib in Resources */,
 			);
@@ -820,14 +820,6 @@
 				1951D1402566984500E4699A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D9B36A1725C090FD0048DD3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9B36A1825C090FD0048DD3D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
