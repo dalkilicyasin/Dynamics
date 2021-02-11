@@ -9,15 +9,14 @@
 import UIKit
 
 class LoginViewController: UIViewController {
- 
+    @IBOutlet weak var headerView: OdeonHeaderView!
     @IBOutlet weak var loginview: UIView!
     @IBOutlet weak var checkBoxView: CheckBoxView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    self.checkBoxView.checkBoxViewDelegate = self
-        
-       loginview.layer.cornerRadius = 5
+        self.checkBoxView.checkBoxViewDelegate = self
+        loginview.layer.cornerRadius = 5
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {

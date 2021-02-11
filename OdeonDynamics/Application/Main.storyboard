@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NvB-Nz-7lk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NvB-Nz-7lk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -211,16 +211,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-4y-p1M">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-4y-p1M" customClass="CheckBoxView" customModule="OdeonDynamics" customModuleProvider="target">
                                 <rect key="frame" x="50" y="455" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Hc-sX-WOZ">
-                                        <rect key="frame" x="-4" y="-2" width="38" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.37550371890000001" green="0.64260792730000005" blue="0.66667395829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phu-eX-kbO">
@@ -253,8 +246,8 @@
                     <navigationItem key="navigationItem" id="UOZ-xF-Hiy"/>
                     <connections>
                         <outlet property="checkBoxView" destination="i4v-4y-p1M" id="epS-AU-49q"/>
-                        <outlet property="checkImage" destination="6Hc-sX-WOZ" id="ktW-iq-TBy"/>
-                        <outlet property="headerView" destination="KVE-wl-4kh" id="FHI-bf-bdY"/>
+                        <outlet property="headerView" destination="KVE-wl-4kh" id="2mT-Rb-Zp2"/>
+                        <outlet property="loginview" destination="avK-gy-l7n" id="fAZ-2M-tIf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdU-hd-ggP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -279,7 +272,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
