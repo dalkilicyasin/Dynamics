@@ -10,10 +10,13 @@ import UIKit
 
 class DestinationMenuView: UIView {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var destinationMenuView: UIView!
     @IBOutlet weak var secondView: UIView!
-    let destinationList = ["Odeon Tour EG","Odeon Tour GR","Odeon Tour ES","Odeon Tour UAE","Odeon Tour TN","Odeon Tour TZ","Odeon Tour TH"]
+    
+    var searchDestination = [DestinationMenuResponseModel]()
+    
     
     var destinationModuleList = DestinationMenuVM()
     
@@ -36,6 +39,9 @@ class DestinationMenuView: UIView {
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableView.automaticDimension
         
+        self.searchBar.delegate = self
+       // self.destinationModuleList.destinationList = searchDestination
+        
         self.destinationModuleList.delegate = self
         self.destinationModuleList.getMainPageList()
         
@@ -48,14 +54,16 @@ class DestinationMenuView: UIView {
 extension DestinationMenuView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       //  return self.destinationList.count
-        self.destinationModuleList.destinationList.count
+      //  self.destinationModuleList.destinationList.count
+            self.searchDestination.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DestinationMenuTableViewCell.identifier) as! DestinationMenuTableViewCell
        // cell.infoLAbel.text = destinationList[indexPath.row]
         if destinationModuleList.destinationList.count > 0 {
-            cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
+           //cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
+        cell.setInfo(destinationMenu: searchDestination[indexPath.row])
         }else{
             self.tableView.reloadData()
         }
@@ -79,5 +87,20 @@ extension DestinationMenuView : ViewModelDelegate {
     
     func viewModelUpdateFailed(error: AppError) {
         
+    }
+}
+
+extension DestinationMenuView : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchText.isEmpty == true {
+            self.destinationModuleList.destinationList = searchDestination
+            self.tableView.reloadData()
+        }else {
+            self.destinationModuleList.destinationList = searchDestination.filter({ (destination) -> Bool in
+                (destination.description?.lowercased().contains(searchText.lowercased()))!
+            })
+            self.tableView.reloadData()
+        }
     }
 }
