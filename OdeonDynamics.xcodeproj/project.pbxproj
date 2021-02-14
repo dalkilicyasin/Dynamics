@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		190FE3242583BB8500DD720B /* NomuraViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190FE3232583BB8500DD720B /* NomuraViewModelTests.swift */; };
 		191E711A2566EAD10013C4E3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E71192566EAD10013C4E3 /* Service.swift */; };
-		191E711C2566EAD50013C4E3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E711B2566EAD50013C4E3 /* Errors.swift */; };
 		191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E711D2566F13A0013C4E3 /* QuotesDM.swift */; };
 		191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E711F2566F1440013C4E3 /* QuotesVM.swift */; };
 		191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */; };
@@ -30,8 +29,22 @@
 		B8C0C34D71CDF6BC82A7ACB3 /* Pods_OdeonDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F6F35962C14285FEFB3FF1 /* Pods_OdeonDynamics.framework */; };
 		BF78C96E25D524F2002747F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78C96D25D524F2002747F0 /* Main.storyboard */; };
 		BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */; };
-		BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */; };
+		BF9A46192591F11700ADE49B /* ServiceEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A46182591F11700ADE49B /* ServiceEndPoints.swift */; };
 		BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */; };
+		BF9DE3CF25D862890034B705 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3CE25D862890034B705 /* AppError.swift */; };
+		BF9DE3F025D86A190034B705 /* ServiceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3E825D86A190034B705 /* ServiceEndPoint.swift */; };
+		BF9DE3F125D86A190034B705 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3E925D86A190034B705 /* NetworkManager.swift */; };
+		BF9DE3F225D86A190034B705 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3EA25D86A190034B705 /* Defaults.swift */; };
+		BF9DE3F325D86A190034B705 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3EB25D86A190034B705 /* BaseResponse.swift */; };
+		BF9DE3F425D86A190034B705 /* BaseApiRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3EC25D86A190034B705 /* BaseApiRequestBody.swift */; };
+		BF9DE3F525D86A190034B705 /* ExtensionUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3ED25D86A190034B705 /* ExtensionUIApplication.swift */; };
+		BF9DE3F625D86A190034B705 /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3EE25D86A190034B705 /* BaseData.swift */; };
+		BF9DE3F725D86A190034B705 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE3EF25D86A190034B705 /* ExtensionUIViewController.swift */; };
+		BF9DE40625D86DBE0034B705 /* ExtensionUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE40525D86DBD0034B705 /* ExtensionUIDevice.swift */; };
+		BF9DE40A25D86DC30034B705 /* BaseMessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE40925D86DC30034B705 /* BaseMessageItem.swift */; };
+		BF9DE41A25D870B40034B705 /* GetUserRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DE41925D870B40034B705 /* GetUserRequestModel.swift */; };
+		BFF7B55625D98D2B0021C813 /* CreateTokenRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7B55525D98D2B0021C813 /* CreateTokenRequestModel.swift */; };
+		BFF7B55B25D994F80021C813 /* GetUserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7B55A25D994F80021C813 /* GetUserResponseModel.swift */; };
 		D900C90725A1D7940042CA43 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C90525A1D7940042CA43 /* MainPageViewController.swift */; };
 		D900C90825A1D7940042CA43 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900C90625A1D7940042CA43 /* MainPageViewController.xib */; };
 		D900C91625A1E9340042CA43 /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C91425A1E9340042CA43 /* MainPageCollectionViewCell.swift */; };
@@ -65,7 +78,6 @@
 		D95EB6F225C3FB9E009736D7 /* DestinationSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95EB6F125C3FB9E009736D7 /* DestinationSelectView.xib */; };
 		D96D0D10259C6826004A0689 /* ModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D0E259C6826004A0689 /* ModuleViewController.swift */; };
 		D96D0D11259C6826004A0689 /* ModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96D0D0F259C6826004A0689 /* ModuleViewController.xib */; };
-		D96D0D2C259C93BE004A0689 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D2B259C93BE004A0689 /* ExtensionUIViewController.swift */; };
 		D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */; };
 		D96D0D34259C98A8004A0689 /* ModuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */; };
 		D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */; };
@@ -116,7 +128,6 @@
 		14F6F35962C14285FEFB3FF1 /* Pods_OdeonDynamics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeonDynamics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		190FE3232583BB8500DD720B /* NomuraViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomuraViewModelTests.swift; sourceTree = "<group>"; };
 		191E71192566EAD10013C4E3 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		191E711B2566EAD50013C4E3 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		191E711D2566F13A0013C4E3 /* QuotesDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesDM.swift; sourceTree = "<group>"; };
 		191E711F2566F1440013C4E3 /* QuotesVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesVM.swift; sourceTree = "<group>"; };
 		191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdeonBaseViewModel.swift; sourceTree = "<group>"; };
@@ -142,8 +153,22 @@
 		ADE5191DCC82ED77E094D6E9 /* Pods_OdeonDynamicsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OdeonDynamicsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF78C96D25D524F2002747F0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponseModel.swift; sourceTree = "<group>"; };
-		BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
+		BF9A46182591F11700ADE49B /* ServiceEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndPoints.swift; sourceTree = "<group>"; };
 		BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
+		BF9DE3CE25D862890034B705 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BF9DE3E825D86A190034B705 /* ServiceEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceEndPoint.swift; sourceTree = "<group>"; };
+		BF9DE3E925D86A190034B705 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BF9DE3EA25D86A190034B705 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		BF9DE3EB25D86A190034B705 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		BF9DE3EC25D86A190034B705 /* BaseApiRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiRequestBody.swift; sourceTree = "<group>"; };
+		BF9DE3ED25D86A190034B705 /* ExtensionUIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIApplication.swift; sourceTree = "<group>"; };
+		BF9DE3EE25D86A190034B705 /* BaseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
+		BF9DE3EF25D86A190034B705 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		BF9DE40525D86DBD0034B705 /* ExtensionUIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIDevice.swift; sourceTree = "<group>"; };
+		BF9DE40925D86DC30034B705 /* BaseMessageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMessageItem.swift; sourceTree = "<group>"; };
+		BF9DE41925D870B40034B705 /* GetUserRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserRequestModel.swift; sourceTree = "<group>"; };
+		BFF7B55525D98D2B0021C813 /* CreateTokenRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTokenRequestModel.swift; sourceTree = "<group>"; };
+		BFF7B55A25D994F80021C813 /* GetUserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserResponseModel.swift; sourceTree = "<group>"; };
 		D723FF99B546835274858275 /* Pods-OdeonDynamicsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamicsTests.debug.xcconfig"; path = "Target Support Files/Pods-OdeonDynamicsTests/Pods-OdeonDynamicsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D900C90525A1D7940042CA43 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		D900C90625A1D7940042CA43 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
@@ -178,7 +203,6 @@
 		D95EB6F125C3FB9E009736D7 /* DestinationSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationSelectView.xib; sourceTree = "<group>"; };
 		D96D0D0E259C6826004A0689 /* ModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewController.swift; sourceTree = "<group>"; };
 		D96D0D0F259C6826004A0689 /* ModuleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleViewController.xib; sourceTree = "<group>"; };
-		D96D0D2B259C93BE004A0689 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
 		D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
 		D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTableViewCell.xib; sourceTree = "<group>"; };
 		D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -330,9 +354,9 @@
 			isa = PBXGroup;
 			children = (
 				191E71192566EAD10013C4E3 /* Service.swift */,
-				191E711B2566EAD50013C4E3 /* Errors.swift */,
-				BF9A46182591F11700ADE49B /* ServiceEndPoint.swift */,
+				BF9A46182591F11700ADE49B /* ServiceEndPoints.swift */,
 				BF9A461C2591F15A00ADE49B /* ServiceRouter.swift */,
+				BF9DE3CE25D862890034B705 /* AppError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -385,6 +409,10 @@
 		1951D1332566984300E4699A /* OdeonDynamics */ = {
 			isa = PBXGroup;
 			children = (
+				BFF7B55925D994E40021C813 /* ResponseModel */,
+				BF9DE41825D8707B0034B705 /* RequestModel */,
+				BF9DE3FE25D86AF10034B705 /* Util */,
+				BF9DE3E725D86A0A0034B705 /* Networking */,
 				D96DC240259B93760042D7B7 /* Extension */,
 				D9455C632591FF840031821A /* CustomView */,
 				191E71252566F26A0013C4E3 /* Helpers */,
@@ -444,6 +472,44 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BF9DE3E725D86A0A0034B705 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DE40925D86DC30034B705 /* BaseMessageItem.swift */,
+				BF9DE3EC25D86A190034B705 /* BaseApiRequestBody.swift */,
+				BF9DE3EE25D86A190034B705 /* BaseData.swift */,
+				BF9DE3EB25D86A190034B705 /* BaseResponse.swift */,
+				BF9DE3E925D86A190034B705 /* NetworkManager.swift */,
+				BF9DE3E825D86A190034B705 /* ServiceEndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BF9DE3FE25D86AF10034B705 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DE3EA25D86A190034B705 /* Defaults.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BF9DE41825D8707B0034B705 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF9DE41925D870B40034B705 /* GetUserRequestModel.swift */,
+				BFF7B55525D98D2B0021C813 /* CreateTokenRequestModel.swift */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		BFF7B55925D994E40021C813 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFF7B55A25D994F80021C813 /* GetUserResponseModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
 		D900C90B25A1D7A20042CA43 /* MainPageViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,8 +563,10 @@
 		D96DC240259B93760042D7B7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BF9DE40525D86DBD0034B705 /* ExtensionUIDevice.swift */,
+				BF9DE3EF25D86A190034B705 /* ExtensionUIViewController.swift */,
+				BF9DE3ED25D86A190034B705 /* ExtensionUIApplication.swift */,
 				D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */,
-				D96D0D2B259C93BE004A0689 /* ExtensionUIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -731,7 +799,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D974A47E25B1975E00D37B8A /* DestinationsViewController.swift in Sources */,
-				BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */,
+				BF9A46192591F11700ADE49B /* ServiceEndPoints.swift in Sources */,
 				D975F9D925B7328000AD5978 /* ExcursionTableViewCell.swift in Sources */,
 				D974A4FA25B39CB300D37B8A /* SalesResponseModel.swift in Sources */,
 				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
@@ -746,13 +814,18 @@
 				D94326D325C30EFC00298451 /* OperatorMenuVM.swift in Sources */,
 				D974A46225B0D48300D37B8A /* DestinationsResponseModel.swift in Sources */,
 				D900C91B25A1FB560042CA43 /* MainPageVM.swift in Sources */,
+				BF9DE40A25D86DC30034B705 /* BaseMessageItem.swift in Sources */,
 				D974A46F25B0D8BD00D37B8A /* DestinationsDM.swift in Sources */,
 				D94326CA25C303A500298451 /* OperatorMenuTableViewCell.swift in Sources */,
+				BF9DE3F125D86A190034B705 /* NetworkManager.swift in Sources */,
+				BFF7B55B25D994F80021C813 /* GetUserResponseModel.swift in Sources */,
 				D96D0D3E259CE1A1004A0689 /* ModuleResponseModel.swift in Sources */,
 				191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */,
 				1951D1352566984300E4699A /* AppDelegate.swift in Sources */,
 				D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */,
 				D95EB6EE25C3FB8D009736D7 /* DestinationSelectView.swift in Sources */,
+				BF9DE3F025D86A190034B705 /* ServiceEndPoint.swift in Sources */,
+				BF9DE40625D86DBE0034B705 /* ExtensionUIDevice.swift in Sources */,
 				1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */,
 				D975F9DE25B750DD00AD5978 /* ExcursionResponseModel.swift in Sources */,
 				D94326CF25C30EC400298451 /* OperatorMenuDM.swift in Sources */,
@@ -763,13 +836,18 @@
 				D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */,
 				D95C282C25B5F133004BB4DF /* ExcursionViewController.swift in Sources */,
 				D944C18225CF1D4F0030CB8B /* DestinationMenuDM.swift in Sources */,
+				BF9DE41A25D870B40034B705 /* GetUserRequestModel.swift in Sources */,
 				D944C17E25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift in Sources */,
+				BF9DE3F225D86A190034B705 /* Defaults.swift in Sources */,
 				191E711A2566EAD10013C4E3 /* Service.swift in Sources */,
 				D94326BB25C3008900298451 /* OperatorMenuView.swift in Sources */,
 				D944C18625CF1D7F0030CB8B /* DestinationMenuVM.swift in Sources */,
 				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
+				BF9DE3F425D86A190034B705 /* BaseApiRequestBody.swift in Sources */,
 				D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */,
+				BFF7B55625D98D2B0021C813 /* CreateTokenRequestModel.swift in Sources */,
 				D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */,
+				BF9DE3F725D86A190034B705 /* ExtensionUIViewController.swift in Sources */,
 				D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */,
 				D96D0D42259CE3BD004A0689 /* ModuleVM.swift in Sources */,
 				D974A4B025B355F800D37B8A /* SalesViewController.swift in Sources */,
@@ -781,10 +859,12 @@
 				D900C91625A1E9340042CA43 /* MainPageCollectionViewCell.swift in Sources */,
 				D974A47825B0FB2100D37B8A /* DestinationTableViewCell.swift in Sources */,
 				D974A4FE25B39CFA00D37B8A /* SalesDM.swift in Sources */,
+				BF9DE3CF25D862890034B705 /* AppError.swift in Sources */,
+				BF9DE3F625D86A190034B705 /* BaseData.swift in Sources */,
+				BF9DE3F525D86A190034B705 /* ExtensionUIApplication.swift in Sources */,
+				BF9DE3F325D86A190034B705 /* BaseResponse.swift in Sources */,
 				D900C90725A1D7940042CA43 /* MainPageViewController.swift in Sources */,
-				191E711C2566EAD50013C4E3 /* Errors.swift in Sources */,
 				D973AC0F25A76F8100117C6D /* NavigationBarView.swift in Sources */,
-				D96D0D2C259C93BE004A0689 /* ExtensionUIViewController.swift in Sources */,
 				19F5E9912583D48500EB8E03 /* AppConstants.swift in Sources */,
 				191E71242566F2640013C4E3 /* UIViewController+Additions.swift in Sources */,
 				BF9A46132591EAAC00ADE49B /* QuotesResponseModel.swift in Sources */,

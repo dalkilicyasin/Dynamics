@@ -9,7 +9,9 @@ target 'OdeonDynamics' do
     pod 'PieCharts'
 
   # Pods for NomuraTest
-    pod 'Alamofire'
+    pod 'ObjectMapper'
+    pod 'Alamofire', '~> 4.7'
+    pod 'AlamofireObjectMapper'
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'OHHTTPStubs/Swift'
     
@@ -17,7 +19,7 @@ target 'OdeonDynamics' do
   target 'OdeonDynamicsTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Alamofire'
+    
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'OHHTTPStubs/Swift'
   end
