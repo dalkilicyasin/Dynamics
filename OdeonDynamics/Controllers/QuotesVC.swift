@@ -10,7 +10,7 @@ import UIKit
 
 class QuotesVC: UIViewController {
     let quotesVM = QuotesVM()
-    var quotesArray:[Result] = []
+    var quotesArray:[Resultt] = []
     @IBOutlet weak var quotesTblView: UITableView!
     var timer: Timer?
     // MARK: View Life Cycle Methods

@@ -57,6 +57,7 @@
 		D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C5B2591FC530031821A /* LoginViewController.swift */; };
 		D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C642591FFBF0031821A /* OdeonHeaderView.swift */; };
 		D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C6A259200040031821A /* OdeonHeaderView.xib */; };
+		D947F1D525D5A84F002FBFD5 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947F1D425D5A84F002FBFD5 /* Users.swift */; };
 		D95C282C25B5F133004BB4DF /* ExcursionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C282A25B5F133004BB4DF /* ExcursionViewController.swift */; };
 		D95C282D25B5F133004BB4DF /* ExcursionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95C282B25B5F133004BB4DF /* ExcursionViewController.xib */; };
 		D95EB6E625C3FB43009736D7 /* DestinationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EB6E525C3FB43009736D7 /* DestinationMenuView.swift */; };
@@ -98,6 +99,7 @@
 		D975F9DE25B750DD00AD5978 /* ExcursionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */; };
 		D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E125B7524900AD5978 /* ExcursionDM.swift */; };
 		D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E525B7528100AD5978 /* ExcursionVM.swift */; };
+		D99EC5EF25D7CA37005C92D5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +172,7 @@
 		D9455C5B2591FC530031821A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9455C642591FFBF0031821A /* OdeonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeonHeaderView.swift; sourceTree = "<group>"; };
 		D9455C6A259200040031821A /* OdeonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdeonHeaderView.xib; sourceTree = "<group>"; };
+		D947F1D425D5A84F002FBFD5 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		D95C282A25B5F133004BB4DF /* ExcursionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionViewController.swift; sourceTree = "<group>"; };
 		D95C282B25B5F133004BB4DF /* ExcursionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExcursionViewController.xib; sourceTree = "<group>"; };
 		D95EB6E525C3FB43009736D7 /* DestinationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuView.swift; sourceTree = "<group>"; };
@@ -211,6 +214,7 @@
 		D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionResponseModel.swift; sourceTree = "<group>"; };
 		D975F9E125B7524900AD5978 /* ExcursionDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionDM.swift; sourceTree = "<group>"; };
 		D975F9E525B7528100AD5978 /* ExcursionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionVM.swift; sourceTree = "<group>"; };
+		D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
 		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -348,6 +352,8 @@
 				D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */,
 				D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */,
 				D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */,
+				D947F1D425D5A84F002FBFD5 /* Users.swift */,
+				D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -734,6 +740,7 @@
 				BF9A46192591F11700ADE49B /* ServiceEndPoint.swift in Sources */,
 				D975F9D925B7328000AD5978 /* ExcursionTableViewCell.swift in Sources */,
 				D974A4FA25B39CB300D37B8A /* SalesResponseModel.swift in Sources */,
+				D947F1D525D5A84F002FBFD5 /* Users.swift in Sources */,
 				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
 				1951D1392566984300E4699A /* QuotesVC.swift in Sources */,
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
@@ -755,6 +762,7 @@
 				D95EB6EE25C3FB8D009736D7 /* DestinationSelectView.swift in Sources */,
 				1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */,
 				D975F9DE25B750DD00AD5978 /* ExcursionResponseModel.swift in Sources */,
+				D99EC5EF25D7CA37005C92D5 /* APIRequest.swift in Sources */,
 				D94326CF25C30EC400298451 /* OperatorMenuDM.swift in Sources */,
 				D974A4A325B348F900D37B8A /* OperatorSelectView.swift in Sources */,
 				D900C91F25A1FB710042CA43 /* MainPageResponseModel.swift in Sources */,

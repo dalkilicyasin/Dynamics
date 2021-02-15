@@ -15,12 +15,12 @@ struct QuotesModel: Codable {
 
 // MARK: - QuoteResponse
 struct QuoteResponse: Codable {
-    let result: [Result]
+    let result: [Resultt]
     let error: String?
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Resultt: Codable {
     let language, region, quoteType, quoteSourceName: String
     let triggerable: Bool
     let quoteSummary: QuoteSummary

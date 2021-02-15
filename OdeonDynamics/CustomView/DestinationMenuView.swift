@@ -15,10 +15,12 @@ class DestinationMenuView: UIView {
     @IBOutlet var destinationMenuView: UIView!
     @IBOutlet weak var secondView: UIView!
     
-    var searchDestination = [DestinationMenuResponseModel]()
-    
-    
+   
     var destinationModuleList = DestinationMenuVM()
+    
+    let datas = ["firstdata","secondData","thirdData"]
+    
+    var filteredData : [DestinationMenuResponseModel]!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,7 +41,7 @@ class DestinationMenuView: UIView {
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableView.automaticDimension
         
-        self.searchBar.delegate = self
+   
        // self.destinationModuleList.destinationList = searchDestination
         
         self.destinationModuleList.delegate = self
@@ -48,22 +50,32 @@ class DestinationMenuView: UIView {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(DestinationMenuTableViewCell.nib, forCellReuseIdentifier: DestinationMenuTableViewCell.identifier)
+        
+        self.searchBar.delegate = self
+        self.filteredData = destinationModuleList.destinationList
     }   
 }
 
 extension DestinationMenuView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      //  return self.destinationList.count
-      //  self.destinationModuleList.destinationList.count
-            self.searchDestination.count
+        
+            return destinationModuleList.destinationList.count
+        
+       
+       // self.destinationModuleList.destinationList.count
+        //    self.searchDestination.count
+        
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DestinationMenuTableViewCell.identifier) as! DestinationMenuTableViewCell
-       // cell.infoLAbel.text = destinationList[indexPath.row]
-        if destinationModuleList.destinationList.count > 0 {
-           //cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
-        cell.setInfo(destinationMenu: searchDestination[indexPath.row])
+    
+        if self.destinationModuleList.destinationList.count > 0 {
+      // cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
+      cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
+         
+            // cell.infoLAbel.text = filteredData[indexPath.row]
         }else{
             self.tableView.reloadData()
         }
@@ -93,7 +105,7 @@ extension DestinationMenuView : ViewModelDelegate {
 extension DestinationMenuView : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        if searchText.isEmpty == true {
+      /*  if searchText.isEmpty == true {
             self.destinationModuleList.destinationList = searchDestination
             self.tableView.reloadData()
         }else {
@@ -101,6 +113,24 @@ extension DestinationMenuView : UISearchBarDelegate {
                 (destination.description?.lowercased().contains(searchText.lowercased()))!
             })
             self.tableView.reloadData()
+        }*/
+        
+        filteredData = []
+        
+        if searchText == "" {
+            filteredData = destinationModuleList.destinationList
+        }else {
+            for data in destinationModuleList.destinationList{
+                
+                if destinationModuleList.destinationList.description.lowercased().contains(searchText.lowercased()){
+                    
+                    filteredData.append(data)
+                
+            }
         }
-    }
+        
+        }
+        self.tableView.reloadData()
+   
+}
 }
