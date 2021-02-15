@@ -8,8 +8,6 @@
 
 import Alamofire
 
-
-
 protocol APIConfiguration: URLRequestConvertible {
     var method: HTTPMethod { get }
     var path: String { get }
@@ -19,7 +17,7 @@ protocol APIConfiguration: URLRequestConvertible {
 
 class AppService: NSObject {
     static func request(_ request: URLRequestConvertible, success:@escaping (Data) -> Void, failure:@escaping (AppError) -> Void) {
-        AF.request(request).responseData { (responseObject) -> Void in
+        Alamofire.request(request).responseData { (responseObject) -> Void in
             if let data = responseObject.data {
                 let decoder = JSONDecoder()
                 if let item = try? decoder.decode(QuotesModel.self, from: data), item.quoteResponse.result.count == 0 {

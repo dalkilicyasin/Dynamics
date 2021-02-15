@@ -13,16 +13,31 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginview: UIView!
     @IBOutlet weak var checkBoxView: CheckBoxView!
     
+    var data : Any?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.checkBoxView.checkBoxViewDelegate = self
         loginview.layer.cornerRadius = 5
+        
+        let createTokenRequestModel = CreateTokenRequestModel.init()
+        NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .CreateToken, requestModel: createTokenRequestModel) { (response: BaseResponse<GetTokenResponse>) in
+            if response.isSuccess ?? false {
+                print("token received - \(response.token ?? "")")
+            }
+        }
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
-       self.otiPushViewController(viewController: ModuleViewController())
-        
-     
+//       self.otiPushViewController(viewController: ModuleViewController())
+
+        let getUserRequestModel = self.getBaseRequestData(data: GetUserRequestModel.init(userId: 1))
+        NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUser, requestModel: getUserRequestModel) { (response: BaseResponse<GetUserResponseModel>) in
+            if response.isSuccess ?? false {
+                
+            }
+        }
     }
 }
 
