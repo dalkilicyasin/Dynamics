@@ -11,10 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OperatorMenuView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="buttonView" destination="acM-73-TkS" id="jK7-Aj-heI"/>
-                <outlet property="operatorMenuView" destination="iN0-l3-epB" id="Tcz-ID-ZQi"/>
-                <outlet property="selectLAbel" destination="ZTo-dE-EYe" id="GHp-ls-p8w"/>
+                <outlet property="buttonSelect" destination="SXz-0T-S2U" id="7Ip-cH-6vh"/>
                 <outlet property="tableView" destination="WYF-m7-NTv" id="qyK-uv-eBm"/>
+                <outlet property="viewOperatorMenu" destination="iN0-l3-epB" id="Hyi-JQ-lQO"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,42 +28,36 @@
                             <rect key="frame" x="37" y="117" width="342" height="421"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acM-73-TkS">
-                            <rect key="frame" x="88" y="598" width="239" height="40"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTo-dE-EYe">
-                                    <rect key="frame" x="0.0" y="0.0" width="239" height="40"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="ZTo-dE-EYe" secondAttribute="bottom" id="Awp-ZM-vHq"/>
-                                <constraint firstItem="ZTo-dE-EYe" firstAttribute="leading" secondItem="acM-73-TkS" secondAttribute="leading" id="BST-mx-LPo"/>
-                                <constraint firstAttribute="height" constant="40" id="ECg-gv-eKJ"/>
-                                <constraint firstItem="ZTo-dE-EYe" firstAttribute="top" secondItem="acM-73-TkS" secondAttribute="top" id="Vd0-zb-Css"/>
-                                <constraint firstAttribute="trailing" secondItem="ZTo-dE-EYe" secondAttribute="trailing" id="de1-zr-sG6"/>
-                            </constraints>
-                        </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Operator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0j-Fk-7sV">
                             <rect key="frame" x="36" y="56" width="136" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" red="0.0" green="0.60784313725490191" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXz-0T-S2U">
+                            <rect key="frame" x="88" y="568" width="239" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YQI-WV-G17"/>
+                            </constraints>
+                            <state key="normal" title="Select">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="SyA-8a-xvD"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="acM-73-TkS" firstAttribute="leading" secondItem="mNo-jS-t2p" secondAttribute="leading" constant="88" id="IC6-3E-JJq"/>
-                        <constraint firstAttribute="trailing" secondItem="acM-73-TkS" secondAttribute="trailing" constant="87" id="JX9-vX-pol"/>
+                        <constraint firstItem="SXz-0T-S2U" firstAttribute="top" secondItem="WYF-m7-NTv" secondAttribute="bottom" constant="30" id="Bpp-RT-LmP"/>
                         <constraint firstAttribute="bottom" secondItem="WYF-m7-NTv" secondAttribute="bottom" constant="140" id="MOc-f7-eg8"/>
                         <constraint firstItem="m0j-Fk-7sV" firstAttribute="leading" secondItem="mNo-jS-t2p" secondAttribute="leading" constant="36" id="Ncf-Ta-9jv"/>
                         <constraint firstAttribute="trailing" secondItem="WYF-m7-NTv" secondAttribute="trailing" constant="35" id="Tze-Mu-ALv"/>
-                        <constraint firstAttribute="bottom" secondItem="acM-73-TkS" secondAttribute="bottom" constant="40" id="Wum-9S-wv7"/>
                         <constraint firstItem="WYF-m7-NTv" firstAttribute="top" secondItem="mNo-jS-t2p" secondAttribute="top" constant="117" id="ZDy-Wm-rpw"/>
                         <constraint firstItem="WYF-m7-NTv" firstAttribute="leading" secondItem="mNo-jS-t2p" secondAttribute="leading" constant="37" id="dxg-ya-zRF"/>
+                        <constraint firstAttribute="trailing" secondItem="SXz-0T-S2U" secondAttribute="trailing" constant="87" id="exF-PF-lXT"/>
+                        <constraint firstItem="SXz-0T-S2U" firstAttribute="leading" secondItem="mNo-jS-t2p" secondAttribute="leading" constant="88" id="neI-qs-nkV"/>
                         <constraint firstItem="m0j-Fk-7sV" firstAttribute="top" secondItem="mNo-jS-t2p" secondAttribute="top" constant="56" id="vUX-3u-Jc6"/>
                     </constraints>
                 </view>

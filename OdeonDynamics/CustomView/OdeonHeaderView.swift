@@ -9,7 +9,8 @@
 import UIKit
 
 class OdeonHeaderView: UIView {
-    @IBOutlet var headerView: UIView!
+    @IBOutlet var viewHeader: UIView!
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +24,7 @@ class OdeonHeaderView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed(String(describing: OdeonHeaderView.self), owner: self, options: nil)
-        headerView.addCustomContainerView(self)
+        viewHeader.addCustomContainerView(self)
     }
 }
 

@@ -8,15 +8,12 @@
 
 import UIKit
 
-class ModuleViewController: UIViewController {
+class ModuleViewController: BaseViewController {
     
     @IBOutlet weak var headerView: OdeonHeaderView!
     @IBOutlet weak var tableView: UITableView!
   
-    
     let moduleVM = ModuleVM()
-    
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()

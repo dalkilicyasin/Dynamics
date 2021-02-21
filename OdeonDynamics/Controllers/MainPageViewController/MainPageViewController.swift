@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainPageViewController: UIViewController {
+class MainPageViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var hamburgerMenuView: HamburgerMenuView!

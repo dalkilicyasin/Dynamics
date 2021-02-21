@@ -9,9 +9,13 @@
 import UIKit
 
 class OperatorSelectView: UIView {
+    
     var operationMenuBar : OperatorMenuView?
     var remember = true
-    @IBOutlet var operatorSelectView: UIView!
+    
+ 
+    @IBOutlet var viewOperatorSelect: UIView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -24,26 +28,26 @@ class OperatorSelectView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed(String(describing: OperatorSelectView.self), owner: self, options: nil)
-        operatorSelectView.addCustomContainerView(self)
+        viewOperatorSelect.addCustomContainerView(self)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        operatorSelectView.addGestureRecognizer(tap)
-        operatorSelectView.isUserInteractionEnabled = true
+        viewOperatorSelect.addGestureRecognizer(tap)
+        viewOperatorSelect.isUserInteractionEnabled = true
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-  
+        
         if self.remember == true{
             if let topVC = UIApplication.getTopViewController() {
                 UIView.animate(withDuration: 2, animations: {
                     self.operationMenuBar = OperatorMenuView()
                     self.operationMenuBar!.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
-                           topVC.view.addSubview(self.operationMenuBar!)
-                        }, completion: { (finished) in
-                            if finished{
-                                
-                            }
-                        })
+                    topVC.view.addSubview(self.operationMenuBar!)
+                }, completion: { (finished) in
+                    if finished{
+                        
+                    }
+                })
             }
             
             print("true")
@@ -52,7 +56,7 @@ class OperatorSelectView: UIView {
             
         }
         
-       // self.remember = !remember
+        // self.remember = !remember
     }
     
 }

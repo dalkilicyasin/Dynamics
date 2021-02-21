@@ -11,11 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBarView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="hamburgerImage" destination="vSA-yo-zGD" id="fBX-95-8qu"/>
-                <outlet property="logOutView" destination="NSw-Oc-UlS" id="YkF-ja-aKj"/>
-                <outlet property="navigationBarView" destination="iN0-l3-epB" id="oQw-ub-nTQ"/>
-                <outlet property="secondNavigationBarView" destination="O9w-On-fEd" id="RwX-8V-Wu3"/>
+                <outlet property="imageHamburger" destination="vSA-yo-zGD" id="0yH-9B-9Ab"/>
                 <outlet property="tableView" destination="4fI-Gw-WIJ" id="DNH-oR-HOs"/>
+                <outlet property="viewLogOut" destination="NSw-Oc-UlS" id="S1s-Q1-qsK"/>
+                <outlet property="viewNavigationBar" destination="iN0-l3-epB" id="xcD-8f-6Eo"/>
+                <outlet property="viewSecondNavigationBar" destination="O9w-On-fEd" id="ohR-W4-QI5"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

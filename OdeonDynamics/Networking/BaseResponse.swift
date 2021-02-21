@@ -29,10 +29,7 @@ public class BaseResponse<T:Mappable >:Mappable{
         dataArray <- map["Data"]
         
     }
-    
-    
 }
-
 
 public class GetTokenResponse:Mappable{
     

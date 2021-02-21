@@ -10,7 +10,7 @@ import UIKit
 import PieCharts
 import Charts
 
-class SalesViewController: UIViewController {
+class SalesViewController: BaseViewController {
     
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var pieChart: PieChart!

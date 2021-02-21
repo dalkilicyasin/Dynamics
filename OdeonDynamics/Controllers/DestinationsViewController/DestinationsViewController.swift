@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DestinationsViewController: UIViewController {
+class DestinationsViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerView: UIView!

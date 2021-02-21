@@ -9,17 +9,14 @@
 import UIKit
 
 class DestinationMenuView: UIView {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet var destinationMenuView: UIView!
-    @IBOutlet weak var secondView: UIView!
+    @IBOutlet var viewDestinationMenu: UIView!
+    @IBOutlet weak var viewSecond: UIView!
     
-   
+    var isFilteredTextEmpty = true
     var destinationModuleList = DestinationMenuVM()
-    
-    let datas = ["firstdata","secondData","thirdData"]
-    
     var filteredData : [DestinationMenuResponseModel]!
     
     override init(frame: CGRect) {
@@ -34,15 +31,12 @@ class DestinationMenuView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed(String(describing: DestinationMenuView.self), owner: self, options: nil)
-        destinationMenuView.addCustomContainerView(self)
+        viewDestinationMenu.addCustomContainerView(self)
         
-        secondView.layer.cornerRadius = 7
+        viewSecond.layer.cornerRadius = 7
         
         tableView.estimatedRowHeight = 500
         tableView.rowHeight = UITableView.automaticDimension
-        
-   
-       // self.destinationModuleList.destinationList = searchDestination
         
         self.destinationModuleList.delegate = self
         self.destinationModuleList.getMainPageList()
@@ -59,27 +53,29 @@ class DestinationMenuView: UIView {
 extension DestinationMenuView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if isFilteredTextEmpty == false {
+            return self.filteredData.count
+        }else{
             return destinationModuleList.destinationList.count
-        
-       
-       // self.destinationModuleList.destinationList.count
-        //    self.searchDestination.count
-        
-       
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DestinationMenuTableViewCell.identifier) as! DestinationMenuTableViewCell
-    
-        if self.destinationModuleList.destinationList.count > 0 {
-      // cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
-      cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
-         
-            // cell.infoLAbel.text = filteredData[indexPath.row]
+        
+        if isFilteredTextEmpty == false {
+            if self.filteredData.count > 0 {
+                cell.setInfo(destinationMenu: filteredData[indexPath.row])
+            }else{
+                self.tableView.reloadData()
+            }
         }else{
-            self.tableView.reloadData()
+            if self.destinationModuleList.destinationList.count > 0 {
+                cell.setInfo(destinationMenu: destinationModuleList.destinationList[indexPath.row])
+            }else{
+                self.tableView.reloadData()
+            }
         }
-    
         return cell
     }
     
@@ -104,33 +100,21 @@ extension DestinationMenuView : ViewModelDelegate {
 
 extension DestinationMenuView : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+  
+        self.filteredData = []
         
-      /*  if searchText.isEmpty == true {
-            self.destinationModuleList.destinationList = searchDestination
-            self.tableView.reloadData()
+        if searchText.elementsEqual(""){
+            self.isFilteredTextEmpty = true
+            self.filteredData = destinationModuleList.destinationList
         }else {
-            self.destinationModuleList.destinationList = searchDestination.filter({ (destination) -> Bool in
-                (destination.description?.lowercased().contains(searchText.lowercased()))!
-            })
-            self.tableView.reloadData()
-        }*/
-        
-        filteredData = []
-        
-        if searchText == "" {
-            filteredData = destinationModuleList.destinationList
-        }else {
+            self.isFilteredTextEmpty = false
             for data in destinationModuleList.destinationList{
-                
-                if destinationModuleList.destinationList.description.lowercased().contains(searchText.lowercased()){
-                    
-                    filteredData.append(data)
-                
+                if data.description!.lowercased().contains(searchText.lowercased()){
+                    self.filteredData.append(data)
+                }
             }
         }
-        
-        }
         self.tableView.reloadData()
-   
-}
+        
+    }
 }

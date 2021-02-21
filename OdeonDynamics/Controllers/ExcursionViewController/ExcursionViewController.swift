@@ -10,20 +10,22 @@ import UIKit
 import PieCharts
 
 
-class ExcursionViewController: UIViewController {
+class ExcursionViewController: BaseViewController {
     
-    @IBOutlet weak var secondView: UIView!
+   
+   
+    @IBOutlet weak var viewSecond: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var pieChart: PieChart!
-    @IBOutlet weak var dataLabel: UILabel!
-    
+    @IBOutlet weak var labelData: UILabel!
+ 
     var excursionVM = ExcursionVM()
     var salesVM = SalesVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        secondView.addLine(position: .bottom, color: .gray, width: 0.5)
+        viewSecond.addLine(position: .bottom, color: .gray, width: 0.5)
         
         self.pieChart.delegate = self
         self.pieChart.layers = [self.createTextLayer()]
@@ -37,7 +39,7 @@ class ExcursionViewController: UIViewController {
             PieSliceModel(value:  Double(self.excursionVM.dataArray[4])!, color: UIColor.yellow.withAlphaComponent(alpha)),
         ]
         
-        dataLabel.text = salesVM.dataArray[0]
+        labelData.text = salesVM.dataArray[0]
         
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableView.automaticDimension

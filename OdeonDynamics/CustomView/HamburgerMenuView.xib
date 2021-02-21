@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HamburgerMenuView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="hamburgerMenuView" destination="iN0-l3-epB" id="PcZ-2a-12r"/>
+                <outlet property="viewHamburgerMenu" destination="iN0-l3-epB" id="LVO-kE-9ax"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

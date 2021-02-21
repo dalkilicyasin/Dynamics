@@ -10,10 +10,10 @@ import UIKit
 
 class NavigationBarView: UIView {
     
-    @IBOutlet weak var hamburgerImage: UIImageView!
-    @IBOutlet weak var logOutView: UIView!
-    @IBOutlet var navigationBarView: UIView!
-    @IBOutlet weak var secondNavigationBarView: UIView!
+    @IBOutlet weak var imageHamburger: UIImageView!
+    @IBOutlet weak var viewLogOut: UIView!
+    @IBOutlet weak var viewSecondNavigationBar: UIView!
+    @IBOutlet var viewNavigationBar: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     var barModuleList = ModuleVM()
@@ -30,17 +30,15 @@ class NavigationBarView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed(String(describing: NavigationBarView.self), owner: self, options: nil)
-        navigationBarView.addCustomContainerView(self)
+        viewNavigationBar.addCustomContainerView(self)
+        viewLogOut.addLine(position: .bottom, color: .gray, width: 0.5)
+        viewLogOut.addLine(position: .top, color: .gray, width: 0.5)
         
-        logOutView.addLine(position: .bottom, color: .gray, width: 0.5)
-        logOutView.addLine(position: .top, color: .gray, width: 0.5)
-        
-        secondNavigationBarView.layer.cornerRadius = 7
+        viewSecondNavigationBar.layer.cornerRadius = 7
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(ModuleTableViewCell.nib, forCellReuseIdentifier: ModuleTableViewCell.identifier)
-        
         
         self.barModuleList.delegate = self
         self.barModuleList.getModuleList()
@@ -49,12 +47,12 @@ class NavigationBarView: UIView {
         tableView.rowHeight = UITableView.automaticDimension
         
         let logOutTap = UITapGestureRecognizer(target: self, action: #selector(self.logOutHandleTap(_:)))
-        logOutView.addGestureRecognizer(logOutTap)
-        logOutView.isUserInteractionEnabled = true
+        viewLogOut.addGestureRecognizer(logOutTap)
+        viewLogOut.isUserInteractionEnabled = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        hamburgerImage.addGestureRecognizer(tap)
-        hamburgerImage.isUserInteractionEnabled = true
+        imageHamburger.addGestureRecognizer(tap)
+        imageHamburger.isUserInteractionEnabled = true
     }
     
     @objc func logOutHandleTap(_ sender: UITapGestureRecognizer) {

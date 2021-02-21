@@ -26,9 +26,7 @@ public class BaseApiRequestBody<T:Mappable >:Mappable{
         data <- map["Data"]
         dataArray <- map["Data"]
     }
-    
-
-    
+   
    public init(token:String!,languageId:Int,mobilInformation:String){
         self.token = token
         self.languageId = languageId

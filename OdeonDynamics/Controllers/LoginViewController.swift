@@ -8,10 +8,13 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
+    
     @IBOutlet weak var headerView: OdeonHeaderView!
-    @IBOutlet weak var loginview: UIView!
+    @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var checkBoxView: CheckBoxView!
+    @IBOutlet weak var textfieldUsername: UITextField!
+    @IBOutlet weak var textfieldPassword: UITextField!
     
     var data : Any?
     
@@ -19,23 +22,22 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         self.checkBoxView.checkBoxViewDelegate = self
-        loginview.layer.cornerRadius = 5
+       buttonLogin.layer.cornerRadius = 5
         
         let createTokenRequestModel = CreateTokenRequestModel.init()
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .CreateToken, requestModel: createTokenRequestModel) { (response: BaseResponse<GetTokenResponse>) in
             if response.isSuccess ?? false {
+                self.baseData.getTokenResponse = response
                 print("token received - \(response.token ?? "")")
             }
         }
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
-//       self.otiPushViewController(viewController: ModuleViewController())
-
-        let getUserRequestModel = self.getBaseRequestData(data: GetUserRequestModel.init(userId: 1))
+   self.otiPushViewController(viewController: ModuleViewController())
+       let getUserRequestModel = self.getBaseRequestData(data: GetUserRequestModel.init(userId: 1))
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUser, requestModel: getUserRequestModel) { (response: BaseResponse<GetUserResponseModel>) in
             if response.isSuccess ?? false {
-                
             }
         }
     }

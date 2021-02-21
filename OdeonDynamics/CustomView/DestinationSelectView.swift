@@ -10,7 +10,8 @@ import UIKit
 
 class DestinationSelectView: UIView {
     
-    @IBOutlet var destinationSelectView: UIView!
+    @IBOutlet var viewDestinationSelect: UIView!
+    @IBOutlet weak var labelSelectedTour: UILabel!
     
     var remember = true
     var destinationMenu : DestinationMenuView?
@@ -27,11 +28,11 @@ class DestinationSelectView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed(String(describing: DestinationSelectView.self), owner: self, options: nil)
-        destinationSelectView.addCustomContainerView(self)
+        viewDestinationSelect.addCustomContainerView(self)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        destinationSelectView.addGestureRecognizer(tap)
-        destinationSelectView.isUserInteractionEnabled = true
+        viewDestinationSelect.addGestureRecognizer(tap)
+        viewDestinationSelect.isUserInteractionEnabled = true
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {

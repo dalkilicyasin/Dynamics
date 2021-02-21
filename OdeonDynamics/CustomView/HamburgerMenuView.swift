@@ -10,7 +10,8 @@ import UIKit
 
 class HamburgerMenuView: UIView {
     var navBar : NavigationBarView?
-    @IBOutlet var hamburgerMenuView: UIView!
+   
+    @IBOutlet var viewHamburgerMenu: UIView!
     
     var remember = true
     
@@ -26,11 +27,11 @@ class HamburgerMenuView: UIView {
     
     func commonInit() {
         Bundle.main.loadNibNamed(String(describing: HamburgerMenuView.self), owner: self, options: nil)
-        hamburgerMenuView.addCustomContainerView(self)
+        viewHamburgerMenu.addCustomContainerView(self)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        hamburgerMenuView.addGestureRecognizer(tap)
-        hamburgerMenuView.isUserInteractionEnabled = true
+        viewHamburgerMenu.addGestureRecognizer(tap)
+        viewHamburgerMenu.isUserInteractionEnabled = true
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
@@ -54,6 +55,6 @@ class HamburgerMenuView: UIView {
             self.navBar!.removeFromSuperview()
         }
         
-        self.remember = !remember
+     //self.remember = !remember
     }
 }

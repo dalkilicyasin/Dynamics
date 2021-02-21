@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DestinationMenuView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="destinationMenuView" destination="iN0-l3-epB" id="lde-fh-SsR"/>
                 <outlet property="searchBar" destination="BE7-Hi-jPl" id="iq2-Oc-lab"/>
-                <outlet property="secondView" destination="R3a-qU-pIi" id="QIW-Rg-ngC"/>
                 <outlet property="tableView" destination="vHF-tS-vLg" id="crH-C9-lBq"/>
+                <outlet property="viewDestinationMenu" destination="iN0-l3-epB" id="GMg-Qf-YyD"/>
+                <outlet property="viewSecond" destination="R3a-qU-pIi" id="3UV-m6-4Rx"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

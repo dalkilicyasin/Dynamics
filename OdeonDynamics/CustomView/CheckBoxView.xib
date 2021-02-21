@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckBoxView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="checkBoxView" destination="iN0-l3-epB" id="9sy-V6-HzK"/>
-                <outlet property="checkImage" destination="1ge-qd-cEV" id="4ek-jX-zEF"/>
+                <outlet property="imageCheck" destination="1ge-qd-cEV" id="HoG-ZY-lLY"/>
+                <outlet property="viewCheckBox" destination="iN0-l3-epB" id="t3x-4m-AQp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

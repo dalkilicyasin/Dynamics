@@ -15,7 +15,6 @@
 		191E71242566F2640013C4E3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E71232566F2640013C4E3 /* UIViewController+Additions.swift */; };
 		1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DB5C256AB55B004FDAF5 /* UIColor+Additions.swift */; };
 		1951D1352566984300E4699A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D1342566984300E4699A /* AppDelegate.swift */; };
-		1951D1392566984300E4699A /* QuotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D1382566984300E4699A /* QuotesVC.swift */; };
 		1951D13E2566984500E4699A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13D2566984500E4699A /* Assets.xcassets */; };
 		1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1951D13F2566984500E4699A /* LaunchScreen.storyboard */; };
 		1951D14C2566984500E4699A /* NomuraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951D14B2566984500E4699A /* NomuraTestTests.swift */; };
@@ -112,6 +111,7 @@
 		D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E125B7524900AD5978 /* ExcursionDM.swift */; };
 		D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E525B7528100AD5978 /* ExcursionVM.swift */; };
 		D99EC5EF25D7CA37005C92D5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */; };
+		D99EC60625DD1E50005C92D5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC60525DD1E50005C92D5 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +137,6 @@
 		1939DB5C256AB55B004FDAF5 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		1951D1312566984300E4699A /* OdeonDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdeonDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1951D1342566984300E4699A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1951D1382566984300E4699A /* QuotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVC.swift; sourceTree = "<group>"; };
 		1951D13D2566984500E4699A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1951D1402566984500E4699A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1951D1422566984500E4699A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -239,6 +238,7 @@
 		D975F9E125B7524900AD5978 /* ExcursionDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionDM.swift; sourceTree = "<group>"; };
 		D975F9E525B7528100AD5978 /* ExcursionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionVM.swift; sourceTree = "<group>"; };
 		D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D99EC60525DD1E50005C92D5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
 		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -317,8 +317,8 @@
 				D974A45125B03C7700D37B8A /* DestinationsViewController */,
 				D900C90B25A1D7A20042CA43 /* MainPageViewController */,
 				D96D0D0D259C6734004A0689 /* ModuleViewController */,
-				1951D1382566984300E4699A /* QuotesVC.swift */,
 				D9455C5B2591FC530031821A /* LoginViewController.swift */,
+				D99EC60525DD1E50005C92D5 /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -810,12 +810,12 @@
 				D974A4FA25B39CB300D37B8A /* SalesResponseModel.swift in Sources */,
 				D947F1D525D5A84F002FBFD5 /* Users.swift in Sources */,
 				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
-				1951D1392566984300E4699A /* QuotesVC.swift in Sources */,
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
 				D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */,
 				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
 				D93F262625A2177100CEB1E0 /* BaseCollectionViewCell.swift in Sources */,
 				19D62C51256836080016B530 /* QuotesCell.swift in Sources */,
+				D99EC60625DD1E50005C92D5 /* BaseViewController.swift in Sources */,
 				D96D0D10259C6826004A0689 /* ModuleViewController.swift in Sources */,
 				D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */,
 				D94326D325C30EFC00298451 /* OperatorMenuVM.swift in Sources */,
