@@ -21,8 +21,8 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.checkBoxView.checkBoxViewDelegate = self
-       buttonLogin.layer.cornerRadius = 5
+    self.checkBoxView.checkBoxViewDelegate = self
+    buttonLogin.layer.cornerRadius = 5
         
         let createTokenRequestModel = CreateTokenRequestModel.init()
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .CreateToken, requestModel: createTokenRequestModel) { (response: BaseResponse<GetTokenResponse>) in
@@ -31,6 +31,8 @@ class LoginViewController: BaseViewController {
                 print("token received - \(response.token ?? "")")
             }
         }
+        
+       
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -38,6 +40,7 @@ class LoginViewController: BaseViewController {
        let getUserRequestModel = self.getBaseRequestData(data: GetUserRequestModel.init(userId: 1))
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUser, requestModel: getUserRequestModel) { (response: BaseResponse<GetUserResponseModel>) in
             if response.isSuccess ?? false {
+                
             }
         }
     }

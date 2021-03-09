@@ -9,15 +9,15 @@
 import UIKit
 
 class DestinationMenuTableViewCell: BaseTableViewCell {
-
-    @IBOutlet weak var secondView: UIView!
-    @IBOutlet weak var infoLAbel: UILabel!
+ 
+    @IBOutlet weak var viewSecond: UIView!
+    @IBOutlet weak var labelInfo: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.secondView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.15)
-        self.secondView.layer.cornerRadius = 5
+        self.viewSecond.backgroundColor = UIColor.lightGray.withAlphaComponent(0.15)
+        self.viewSecond.layer.cornerRadius = 5
     }
     
     override func layoutSubviews() {
@@ -30,6 +30,6 @@ class DestinationMenuTableViewCell: BaseTableViewCell {
     }
     
     func setInfo(destinationMenu : DestinationMenuResponseModel) {
-        self.infoLAbel.text = destinationMenu.description
+        self.labelInfo.text = destinationMenu.description
     }
 }

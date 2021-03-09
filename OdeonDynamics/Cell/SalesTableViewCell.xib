@@ -77,9 +77,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dataLAbel" destination="WIC-58-gQ6" id="SZb-6g-JAf"/>
-                <outlet property="infoLAbel" destination="JVJ-60-Xov" id="Rtd-0T-ZWy"/>
-                <outlet property="secondView" destination="5Gn-0B-91j" id="f72-Bg-1Gc"/>
+                <outlet property="labelData" destination="WIC-58-gQ6" id="WvV-tI-voo"/>
+                <outlet property="labelInfo" destination="JVJ-60-Xov" id="I4W-8M-urW"/>
+                <outlet property="viewSecond" destination="5Gn-0B-91j" id="RZn-3n-UbI"/>
             </connections>
             <point key="canvasLocation" x="204.34782608695653" y="148.66071428571428"/>
         </tableViewCell>

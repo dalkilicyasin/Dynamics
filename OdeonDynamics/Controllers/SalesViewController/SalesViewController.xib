@@ -12,9 +12,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalesViewController" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
                 <outlet property="pieChart" destination="Zw1-BE-6at" id="nAk-rW-tHT"/>
-                <outlet property="secondView" destination="apx-9F-K5N" id="Vjj-VV-yWT"/>
                 <outlet property="tableView" destination="zRc-GP-a2l" id="lAn-Mr-3fa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewSecond" destination="apx-9F-K5N" id="B2m-JH-Cnl"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

@@ -13,5 +13,6 @@ public enum ServiceEndPoint: String {
     
     case CreateToken = "/api/Account/CreateTokenAsync"
     case GetUser = "/api/Account/GetUser"
+    case GetUserListById = "/api/Account/GetTypeListByUserIdAsync"
 
 }

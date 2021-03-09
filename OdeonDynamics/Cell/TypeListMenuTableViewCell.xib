@@ -54,8 +54,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="coralImage" destination="VV8-p8-AtR" id="3tJ-iH-ncg"/>
-                <outlet property="infoLabel" destination="Fvy-5d-Qbe" id="HP3-1U-zwE"/>
+                <outlet property="imageCompany" destination="VV8-p8-AtR" id="B6O-3A-FzQ"/>
+                <outlet property="labelInfo" destination="Fvy-5d-Qbe" id="ldU-gT-agU"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="94.084821428571431"/>
         </tableViewCell>

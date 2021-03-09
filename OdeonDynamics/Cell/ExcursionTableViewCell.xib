@@ -66,10 +66,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dataLabel" destination="fJm-cK-cSj" id="9gj-j7-5zR"/>
-                <outlet property="infoLabel" destination="pPk-iZ-C5a" id="ywW-oZ-Jph"/>
-                <outlet property="numberLabel" destination="Hui-B0-V0I" id="oUM-LB-DOq"/>
-                <outlet property="secondView" destination="LFL-ho-8Ew" id="GSO-71-uJD"/>
+                <outlet property="labelData" destination="fJm-cK-cSj" id="57e-kT-H7x"/>
+                <outlet property="labelInfo" destination="pPk-iZ-C5a" id="iyy-DD-fkR"/>
+                <outlet property="labelNumber" destination="Hui-B0-V0I" id="3dQ-TD-U6e"/>
+                <outlet property="viewSecond" destination="LFL-ho-8Ew" id="1S3-T9-e8a"/>
             </connections>
             <point key="canvasLocation" x="302.89855072463769" y="114.17410714285714"/>
         </tableViewCell>

@@ -66,7 +66,7 @@ extension ModuleViewController : UITableViewDelegate, UITableViewDataSource {
         case 2:
             viewController = SalesViewController()
         case 3:
-            viewController = ExcursionViewController()
+            viewController = ExcursionsViewController()
         default:
             print("default")
         }

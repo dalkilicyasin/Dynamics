@@ -11,8 +11,8 @@ import PieCharts
 import Charts
 
 class SalesViewController: BaseViewController {
-    
-    @IBOutlet weak var secondView: UIView!
+
+    @IBOutlet weak var viewSecond: UIView!
     @IBOutlet weak var pieChart: PieChart!
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,7 +21,7 @@ class SalesViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        secondView.addLine(position: .bottom, color: .gray, width: 0.5)
+        viewSecond.addLine(position: .bottom, color: .gray, width: 0.5)
         
         self.pieChart.delegate = self
         self.pieChart.layers = [self.createTextLayer()]
@@ -89,7 +89,7 @@ extension SalesViewController : UITableViewDelegate, UITableViewDataSource {
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.otiPushViewController(viewController: ExcursionViewController())
+        self.otiPushViewController(viewController: ExcursionsViewController())
     }
 }
 

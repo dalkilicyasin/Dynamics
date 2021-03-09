@@ -11,9 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DestinationsViewController" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
-                <outlet property="headerView" destination="9Js-qW-aWK" id="0DL-AS-CuT"/>
-                <outlet property="operatorSelectedView" destination="Fs5-rq-Rvu" id="s4E-uI-gzB"/>
+                <outlet property="destinationView" destination="9Js-qW-aWK" id="mWg-kB-03K"/>
                 <outlet property="tableView" destination="1w6-AG-tnu" id="iwN-e0-cUe"/>
+                <outlet property="typeListSelectView" destination="Fs5-rq-Rvu" id="VlB-mv-LCp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,7 +56,7 @@
                         <constraint firstAttribute="width" constant="30" id="nBe-hp-Oco"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-rq-Rvu" customClass="OperatorSelectView" customModule="OdeonDynamics" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-rq-Rvu" customClass="TypeListSelectView" customModule="OdeonDynamics" customModuleProvider="target">
                     <rect key="frame" x="36" y="68" width="205" height="21"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>

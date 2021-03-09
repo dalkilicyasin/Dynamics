@@ -10,19 +10,21 @@ import UIKit
 
 class MainPageCollectionViewCell: BaseCollectionViewCell {
     
-    @IBOutlet weak var topLAbel: UILabel!
-    @IBOutlet weak var mainPageImage: UIImageView!
-    @IBOutlet weak var dataLabel: UILabel!
-    @IBOutlet weak var mainPageView: UIView!
+   
+    @IBOutlet weak var labelTop: UILabel!
+    @IBOutlet weak var imageMainPage: UIImageView!
+    @IBOutlet weak var labelData: UILabel!
+    @IBOutlet weak var viewMainPage: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        mainPageView.layer.cornerRadius = 10 
+        viewMainPage.layer.cornerRadius = 10 
     }
     
     func setInfo (mainpage : MainPageResponseModel ) {
-        self.topLAbel.text = mainpage.toplabel
-        self.mainPageImage.image = UIImage(named: mainpage.image ?? "")
-        self.dataLabel.text = mainpage.datalabel
+        self.labelTop.text = mainpage.toplabel
+        self.imageMainPage.image = UIImage(named: mainpage.image ?? "")
+        self.labelData.text = mainpage.datalabel
     }
 }

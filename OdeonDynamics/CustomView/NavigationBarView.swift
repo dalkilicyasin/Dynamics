@@ -100,7 +100,7 @@ extension NavigationBarView : UITableViewDelegate, UITableViewDataSource {
             case 2:
                 viewController = SalesViewController()
             case 3:
-                viewController = ExcursionViewController()
+                viewController = ExcursionsViewController()
             default:
                 print("default")
             }
@@ -112,7 +112,7 @@ extension NavigationBarView : UITableViewDelegate, UITableViewDataSource {
 extension NavigationBarView : ViewModelDelegate {
     func viewModelDidUpdate(sender: OdeonViewModel) {
         self.tableView.reloadData()
-    }
+    } 
     
     func viewModelUpdateFailed(error: AppError) {
     }

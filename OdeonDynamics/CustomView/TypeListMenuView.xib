@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OperatorMenuView" customModule="OdeonDynamics" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TypeListMenuView" customModule="OdeonDynamics" customModuleProvider="target">
             <connections>
                 <outlet property="buttonSelect" destination="SXz-0T-S2U" id="7Ip-cH-6vh"/>
                 <outlet property="tableView" destination="WYF-m7-NTv" id="qyK-uv-eBm"/>
-                <outlet property="viewOperatorMenu" destination="iN0-l3-epB" id="Hyi-JQ-lQO"/>
+                <outlet property="viewTypeListMenu" destination="iN0-l3-epB" id="2Wd-1M-PHa"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

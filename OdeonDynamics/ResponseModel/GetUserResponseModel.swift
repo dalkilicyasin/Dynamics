@@ -16,7 +16,7 @@ struct GetUserResponseModel : Mappable {
     var emailAddress : String?
     var userName : String?
     var rolelist : [Rolelist]?
-    var typelist : [Typelist]?
+    
 
     init?(map: Map) {
 
@@ -30,7 +30,7 @@ struct GetUserResponseModel : Mappable {
         emailAddress <- map["EmailAddress"]
         userName <- map["UserName"]
         rolelist <- map["rolelist"]
-        typelist <- map["typelist"]
+       
     }
 }
 struct Rolelist : Mappable {
@@ -52,54 +52,5 @@ struct Rolelist : Mappable {
     }
 
 }
-struct Typelist : Mappable {
-    var id : Int?
-    var typeName : String?
-    var subTypeName : String?
-    var subTypeId : Int?
-    var iconImages : IconImages?
 
-    init?(map: Map) {
 
-    }
-
-    mutating func mapping(map: Map) {
-
-        id <- map["Id"]
-        typeName <- map["TypeName"]
-        subTypeName <- map["SubTypeName"]
-        subTypeId <- map["SubTypeId"]
-        iconImages <- map["iconImages"]
-    }
-}
-struct IconImages : Mappable {
-    var id : Int?
-    var image_Name : String?
-    var image_Url : String?
-    var image_Desc : String?
-    var status : Bool?
-    var insertedBy : String?
-    var insertedDate : String?
-    var modifiedBy : String?
-    var modifiedDate : String?
-    var typeListId : Int?
-
-    init?(map: Map) {
-
-    }
-
-    mutating func mapping(map: Map) {
-
-        id <- map["Id"]
-        image_Name <- map["Image_Name"]
-        image_Url <- map["Image_Url"]
-        image_Desc <- map["Image_Desc"]
-        status <- map["Status"]
-        insertedBy <- map["InsertedBy"]
-        insertedDate <- map["InsertedDate"]
-        modifiedBy <- map["ModifiedBy"]
-        modifiedDate <- map["ModifiedDate"]
-        typeListId <- map["TypeListId"]
-    }
-
-}

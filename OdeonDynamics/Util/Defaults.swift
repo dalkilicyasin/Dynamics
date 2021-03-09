@@ -15,6 +15,7 @@ public class Defaults{
     public enum DefaultsType {
         case LanguageID
         case DeviceID
+        case UserID
     }
     
    public init(){}
@@ -31,6 +32,23 @@ public class Defaults{
     public func getLanguageId() -> Int{
         let preferences = UserDefaults.standard
         let currentLanguageKey = getIdentifier(type: .LanguageID)
+        if preferences.object(forKey: currentLanguageKey) == nil {
+            return -1
+        } else {
+            return preferences.integer(forKey: currentLanguageKey)
+        }
+    }
+    
+    public func saveUserId(languageId:Int){
+        let preferences = UserDefaults.standard
+        let currentLanguageKey = getIdentifier(type: .UserID)
+        preferences.set(languageId, forKey: currentLanguageKey)
+        preferences.synchronize()
+    }
+    
+    public func getUserId() -> Int{
+        let preferences = UserDefaults.standard
+        let currentLanguageKey = getIdentifier(type: .UserID)
         if preferences.object(forKey: currentLanguageKey) == nil {
             return -1
         } else {
@@ -61,6 +79,8 @@ public class Defaults{
             return "LanguageID"
         case .DeviceID:
             return "DeviceID"
+        case .UserID:
+            return "UserID"
         }
     }
 }

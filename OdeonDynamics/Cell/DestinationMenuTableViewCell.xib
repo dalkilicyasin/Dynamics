@@ -57,8 +57,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="infoLAbel" destination="DS6-Ji-ROV" id="ZtY-j1-dtW"/>
-                <outlet property="secondView" destination="g9n-Dk-LTc" id="qH0-OB-O6B"/>
+                <outlet property="labelInfo" destination="DS6-Ji-ROV" id="5A6-sh-zAg"/>
+                <outlet property="viewSecond" destination="g9n-Dk-LTc" id="3dK-Ct-MYt"/>
             </connections>
             <point key="canvasLocation" x="118.84057971014494" y="104.46428571428571"/>
         </tableViewCell>

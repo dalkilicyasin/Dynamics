@@ -8,23 +8,22 @@
 
 import UIKit
 
-class OperatorMenuTableViewCell: BaseTableViewCell {
+class TypeListMenuTableViewCell: BaseTableViewCell {
 
-    @IBOutlet weak var coralImage: UIImageView!
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var imageCompany: UIImageView!
+    @IBOutlet weak var labelInfo: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
     
-    func setInfo( operatormenu : OperatorMenuResponseModel ) {
-        self.infoLabel.text = operatormenu.description
-        self.coralImage.image = UIImage(named: operatormenu.image ?? "")
+    func setInfo( operatormenu : TypeList ) {
+        self.labelInfo.text = operatormenu.subTypeName
+        self.imageCompany.image = UIImage(named: operatormenu.iconImages?.image_Url ?? "")
     } 
 }

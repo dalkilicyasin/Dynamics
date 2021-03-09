@@ -11,22 +11,21 @@ import UIKit
 class DestinationsViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var operatorSelectedView: OperatorSelectView!
+    @IBOutlet weak var destinationView: DestinationSelectView!
+    @IBOutlet weak var typeListSelectView: TypeListSelectView!
     
- 
     var destinationVM = DestinationVM()
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        operatorSelectedView.backgroundColor = .clear
+        typeListSelectView.backgroundColor = .clear
         
-        headerView.layer.cornerRadius = 5
-        headerView.layer.shadowColor = UIColor.black.cgColor
-        headerView.layer.shadowOpacity = 0.3
-        headerView.layer.shadowOffset = .zero
-        headerView.layer.shadowRadius = 5
+        destinationView.layer.cornerRadius = 5
+        destinationView.layer.shadowColor = UIColor.black.cgColor
+        destinationView.layer.shadowOpacity = 0.3
+        destinationView.layer.shadowOffset = .zero
+        destinationView.layer.shadowRadius = 5
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 200
@@ -35,13 +34,8 @@ class DestinationsViewController: BaseViewController {
         self.tableView.dataSource = self
         self.tableView.register(DestinationTableViewCell.nib, forCellReuseIdentifier: DestinationTableViewCell.identifier)
         
-        
         self.destinationVM.delegate = self
-        self.destinationVM.getMainPageList()
-        
-      
-        
-     
+        self.destinationVM.getMainPageList()   
     }
 }
 

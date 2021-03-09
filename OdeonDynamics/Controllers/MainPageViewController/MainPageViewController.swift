@@ -13,11 +13,8 @@ class MainPageViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var hamburgerMenuView: HamburgerMenuView!
     
-    var contentView = NavigationBarView()
     let mainPageVM = MainPAgeVM()
-    
-   
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -32,25 +29,6 @@ class MainPageViewController: BaseViewController {
         
         self.mainPageVM.delegate = self
         self.mainPageVM.getMainPageList()
-        contentView.frame = CGRect(x: view.frame.size.width, y: 0, width: 414, height: 896)
-        
-        /*   let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-         contentView.headerView.addGestureRecognizer(tap)
-         contentView.headerView.isUserInteractionEnabled = true */
-        
-    }
-    
-    @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        /*  print("button tapped")
-         contentView.removeFromSuperview() */
-    }
-    
-    @IBAction func hamburgerButton(_ sender: Any) {
-        /*    self.view.addSubview(contentView)
-         UIView.animate(withDuration: 1) {
-         self.contentView.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
-         
-         }*/
     }
 }
 

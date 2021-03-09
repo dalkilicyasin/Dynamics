@@ -56,22 +56,16 @@
 		D9385C7625C355550049911A /* DestinationMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9385C7425C355550049911A /* DestinationMenuTableViewCell.swift */; };
 		D9385C7725C355550049911A /* DestinationMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9385C7525C355550049911A /* DestinationMenuTableViewCell.xib */; };
 		D93F262625A2177100CEB1E0 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F262525A2177100CEB1E0 /* BaseCollectionViewCell.swift */; };
-		D94326BB25C3008900298451 /* OperatorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326BA25C3008900298451 /* OperatorMenuView.swift */; };
-		D94326BF25C300A100298451 /* OperatorMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94326BE25C300A100298451 /* OperatorMenuView.xib */; };
-		D94326CA25C303A500298451 /* OperatorMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326C825C303A500298451 /* OperatorMenuTableViewCell.swift */; };
-		D94326CB25C303A500298451 /* OperatorMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94326C925C303A500298451 /* OperatorMenuTableViewCell.xib */; };
-		D94326CF25C30EC400298451 /* OperatorMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326CE25C30EC400298451 /* OperatorMenuDM.swift */; };
-		D94326D325C30EFC00298451 /* OperatorMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326D225C30EFC00298451 /* OperatorMenuVM.swift */; };
-		D94326D725C30F1C00298451 /* OperatorMenuResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */; };
+		D94326BB25C3008900298451 /* TypeListMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326BA25C3008900298451 /* TypeListMenuView.swift */; };
+		D94326BF25C300A100298451 /* TypeListMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94326BE25C300A100298451 /* TypeListMenuView.xib */; };
+		D94326CA25C303A500298451 /* TypeListMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94326C825C303A500298451 /* TypeListMenuTableViewCell.swift */; };
+		D94326CB25C303A500298451 /* TypeListMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94326C925C303A500298451 /* TypeListMenuTableViewCell.xib */; };
 		D944C17E25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */; };
 		D944C18225CF1D4F0030CB8B /* DestinationMenuDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C18125CF1D4F0030CB8B /* DestinationMenuDM.swift */; };
 		D944C18625CF1D7F0030CB8B /* DestinationMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944C18525CF1D7F0030CB8B /* DestinationMenuVM.swift */; };
 		D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C5B2591FC530031821A /* LoginViewController.swift */; };
 		D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455C642591FFBF0031821A /* OdeonHeaderView.swift */; };
 		D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9455C6A259200040031821A /* OdeonHeaderView.xib */; };
-		D947F1D525D5A84F002FBFD5 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947F1D425D5A84F002FBFD5 /* Users.swift */; };
-		D95C282C25B5F133004BB4DF /* ExcursionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C282A25B5F133004BB4DF /* ExcursionViewController.swift */; };
-		D95C282D25B5F133004BB4DF /* ExcursionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95C282B25B5F133004BB4DF /* ExcursionViewController.xib */; };
 		D95EB6E625C3FB43009736D7 /* DestinationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EB6E525C3FB43009736D7 /* DestinationMenuView.swift */; };
 		D95EB6EA25C3FB64009736D7 /* DestinationMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95EB6E925C3FB64009736D7 /* DestinationMenuView.xib */; };
 		D95EB6EE25C3FB8D009736D7 /* DestinationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EB6ED25C3FB8D009736D7 /* DestinationSelectView.swift */; };
@@ -96,8 +90,8 @@
 		D974A47925B0FB2100D37B8A /* DestinationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A47725B0FB2100D37B8A /* DestinationTableViewCell.xib */; };
 		D974A47E25B1975E00D37B8A /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A47C25B1975E00D37B8A /* DestinationsViewController.swift */; };
 		D974A47F25B1975E00D37B8A /* DestinationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A47D25B1975E00D37B8A /* DestinationsViewController.xib */; };
-		D974A4A325B348F900D37B8A /* OperatorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A4A225B348F900D37B8A /* OperatorSelectView.swift */; };
-		D974A4A725B3490500D37B8A /* OperatorSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A4A625B3490500D37B8A /* OperatorSelectView.xib */; };
+		D974A4A325B348F900D37B8A /* TypeListSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A4A225B348F900D37B8A /* TypeListSelectView.swift */; };
+		D974A4A725B3490500D37B8A /* TypeListSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A4A625B3490500D37B8A /* TypeListSelectView.xib */; };
 		D974A4B025B355F800D37B8A /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A4AE25B355F800D37B8A /* SalesViewController.swift */; };
 		D974A4B125B355F800D37B8A /* SalesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974A4AF25B355F800D37B8A /* SalesViewController.xib */; };
 		D974A4FA25B39CB300D37B8A /* SalesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A4F925B39CB300D37B8A /* SalesResponseModel.swift */; };
@@ -110,8 +104,11 @@
 		D975F9DE25B750DD00AD5978 /* ExcursionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */; };
 		D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E125B7524900AD5978 /* ExcursionDM.swift */; };
 		D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D975F9E525B7528100AD5978 /* ExcursionVM.swift */; };
-		D99EC5EF25D7CA37005C92D5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */; };
 		D99EC60625DD1E50005C92D5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EC60525DD1E50005C92D5 /* BaseViewController.swift */; };
+		D9D6189925E27ED800A92FC9 /* ExcursionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6189725E27ED800A92FC9 /* ExcursionsViewController.swift */; };
+		D9D6189A25E27ED800A92FC9 /* ExcursionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D6189825E27ED800A92FC9 /* ExcursionsViewController.xib */; };
+		D9D618BA25E5AF7000A92FC9 /* GetTypeListByUserIdRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D618B925E5AF7000A92FC9 /* GetTypeListByUserIdRequestModel.swift */; };
+		D9D618BE25E5B23D00A92FC9 /* GetTypeListByUserIdResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D618BD25E5B23D00A92FC9 /* GetTypeListByUserIdResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,22 +180,16 @@
 		D9385C7425C355550049911A /* DestinationMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuTableViewCell.swift; sourceTree = "<group>"; };
 		D9385C7525C355550049911A /* DestinationMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationMenuTableViewCell.xib; sourceTree = "<group>"; };
 		D93F262525A2177100CEB1E0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		D94326BA25C3008900298451 /* OperatorMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuView.swift; sourceTree = "<group>"; };
-		D94326BE25C300A100298451 /* OperatorMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorMenuView.xib; sourceTree = "<group>"; };
-		D94326C825C303A500298451 /* OperatorMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuTableViewCell.swift; sourceTree = "<group>"; };
-		D94326C925C303A500298451 /* OperatorMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorMenuTableViewCell.xib; sourceTree = "<group>"; };
-		D94326CE25C30EC400298451 /* OperatorMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuDM.swift; sourceTree = "<group>"; };
-		D94326D225C30EFC00298451 /* OperatorMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuVM.swift; sourceTree = "<group>"; };
-		D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorMenuResponseModel.swift; sourceTree = "<group>"; };
+		D94326BA25C3008900298451 /* TypeListMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeListMenuView.swift; sourceTree = "<group>"; };
+		D94326BE25C300A100298451 /* TypeListMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeListMenuView.xib; sourceTree = "<group>"; };
+		D94326C825C303A500298451 /* TypeListMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeListMenuTableViewCell.swift; sourceTree = "<group>"; };
+		D94326C925C303A500298451 /* TypeListMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeListMenuTableViewCell.xib; sourceTree = "<group>"; };
 		D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuResponseModel.swift; sourceTree = "<group>"; };
 		D944C18125CF1D4F0030CB8B /* DestinationMenuDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuDM.swift; sourceTree = "<group>"; };
 		D944C18525CF1D7F0030CB8B /* DestinationMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuVM.swift; sourceTree = "<group>"; };
 		D9455C5B2591FC530031821A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9455C642591FFBF0031821A /* OdeonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdeonHeaderView.swift; sourceTree = "<group>"; };
 		D9455C6A259200040031821A /* OdeonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OdeonHeaderView.xib; sourceTree = "<group>"; };
-		D947F1D425D5A84F002FBFD5 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
-		D95C282A25B5F133004BB4DF /* ExcursionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionViewController.swift; sourceTree = "<group>"; };
-		D95C282B25B5F133004BB4DF /* ExcursionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExcursionViewController.xib; sourceTree = "<group>"; };
 		D95EB6E525C3FB43009736D7 /* DestinationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationMenuView.swift; sourceTree = "<group>"; };
 		D95EB6E925C3FB64009736D7 /* DestinationMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationMenuView.xib; sourceTree = "<group>"; };
 		D95EB6ED25C3FB8D009736D7 /* DestinationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSelectView.swift; sourceTree = "<group>"; };
@@ -223,8 +214,8 @@
 		D974A47725B0FB2100D37B8A /* DestinationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationTableViewCell.xib; sourceTree = "<group>"; };
 		D974A47C25B1975E00D37B8A /* DestinationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsViewController.swift; sourceTree = "<group>"; };
 		D974A47D25B1975E00D37B8A /* DestinationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationsViewController.xib; sourceTree = "<group>"; };
-		D974A4A225B348F900D37B8A /* OperatorSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSelectView.swift; sourceTree = "<group>"; };
-		D974A4A625B3490500D37B8A /* OperatorSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorSelectView.xib; sourceTree = "<group>"; };
+		D974A4A225B348F900D37B8A /* TypeListSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeListSelectView.swift; sourceTree = "<group>"; };
+		D974A4A625B3490500D37B8A /* TypeListSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeListSelectView.xib; sourceTree = "<group>"; };
 		D974A4AE25B355F800D37B8A /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
 		D974A4AF25B355F800D37B8A /* SalesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SalesViewController.xib; sourceTree = "<group>"; };
 		D974A4F925B39CB300D37B8A /* SalesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesResponseModel.swift; sourceTree = "<group>"; };
@@ -237,8 +228,11 @@
 		D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionResponseModel.swift; sourceTree = "<group>"; };
 		D975F9E125B7524900AD5978 /* ExcursionDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionDM.swift; sourceTree = "<group>"; };
 		D975F9E525B7528100AD5978 /* ExcursionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionVM.swift; sourceTree = "<group>"; };
-		D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		D99EC60525DD1E50005C92D5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D9D6189725E27ED800A92FC9 /* ExcursionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionsViewController.swift; sourceTree = "<group>"; };
+		D9D6189825E27ED800A92FC9 /* ExcursionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExcursionsViewController.xib; sourceTree = "<group>"; };
+		D9D618B925E5AF7000A92FC9 /* GetTypeListByUserIdRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTypeListByUserIdRequestModel.swift; sourceTree = "<group>"; };
+		D9D618BD25E5B23D00A92FC9 /* GetTypeListByUserIdResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTypeListByUserIdResponseModel.swift; sourceTree = "<group>"; };
 		E180379C47ECAA6BA011E021 /* Pods-OdeonDynamics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OdeonDynamics.release.xcconfig"; path = "Target Support Files/Pods-OdeonDynamics/Pods-OdeonDynamics.release.xcconfig"; sourceTree = "<group>"; };
 		EA1DAA74A1D338448C451FDD /* Pods-NomuraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.debug.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F4231065920F335DEFDB0CED /* Pods-NomuraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomuraTest.release.xcconfig"; path = "Target Support Files/Pods-NomuraTest/Pods-NomuraTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -301,8 +295,8 @@
 				D974A50625B39DDD00D37B8A /* SalesTableViewCell.xib */,
 				D975F9D725B7328000AD5978 /* ExcursionTableViewCell.swift */,
 				D975F9D825B7328000AD5978 /* ExcursionTableViewCell.xib */,
-				D94326C825C303A500298451 /* OperatorMenuTableViewCell.swift */,
-				D94326C925C303A500298451 /* OperatorMenuTableViewCell.xib */,
+				D94326C825C303A500298451 /* TypeListMenuTableViewCell.swift */,
+				D94326C925C303A500298451 /* TypeListMenuTableViewCell.xib */,
 				D9385C7425C355550049911A /* DestinationMenuTableViewCell.swift */,
 				D9385C7525C355550049911A /* DestinationMenuTableViewCell.xib */,
 			);
@@ -312,7 +306,7 @@
 		191E71122566EA3C0013C4E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D95C281F25B5F0E1004BB4DF /* ExcursionViewController */,
+				D9D6189625E27E9D00A92FC9 /* ExcursionsViewController */,
 				D974A4AD25B355BE00D37B8A /* SalesViewController */,
 				D974A45125B03C7700D37B8A /* DestinationsViewController */,
 				D900C90B25A1D7A20042CA43 /* MainPageViewController */,
@@ -333,7 +327,6 @@
 				D974A46825B0D6D700D37B8A /* DestinationVM.swift */,
 				D974A50125B39D3300D37B8A /* SalesVM.swift */,
 				D975F9E525B7528100AD5978 /* ExcursionVM.swift */,
-				D94326D225C30EFC00298451 /* OperatorMenuVM.swift */,
 				D944C18525CF1D7F0030CB8B /* DestinationMenuVM.swift */,
 			);
 			path = ViewModel;
@@ -348,7 +341,6 @@
 				D974A46E25B0D8BD00D37B8A /* DestinationsDM.swift */,
 				D974A4FD25B39CFA00D37B8A /* SalesDM.swift */,
 				D975F9E125B7524900AD5978 /* ExcursionDM.swift */,
-				D94326CE25C30EC400298451 /* OperatorMenuDM.swift */,
 				D944C18125CF1D4F0030CB8B /* DestinationMenuDM.swift */,
 			);
 			path = "Data Manager";
@@ -374,10 +366,7 @@
 				D974A46125B0D48300D37B8A /* DestinationsResponseModel.swift */,
 				D974A4F925B39CB300D37B8A /* SalesResponseModel.swift */,
 				D975F9DD25B750DD00AD5978 /* ExcursionResponseModel.swift */,
-				D94326D625C30F1C00298451 /* OperatorMenuResponseModel.swift */,
 				D944C17D25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift */,
-				D947F1D425D5A84F002FBFD5 /* Users.swift */,
-				D99EC5EE25D7CA37005C92D5 /* APIRequest.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -504,6 +493,7 @@
 			children = (
 				BF9DE41925D870B40034B705 /* GetUserRequestModel.swift */,
 				BFF7B55525D98D2B0021C813 /* CreateTokenRequestModel.swift */,
+				D9D618B925E5AF7000A92FC9 /* GetTypeListByUserIdRequestModel.swift */,
 			);
 			path = RequestModel;
 			sourceTree = "<group>";
@@ -512,6 +502,7 @@
 			isa = PBXGroup;
 			children = (
 				BFF7B55A25D994F80021C813 /* GetUserResponseModel.swift */,
+				D9D618BD25E5B23D00A92FC9 /* GetTypeListByUserIdResponseModel.swift */,
 			);
 			path = ResponseModel;
 			sourceTree = "<group>";
@@ -536,25 +527,16 @@
 				D9338E7825A4E9EA00593D89 /* HamburgerMenuView.xib */,
 				D973AC0E25A76F8100117C6D /* NavigationBarView.swift */,
 				D973AC1225A76F8B00117C6D /* NavigationBarView.xib */,
-				D974A4A225B348F900D37B8A /* OperatorSelectView.swift */,
-				D974A4A625B3490500D37B8A /* OperatorSelectView.xib */,
-				D94326BA25C3008900298451 /* OperatorMenuView.swift */,
-				D94326BE25C300A100298451 /* OperatorMenuView.xib */,
+				D974A4A225B348F900D37B8A /* TypeListSelectView.swift */,
+				D974A4A625B3490500D37B8A /* TypeListSelectView.xib */,
+				D94326BA25C3008900298451 /* TypeListMenuView.swift */,
+				D94326BE25C300A100298451 /* TypeListMenuView.xib */,
 				D95EB6E525C3FB43009736D7 /* DestinationMenuView.swift */,
 				D95EB6E925C3FB64009736D7 /* DestinationMenuView.xib */,
 				D95EB6ED25C3FB8D009736D7 /* DestinationSelectView.swift */,
 				D95EB6F125C3FB9E009736D7 /* DestinationSelectView.xib */,
 			);
 			path = CustomView;
-			sourceTree = "<group>";
-		};
-		D95C281F25B5F0E1004BB4DF /* ExcursionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				D95C282A25B5F133004BB4DF /* ExcursionViewController.swift */,
-				D95C282B25B5F133004BB4DF /* ExcursionViewController.xib */,
-			);
-			path = ExcursionViewController;
 			sourceTree = "<group>";
 		};
 		D96D0D0D259C6734004A0689 /* ModuleViewController */ = {
@@ -593,6 +575,15 @@
 				D974A4AF25B355F800D37B8A /* SalesViewController.xib */,
 			);
 			path = SalesViewController;
+			sourceTree = "<group>";
+		};
+		D9D6189625E27E9D00A92FC9 /* ExcursionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D9D6189725E27ED800A92FC9 /* ExcursionsViewController.swift */,
+				D9D6189825E27ED800A92FC9 /* ExcursionsViewController.xib */,
+			);
+			path = ExcursionsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,26 +672,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D900C91725A1E9340042CA43 /* MainPageCollectionViewCell.xib in Resources */,
-				D974A4A725B3490500D37B8A /* OperatorSelectView.xib in Resources */,
+				D974A4A725B3490500D37B8A /* TypeListSelectView.xib in Resources */,
 				1951D1412566984500E4699A /* LaunchScreen.storyboard in Resources */,
 				BF78C96E25D524F2002747F0 /* Main.storyboard in Resources */,
 				D974A47925B0FB2100D37B8A /* DestinationTableViewCell.xib in Resources */,
 				D96D0D34259C98A8004A0689 /* ModuleTableViewCell.xib in Resources */,
-				D94326CB25C303A500298451 /* OperatorMenuTableViewCell.xib in Resources */,
+				D94326CB25C303A500298451 /* TypeListMenuTableViewCell.xib in Resources */,
+				D9D6189A25E27ED800A92FC9 /* ExcursionsViewController.xib in Resources */,
 				D9455C6B259200040031821A /* OdeonHeaderView.xib in Resources */,
 				D975F9DA25B7328000AD5978 /* ExcursionTableViewCell.xib in Resources */,
 				D973AC1325A76F8B00117C6D /* NavigationBarView.xib in Resources */,
 				D96D0D11259C6826004A0689 /* ModuleViewController.xib in Resources */,
 				D9338E7925A4E9EA00593D89 /* HamburgerMenuView.xib in Resources */,
 				D900C90825A1D7940042CA43 /* MainPageViewController.xib in Resources */,
-				D95C282D25B5F133004BB4DF /* ExcursionViewController.xib in Resources */,
 				D974A50825B39DDD00D37B8A /* SalesTableViewCell.xib in Resources */,
 				D95EB6F225C3FB9E009736D7 /* DestinationSelectView.xib in Resources */,
 				1951D13E2566984500E4699A /* Assets.xcassets in Resources */,
 				D95EB6EA25C3FB64009736D7 /* DestinationMenuView.xib in Resources */,
 				D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */,
 				D974A47F25B1975E00D37B8A /* DestinationsViewController.xib in Resources */,
-				D94326BF25C300A100298451 /* OperatorMenuView.xib in Resources */,
+				D94326BF25C300A100298451 /* TypeListMenuView.xib in Resources */,
 				D9385C7725C355550049911A /* DestinationMenuTableViewCell.xib in Resources */,
 				D974A4B125B355F800D37B8A /* SalesViewController.xib in Resources */,
 			);
@@ -808,7 +799,6 @@
 				BF9A46192591F11700ADE49B /* ServiceEndPoints.swift in Sources */,
 				D975F9D925B7328000AD5978 /* ExcursionTableViewCell.swift in Sources */,
 				D974A4FA25B39CB300D37B8A /* SalesResponseModel.swift in Sources */,
-				D947F1D525D5A84F002FBFD5 /* Users.swift in Sources */,
 				BF9A461D2591F15A00ADE49B /* ServiceRouter.swift in Sources */,
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
 				D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */,
@@ -818,12 +808,12 @@
 				D99EC60625DD1E50005C92D5 /* BaseViewController.swift in Sources */,
 				D96D0D10259C6826004A0689 /* ModuleViewController.swift in Sources */,
 				D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */,
-				D94326D325C30EFC00298451 /* OperatorMenuVM.swift in Sources */,
 				D974A46225B0D48300D37B8A /* DestinationsResponseModel.swift in Sources */,
+				D9D618BE25E5B23D00A92FC9 /* GetTypeListByUserIdResponseModel.swift in Sources */,
 				D900C91B25A1FB560042CA43 /* MainPageVM.swift in Sources */,
 				BF9DE40A25D86DC30034B705 /* BaseMessageItem.swift in Sources */,
 				D974A46F25B0D8BD00D37B8A /* DestinationsDM.swift in Sources */,
-				D94326CA25C303A500298451 /* OperatorMenuTableViewCell.swift in Sources */,
+				D94326CA25C303A500298451 /* TypeListMenuTableViewCell.swift in Sources */,
 				BF9DE3F125D86A190034B705 /* NetworkManager.swift in Sources */,
 				BFF7B55B25D994F80021C813 /* GetUserResponseModel.swift in Sources */,
 				D96D0D3E259CE1A1004A0689 /* ModuleResponseModel.swift in Sources */,
@@ -832,23 +822,21 @@
 				D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */,
 				D95EB6EE25C3FB8D009736D7 /* DestinationSelectView.swift in Sources */,
 				BF9DE3F025D86A190034B705 /* ServiceEndPoint.swift in Sources */,
+				D9D6189925E27ED800A92FC9 /* ExcursionsViewController.swift in Sources */,
 				BF9DE40625D86DBE0034B705 /* ExtensionUIDevice.swift in Sources */,
 				1939DB5D256AB55B004FDAF5 /* UIColor+Additions.swift in Sources */,
 				D975F9DE25B750DD00AD5978 /* ExcursionResponseModel.swift in Sources */,
-				D99EC5EF25D7CA37005C92D5 /* APIRequest.swift in Sources */,
-				D94326CF25C30EC400298451 /* OperatorMenuDM.swift in Sources */,
-				D974A4A325B348F900D37B8A /* OperatorSelectView.swift in Sources */,
+				D974A4A325B348F900D37B8A /* TypeListSelectView.swift in Sources */,
 				D900C91F25A1FB710042CA43 /* MainPageResponseModel.swift in Sources */,
 				D95EB6E625C3FB43009736D7 /* DestinationMenuView.swift in Sources */,
 				D9455C652591FFBF0031821A /* OdeonHeaderView.swift in Sources */,
 				D975F9E625B7528100AD5978 /* ExcursionVM.swift in Sources */,
-				D95C282C25B5F133004BB4DF /* ExcursionViewController.swift in Sources */,
 				D944C18225CF1D4F0030CB8B /* DestinationMenuDM.swift in Sources */,
 				BF9DE41A25D870B40034B705 /* GetUserRequestModel.swift in Sources */,
 				D944C17E25CF1D1B0030CB8B /* DestinationMenuResponseModel.swift in Sources */,
 				BF9DE3F225D86A190034B705 /* Defaults.swift in Sources */,
 				191E711A2566EAD10013C4E3 /* Service.swift in Sources */,
-				D94326BB25C3008900298451 /* OperatorMenuView.swift in Sources */,
+				D94326BB25C3008900298451 /* TypeListMenuView.swift in Sources */,
 				D944C18625CF1D7F0030CB8B /* DestinationMenuVM.swift in Sources */,
 				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
 				BF9DE3F425D86A190034B705 /* BaseApiRequestBody.swift in Sources */,
@@ -863,13 +851,13 @@
 				D974A50225B39D3300D37B8A /* SalesVM.swift in Sources */,
 				D9338E7125A221C600593D89 /* MainPageDM.swift in Sources */,
 				D974A46925B0D6D700D37B8A /* DestinationVM.swift in Sources */,
-				D94326D725C30F1C00298451 /* OperatorMenuResponseModel.swift in Sources */,
 				D900C91625A1E9340042CA43 /* MainPageCollectionViewCell.swift in Sources */,
 				D974A47825B0FB2100D37B8A /* DestinationTableViewCell.swift in Sources */,
 				D974A4FE25B39CFA00D37B8A /* SalesDM.swift in Sources */,
 				BF9DE3CF25D862890034B705 /* AppError.swift in Sources */,
 				BF9DE3F625D86A190034B705 /* BaseData.swift in Sources */,
 				BF9DE3F525D86A190034B705 /* ExtensionUIApplication.swift in Sources */,
+				D9D618BA25E5AF7000A92FC9 /* GetTypeListByUserIdRequestModel.swift in Sources */,
 				BF9DE3F325D86A190034B705 /* BaseResponse.swift in Sources */,
 				D900C90725A1D7940042CA43 /* MainPageViewController.swift in Sources */,
 				D973AC0F25A76F8100117C6D /* NavigationBarView.swift in Sources */,

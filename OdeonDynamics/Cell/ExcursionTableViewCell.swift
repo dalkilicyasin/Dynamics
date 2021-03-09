@@ -10,15 +10,16 @@ import UIKit
 
 class ExcursionTableViewCell: BaseTableViewCell {
     
-    @IBOutlet weak var numberLabel: UILabel!
-    @IBOutlet weak var infoLabel: UILabel!
-    @IBOutlet weak var dataLabel: UILabel!
-    @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var labelNumber: UILabel!
+    @IBOutlet weak var labelInfo: UILabel!
+    @IBOutlet weak var labelData: UILabel!
+    @IBOutlet weak var viewSecond: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.secondView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.15)
-        self.secondView.layer.cornerRadius = 5
+        self.viewSecond.backgroundColor = UIColor.lightGray.withAlphaComponent(0.15)
+        self.viewSecond.layer.cornerRadius = 5
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,8 +32,8 @@ class ExcursionTableViewCell: BaseTableViewCell {
     }
     
     func setInfo( excursion : ExcursionResponseModel) {
-        self.numberLabel.text = excursion.number
-        self.infoLabel.text = excursion.description
-        self.dataLabel.text = excursion.data
+        self.labelNumber.text = excursion.number
+        self.labelInfo.text = excursion.description
+        self.labelData.text = excursion.data
     }
 }

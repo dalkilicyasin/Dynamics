@@ -9,22 +9,22 @@
 import UIKit
 
 class DestinationTableViewCell: BaseTableViewCell {
-    
-    @IBOutlet weak var firstView: UIView!
-    @IBOutlet weak var secondView: UIView!
-    @IBOutlet weak var infoLabel: UILabel!
-    @IBOutlet weak var infoImage: UIImageView!
-    @IBOutlet weak var dataLabel: UILabel!
+ 
+    @IBOutlet weak var viewFirst: UIView!
+    @IBOutlet weak var viewSecond: UIView!
+    @IBOutlet weak var labelInfo: UILabel!
+    @IBOutlet weak var labelData: UILabel!
+    @IBOutlet weak var imageInfo: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         backgroundColor = .clear
         
-        self.secondView.layer.borderWidth = 1
-        self.secondView.layer.cornerRadius = 3
-        self.secondView.layer.borderColor = UIColor.clear.cgColor
-        self.secondView.layer.masksToBounds = true
+        self.viewSecond.layer.borderWidth = 1
+        self.viewSecond.layer.cornerRadius = 3
+        self.viewSecond.layer.borderColor = UIColor.clear.cgColor
+        self.viewSecond.layer.masksToBounds = true
         
         self.layer.shadowOpacity = 0.30
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -43,8 +43,8 @@ class DestinationTableViewCell: BaseTableViewCell {
     }
     
     func setInfo( destination : DestinationResponseModel) {
-        self.infoLabel.text = destination.description
-        self.dataLabel.text = destination.data
-        self.infoImage.image = UIImage(named: destination.image ?? "")
+        self.labelInfo.text = destination.description
+        self.labelData.text = destination.data
+        self.imageInfo.image = UIImage(named: destination.image ?? "")
     }
 }

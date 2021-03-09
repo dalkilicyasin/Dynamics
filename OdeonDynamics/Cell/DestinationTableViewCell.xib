@@ -77,11 +77,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dataLabel" destination="hwO-Mz-D2D" id="pu3-6S-ZBD"/>
-                <outlet property="firstView" destination="H2p-sc-9uM" id="sBP-aq-MqX"/>
-                <outlet property="infoImage" destination="8aQ-cN-xky" id="k8r-U6-1B4"/>
-                <outlet property="infoLabel" destination="iKY-3O-t51" id="8Hv-Jz-Skt"/>
-                <outlet property="secondView" destination="73X-pP-5aD" id="1hN-s7-Dcg"/>
+                <outlet property="imageInfo" destination="8aQ-cN-xky" id="b6h-M4-xaB"/>
+                <outlet property="labelData" destination="hwO-Mz-D2D" id="23V-f6-qzc"/>
+                <outlet property="labelInfo" destination="iKY-3O-t51" id="I7k-w3-aRi"/>
+                <outlet property="viewFirst" destination="H2p-sc-9uM" id="Dq6-h5-0Yx"/>
+                <outlet property="viewSecond" destination="73X-pP-5aD" id="2yx-ge-PPA"/>
             </connections>
             <point key="canvasLocation" x="83.333333333333343" y="185.82589285714286"/>
         </tableViewCell>

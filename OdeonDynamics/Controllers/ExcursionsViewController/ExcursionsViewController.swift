@@ -10,9 +10,7 @@ import UIKit
 import PieCharts
 
 
-class ExcursionViewController: BaseViewController {
-    
-   
+class ExcursionsViewController: BaseViewController {
    
     @IBOutlet weak var viewSecond: UIView!
     @IBOutlet weak var tableView: UITableView!
@@ -74,7 +72,7 @@ class ExcursionViewController: BaseViewController {
     }
 }
 
-extension ExcursionViewController : ViewModelDelegate {
+extension ExcursionsViewController : ViewModelDelegate {
     func viewModelDidUpdate(sender: OdeonViewModel) {
         self.tableView.reloadData()
     }
@@ -84,7 +82,7 @@ extension ExcursionViewController : ViewModelDelegate {
     }
 }
 
-extension ExcursionViewController : UITableViewDelegate, UITableViewDataSource {
+extension ExcursionsViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.excursionVM.excursionList.count
     }
@@ -99,7 +97,7 @@ extension ExcursionViewController : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension ExcursionViewController : PieChartDelegate {
+extension ExcursionsViewController : PieChartDelegate {
     func onSelected(slice: PieSlice, selected: Bool) {
         print("Selected: \(selected), slice: \(slice)")
     }
