@@ -9,7 +9,7 @@
 import ObjectMapper
 import UIKit
 
-struct GetTypeListByUserIdResponseModel : Mappable {
+struct GetTypeListByUserIdResponseModel : Mappable, Decodable, Encodable {
    
     var isSuccess : Bool?
     var threadGuid : String?
@@ -30,7 +30,7 @@ struct GetTypeListByUserIdResponseModel : Mappable {
 
 }
 
-struct BaseMessage : Mappable {
+struct BaseMessage : Mappable, Decodable, Encodable {
     var type : String?
     var code : Int?
     var message : String?
@@ -51,7 +51,7 @@ struct BaseMessage : Mappable {
 
 }
 
-struct TypeList : Mappable {
+struct TypeList : Mappable, Decodable, Encodable {
     var id : Int?
     var typeName : String?
     var subTypeName : String?
@@ -75,7 +75,7 @@ struct TypeList : Mappable {
 
 }
 
-struct IconImages : Mappable {
+struct IconImages : Mappable, Decodable, Encodable {
     var id : Int?
     var image_Url : String?
     var typeListId : Int?

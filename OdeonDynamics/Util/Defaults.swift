@@ -16,10 +16,31 @@ public class Defaults{
         case LanguageID
         case DeviceID
         case UserID
+        case TopicList
     }
     
    public init(){}
     
+     func saveTopicList(moduleTypeName:GetTypeListByUserIdResponseModel){
+           let preferences = UserDefaults.standard
+           let encoder = JSONEncoder()
+           if let encoded = try? encoder.encode(moduleTypeName) {
+            preferences.set(encoded, forKey: getIdentifier(type: .TopicList))
+               preferences.synchronize()
+           }
+       }
+       
+    func getTopicList() -> GetTypeListByUserIdResponseModel{
+           let preferences = UserDefaults.standard
+           let decoder = JSONDecoder()
+        if let savedTypeName = preferences.object(forKey: getIdentifier(type: .TopicList)) as? Data {
+               if let loadedTypeName = try? decoder.decode(GetTypeListByUserIdResponseModel.self, from: savedTypeName) {
+                   return loadedTypeName
+               }
+           }
+        return GetTypeListByUserIdResponseModel.init(JSON: ["":""])!
+       }
+
     
     //LanguageID
     public func saveLanguageId(languageId:Int){
@@ -81,6 +102,9 @@ public class Defaults{
             return "DeviceID"
         case .UserID:
             return "UserID"
+        case .TopicList:
+            return "TopicList"
         }
     }
+    
 }

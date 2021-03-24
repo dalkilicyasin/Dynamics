@@ -50,6 +50,7 @@
 		D900C91725A1E9340042CA43 /* MainPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D900C91525A1E9340042CA43 /* MainPageCollectionViewCell.xib */; };
 		D900C91B25A1FB560042CA43 /* MainPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C91A25A1FB560042CA43 /* MainPageVM.swift */; };
 		D900C91F25A1FB710042CA43 /* MainPageResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */; };
+		D9163F0325FA6942002AC287 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9163F0225FA6942002AC287 /* Global.swift */; };
 		D9338E7125A221C600593D89 /* MainPageDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9338E7025A221C600593D89 /* MainPageDM.swift */; };
 		D9338E7525A4E9DA00593D89 /* HamburgerMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9338E7425A4E9DA00593D89 /* HamburgerMenuView.swift */; };
 		D9338E7925A4E9EA00593D89 /* HamburgerMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9338E7825A4E9EA00593D89 /* HamburgerMenuView.xib */; };
@@ -75,9 +76,6 @@
 		D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */; };
 		D96D0D34259C98A8004A0689 /* ModuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */; };
 		D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */; };
-		D96D0D3E259CE1A1004A0689 /* ModuleResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */; };
-		D96D0D42259CE3BD004A0689 /* ModuleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D41259CE3BD004A0689 /* ModuleVM.swift */; };
-		D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D0D45259CF831004A0689 /* ModuleDM.swift */; };
 		D96DC242259B93AA0042D7B7 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */; };
 		D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DC245259B95570042D7B7 /* CheckBoxView.swift */; };
 		D96DC24A259B95720042D7B7 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96DC249259B95720042D7B7 /* CheckBoxView.xib */; };
@@ -174,6 +172,7 @@
 		D900C91525A1E9340042CA43 /* MainPageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageCollectionViewCell.xib; sourceTree = "<group>"; };
 		D900C91A25A1FB560042CA43 /* MainPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVM.swift; sourceTree = "<group>"; };
 		D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageResponseModel.swift; sourceTree = "<group>"; };
+		D9163F0225FA6942002AC287 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		D9338E7025A221C600593D89 /* MainPageDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageDM.swift; sourceTree = "<group>"; };
 		D9338E7425A4E9DA00593D89 /* HamburgerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerMenuView.swift; sourceTree = "<group>"; };
 		D9338E7825A4E9EA00593D89 /* HamburgerMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HamburgerMenuView.xib; sourceTree = "<group>"; };
@@ -199,9 +198,6 @@
 		D96D0D31259C98A8004A0689 /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
 		D96D0D32259C98A8004A0689 /* ModuleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleTableViewCell.xib; sourceTree = "<group>"; };
 		D96D0D37259C992B004A0689 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleResponseModel.swift; sourceTree = "<group>"; };
-		D96D0D41259CE3BD004A0689 /* ModuleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVM.swift; sourceTree = "<group>"; };
-		D96D0D45259CF831004A0689 /* ModuleDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDM.swift; sourceTree = "<group>"; };
 		D96DC241259B93AA0042D7B7 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 		D96DC245259B95570042D7B7 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		D96DC249259B95720042D7B7 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
@@ -322,7 +318,6 @@
 			children = (
 				191E71202566F1440013C4E3 /* OdeonBaseViewModel.swift */,
 				191E711F2566F1440013C4E3 /* QuotesVM.swift */,
-				D96D0D41259CE3BD004A0689 /* ModuleVM.swift */,
 				D900C91A25A1FB560042CA43 /* MainPageVM.swift */,
 				D974A46825B0D6D700D37B8A /* DestinationVM.swift */,
 				D974A50125B39D3300D37B8A /* SalesVM.swift */,
@@ -336,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				191E711D2566F13A0013C4E3 /* QuotesDM.swift */,
-				D96D0D45259CF831004A0689 /* ModuleDM.swift */,
 				D9338E7025A221C600593D89 /* MainPageDM.swift */,
 				D974A46E25B0D8BD00D37B8A /* DestinationsDM.swift */,
 				D974A4FD25B39CFA00D37B8A /* SalesDM.swift */,
@@ -361,7 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				BF9A46122591EAAC00ADE49B /* QuotesResponseModel.swift */,
-				D96D0D3D259CE1A1004A0689 /* ModuleResponseModel.swift */,
 				D900C91E25A1FB710042CA43 /* MainPageResponseModel.swift */,
 				D974A46125B0D48300D37B8A /* DestinationsResponseModel.swift */,
 				D974A4F925B39CB300D37B8A /* SalesResponseModel.swift */,
@@ -484,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				BF9DE3EA25D86A190034B705 /* Defaults.swift */,
+				D9163F0225FA6942002AC287 /* Global.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -803,6 +797,7 @@
 				D9455C5D2591FC530031821A /* LoginViewController.swift in Sources */,
 				D975F9E225B7524900AD5978 /* ExcursionDM.swift in Sources */,
 				191E71212566F1440013C4E3 /* QuotesVM.swift in Sources */,
+				D9163F0325FA6942002AC287 /* Global.swift in Sources */,
 				D93F262625A2177100CEB1E0 /* BaseCollectionViewCell.swift in Sources */,
 				19D62C51256836080016B530 /* QuotesCell.swift in Sources */,
 				D99EC60625DD1E50005C92D5 /* BaseViewController.swift in Sources */,
@@ -816,7 +811,6 @@
 				D94326CA25C303A500298451 /* TypeListMenuTableViewCell.swift in Sources */,
 				BF9DE3F125D86A190034B705 /* NetworkManager.swift in Sources */,
 				BFF7B55B25D994F80021C813 /* GetUserResponseModel.swift in Sources */,
-				D96D0D3E259CE1A1004A0689 /* ModuleResponseModel.swift in Sources */,
 				191E711E2566F13A0013C4E3 /* QuotesDM.swift in Sources */,
 				1951D1352566984300E4699A /* AppDelegate.swift in Sources */,
 				D96D0D33259C98A8004A0689 /* ModuleTableViewCell.swift in Sources */,
@@ -840,12 +834,10 @@
 				D944C18625CF1D7F0030CB8B /* DestinationMenuVM.swift in Sources */,
 				191E71222566F1440013C4E3 /* OdeonBaseViewModel.swift in Sources */,
 				BF9DE3F425D86A190034B705 /* BaseApiRequestBody.swift in Sources */,
-				D96D0D46259CF831004A0689 /* ModuleDM.swift in Sources */,
 				BFF7B55625D98D2B0021C813 /* CreateTokenRequestModel.swift in Sources */,
 				D96DC246259B95570042D7B7 /* CheckBoxView.swift in Sources */,
 				BF9DE3F725D86A190034B705 /* ExtensionUIViewController.swift in Sources */,
 				D96D0D38259C992B004A0689 /* BaseTableViewCell.swift in Sources */,
-				D96D0D42259CE3BD004A0689 /* ModuleVM.swift in Sources */,
 				D974A4B025B355F800D37B8A /* SalesViewController.swift in Sources */,
 				D9385C7625C355550049911A /* DestinationMenuTableViewCell.swift in Sources */,
 				D974A50225B39D3300D37B8A /* SalesVM.swift in Sources */,

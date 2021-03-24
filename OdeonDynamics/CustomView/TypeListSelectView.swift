@@ -16,7 +16,7 @@ class TypeListSelectView: UIView {
     
     var typeListMenuBar : TypeListMenuView?
     var remember = true
-    var companyArrayList : GetTypeListByUserIdResponseModel?
+    var companyResponse : GetTypeListByUserIdResponseModel?
     var typeListDelegate : TypeListDelegate?
     
     @IBOutlet var viewTypeListSelect: UIView!
@@ -39,11 +39,11 @@ class TypeListSelectView: UIView {
         viewTypeListSelect.addGestureRecognizer(tap)
         viewTypeListSelect.isUserInteractionEnabled = true
         
-        let getTypeListByUserRequestModel = UIApplication.getTopViewController()!.getBaseRequestData(data: GetTypeListByUserIdRequestModel(userId: 1, groupId: 3))
+        let getTypeListByUserRequestModel = UIApplication.getTopViewController()!.getBaseRequestData(data: GetTypeListByUserIdRequestModel(userId: userDefaultsData.getUserId(), groupId: OPERATOR_REQUEST_ID))
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUserListById, requestModel: getTypeListByUserRequestModel ) { (response: BaseResponse<GetTypeListByUserIdResponseModel>) in
             if response.isSuccess ?? false {
-                self.companyArrayList = response.dataObject
-                self.typeListDelegate?.typeListSeletcViewTapped(typeList: self.companyArrayList!)
+                self.companyResponse = response.dataObject
+                self.typeListDelegate?.typeListSeletcViewTapped(typeList: self.companyResponse!)
                 print("response succsess")
             }
         }

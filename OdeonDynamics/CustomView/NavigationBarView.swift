@@ -16,7 +16,10 @@ class NavigationBarView: UIView {
     @IBOutlet var viewNavigationBar: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    var barModuleList = ModuleVM()
+    let companyList = ["App Statistic","Pax Information","Sales Revenue","Finance"]
+    let companyImageList = ["statistic","pax","sales","budget"]
+    
+    var barModuleList : [TypeList]?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,9 +43,6 @@ class NavigationBarView: UIView {
         self.tableView.dataSource = self
         self.tableView.register(ModuleTableViewCell.nib, forCellReuseIdentifier: ModuleTableViewCell.identifier)
         
-        self.barModuleList.delegate = self
-        self.barModuleList.getModuleList()
-        
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableView.automaticDimension
         
@@ -53,6 +53,8 @@ class NavigationBarView: UIView {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         imageHamburger.addGestureRecognizer(tap)
         imageHamburger.isUserInteractionEnabled = true
+        
+        self.barModuleList = userDefaultsData.getTopicList().typelist
     }
     
     @objc func logOutHandleTap(_ sender: UITapGestureRecognizer) {
@@ -73,12 +75,15 @@ class NavigationBarView: UIView {
 
 extension NavigationBarView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.barModuleList.moduleList.count
+       // return (self.barModuleList?.count ?? 0)
+        return self.companyList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ModuleTableViewCell.identifier) as! ModuleTableViewCell
-        cell.setInfo(module: barModuleList.moduleList[indexPath.row])
+       // cell.setInfo(module: (barModuleList?[indexPath.row])!)
+        cell.labelModule.text = self.companyList[indexPath.row]
+        cell.imageViewModule.image = UIImage(named: companyImageList[indexPath.row])
         return cell
     }
     

@@ -15,7 +15,7 @@ class TypeListMenuView: UIView {
     @IBOutlet weak var buttonSelect: UIButton!
     
     var typeListSelectView : TypeListSelectView?
-    var companyList : GetTypeListByUserIdResponseModel?
+    var companyResponse : GetTypeListByUserIdResponseModel?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,12 +51,12 @@ class TypeListMenuView: UIView {
 extension TypeListMenuView : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (self.companyList?.typelist?.count ?? 0)
+        return (self.companyResponse?.typelist?.count ?? 0)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TypeListMenuTableViewCell.identifier) as! TypeListMenuTableViewCell
-        cell.setInfo(operatormenu: (companyList?.typelist![indexPath.row])!)
+        cell.setInfo(operatormenu: (companyResponse?.typelist![indexPath.row])!)
         return cell
     }
     
@@ -66,7 +66,7 @@ extension TypeListMenuView : UITableViewDelegate, UITableViewDataSource {
 }
 extension TypeListMenuView : TypeListDelegate {
     func typeListSeletcViewTapped(typeList: GetTypeListByUserIdResponseModel) {
-        self.companyList = typeList
+        self.companyResponse = typeList
         self.tableView.reloadData()
     }
 }

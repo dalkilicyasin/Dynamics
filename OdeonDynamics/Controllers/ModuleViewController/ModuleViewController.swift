@@ -12,9 +12,11 @@ class ModuleViewController: BaseViewController {
     
     @IBOutlet weak var headerView: OdeonHeaderView!
     @IBOutlet weak var tableView: UITableView!
-  
-    let moduleVM = ModuleVM()
+    var topicResponse : GetTypeListByUserIdResponseModel?
     
+    let companyList = ["App Statistic","Pax Information","Sales Revenue","Finance"]
+    let companyImageList = ["statistic","pax","sales","budget"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,25 +27,28 @@ class ModuleViewController: BaseViewController {
         self.tableView.dataSource = self
         self.tableView.register(ModuleTableViewCell.nib, forCellReuseIdentifier: ModuleTableViewCell.identifier)
         
-        self.moduleVM.delegate = self
-        self.moduleVM.getModuleList()
+        let getTypeListByUserRequestModel = getBaseRequestData(data: GetTypeListByUserIdRequestModel(userId: userDefaultsData.getUserId(), groupId: TOPIC_REQUEST_ID))
+        NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUserListById, requestModel: getTypeListByUserRequestModel ) { (response: BaseResponse<GetTypeListByUserIdResponseModel>) in
+            if response.isSuccess ?? false {
+                self.topicResponse = response.dataObject
+                if response.dataObject != nil {
+                    userDefaultsData.saveTopicList(moduleTypeName: response.dataObject!)
+                    print("response succsess")
+                }else{
+                    print("data empty")
+                }
+            }
+        }
     }
     @IBAction func logOutButtonTapped(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
-extension ModuleViewController : ViewModelDelegate {
-    func viewModelDidUpdate(sender: OdeonViewModel) {
-        self.tableView.reloadData()
-    }
-    func viewModelUpdateFailed(error: AppError) {
-    }
-}
-
 extension ModuleViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.moduleVM.moduleList.count
+       // return (self.topicResponse?.typelist?.count ?? 0)
+        return companyList.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -51,7 +56,9 @@ extension ModuleViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ModuleTableViewCell.identifier) as! ModuleTableViewCell
-        cell.setInfo(module: self.moduleVM.moduleList[indexPath.row])
+        //cell.setInfo(module: (self.topicResponse?.typelist?[indexPath.row])!)
+        cell.imageViewModule.image = UIImage(named: companyImageList[indexPath.row])
+        cell.labelModule.text = companyList[indexPath.row]
         return cell
     }
     

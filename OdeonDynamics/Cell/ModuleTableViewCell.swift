@@ -22,8 +22,8 @@ class ModuleTableViewCell: BaseTableViewCell{
         super.setSelected(selected, animated: animated)
     }
   
-    func setInfo(module : ModuleResponseModel) {
-        self.labelModule.text = module.name
-        self.imageViewModule.image = UIImage(named: module.image ?? "")
+    func setInfo(module : TypeList) {
+        self.labelModule.text = module.typeName
+        self.imageViewModule.image = UIImage(named: module.iconImages?.image_Url ?? "")
     }
 }

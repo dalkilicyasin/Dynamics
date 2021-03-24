@@ -10,7 +10,6 @@ import ObjectMapper
 
 struct GetTypeListByUserIdRequestModel : Mappable {
    
-    
     public var userId : Int!
     public var groupId : Int!
     

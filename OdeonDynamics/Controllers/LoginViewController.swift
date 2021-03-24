@@ -30,9 +30,7 @@ class LoginViewController: BaseViewController {
                 self.baseData.getTokenResponse = response
                 print("token received - \(response.token ?? "")")
             }
-        }
-        
-       
+        } 
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -40,7 +38,7 @@ class LoginViewController: BaseViewController {
        let getUserRequestModel = self.getBaseRequestData(data: GetUserRequestModel.init(userId: 1))
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUser, requestModel: getUserRequestModel) { (response: BaseResponse<GetUserResponseModel>) in
             if response.isSuccess ?? false {
-                
+                userDefaultsData.saveUserId(languageId: response.dataObject?.id ?? -1)
             }
         }
     }
