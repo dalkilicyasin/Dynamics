@@ -55,6 +55,7 @@ class NavigationBarView: UIView {
         imageHamburger.isUserInteractionEnabled = true
         
         self.barModuleList = userDefaultsData.getTopicList().typelist
+        print("tested")
     }
     
     @objc func logOutHandleTap(_ sender: UITapGestureRecognizer) {
