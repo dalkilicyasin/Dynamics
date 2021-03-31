@@ -10,9 +10,7 @@ import UIKit
 
 class HamburgerMenuView: UIView {
     var navBar : NavigationBarView?
-   
     @IBOutlet var viewHamburgerMenu: UIView!
-    
     var remember = true
     
     override init(frame: CGRect) {
@@ -41,12 +39,12 @@ class HamburgerMenuView: UIView {
                 UIView.animate(withDuration: 2, animations: {
                     self.navBar = NavigationBarView()
                     self.navBar!.frame = CGRect(x: 0, y: 0, width: 414, height: 896)
-                           topVC.view.addSubview(self.navBar!)
-                        }, completion: { (finished) in
-                            if finished{
-                                
-                            }
-                        })
+                    topVC.view.addSubview(self.navBar!)
+                }, completion: { (finished) in
+                    if finished{
+                        
+                    }
+                })
             }
             
             print("true")
@@ -55,6 +53,6 @@ class HamburgerMenuView: UIView {
             self.navBar!.removeFromSuperview()
         }
         
-     //self.remember = !remember
+        //self.remember = !remember
     }
 }

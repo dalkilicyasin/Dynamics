@@ -62,8 +62,6 @@ class NavigationBarView: UIView {
         
         print("button tapped")
         if let topVC = UIApplication.getTopViewController() {
-            
-            let viewController: UIViewController = LoginViewController()
             topVC.navigationController?.popToRootViewController(animated: true)
         }
     }
@@ -115,14 +113,6 @@ extension NavigationBarView : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension NavigationBarView : ViewModelDelegate {
-    func viewModelDidUpdate(sender: OdeonViewModel) {
-        self.tableView.reloadData()
-    } 
-    
-    func viewModelUpdateFailed(error: AppError) {
-    }
-}
 
 
 

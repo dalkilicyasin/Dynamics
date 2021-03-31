@@ -9,7 +9,7 @@
 import UIKit
 
 protocol TypeListDelegate {
-    func typeListSeletcViewTapped( typeList : GetTypeListByUserIdResponseModel)
+    func typeListSelectViewTapped( typeList : GetTypeListByUserIdResponseModel)
 }
 
 class TypeListSelectView: UIView {
@@ -43,7 +43,7 @@ class TypeListSelectView: UIView {
         NetworkManager.sendRequest(url: NetworkManager.BASEURL, endPoint: .GetUserListById, requestModel: getTypeListByUserRequestModel ) { (response: BaseResponse<GetTypeListByUserIdResponseModel>) in
             if response.isSuccess ?? false {
                 self.companyResponse = response.dataObject
-                self.typeListDelegate?.typeListSeletcViewTapped(typeList: self.companyResponse!)
+                self.typeListDelegate?.typeListSelectViewTapped(typeList: self.companyResponse!)
                 print("response succsess")
             }
         }

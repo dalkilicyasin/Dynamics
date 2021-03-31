@@ -65,7 +65,7 @@ extension TypeListMenuView : UITableViewDelegate, UITableViewDataSource {
     }  
 }
 extension TypeListMenuView : TypeListDelegate {
-    func typeListSeletcViewTapped(typeList: GetTypeListByUserIdResponseModel) {
+    func typeListSelectViewTapped(typeList: GetTypeListByUserIdResponseModel) {
         self.companyResponse = typeList
         self.tableView.reloadData()
     }
